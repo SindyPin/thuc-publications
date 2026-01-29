@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr Thuc Le - Publications</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 { color: #333; }
+        h2 { 
+            color: #666; 
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+        #publications-container {
+            margin-top: 20px;
+        }
+        .loading {
+            color: #666;
+            font-style: italic;
+        }
+        .error {
+            color: #c00;
+            background: #fee;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dr Thuc Le</h1>
+    <p>Associate Professor, University of South Australia</p>
+    
+    <h2>Publications</h2>
+    
+    <!-- Option 1: Load from GitHub (automatic updates) -->
+    <div id="publications-container">
+        <p class="loading">Loading publications...</p>
+    </div>
+    
+    <script>
+        // Replace YOUR_USERNAME with your actual GitHub username
+        const GITHUB_USERNAME = 'YOUR_USERNAME';
+        const REPO_NAME = 'thuc-publications';
+        
+        const url = `https://raw.githubusercontent.com/${GITHUB_USERNAME}/${REPO_NAME}/main/publications.html`;
+        
+        fetch(url)
+            .then(response => {
+                if (!response.ok) throw new Error('Failed to load publications');
+                return response.text();
+            })
+            .then(html => {
+                document.getElementById('publications-container').innerHTML = html;
+            })
+            .catch(error => {
+                document.getElementById('publications-container').innerHTML = 
+                    `<p class="error">Could not load publications. 
+                     <a href="https://scholar.google.com.au/citations?user=wMSCRxUAAAAJ">
+                     View on Google Scholar</a></p>`;
+                console.error('Error:', error);
+            });
+    </script>
+    
+    <!-- Option 2: Fallback link to Google Scholar -->
+    <noscript>
+        <p>
+            <a href="https://scholar.google.com.au/citations?user=wMSCRxUAAAAJ">
+                View publications on Google Scholar
+            </a>
+        </p>
+    </noscript>
+</body>
+</html>
