@@ -3114,7 +3114,7 @@
     "title": "Multi-Source Causal Feature Selection",
     "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
     "year": 2020,
-    "citationCount": 109,
+    "citationCount": 110,
     "openAccessPdf": {
       "url": "",
       "status": "CLOSED",
@@ -4834,7 +4834,7 @@
     "title": "miRBaseConverter: an R/Bioconductor package for converting and retrieving miRNA name, accession, sequence and family information in different versions of miRBase",
     "venue": "bioRxiv",
     "year": 2018,
-    "citationCount": 66,
+    "citationCount": 67,
     "openAccessPdf": {
       "url": "https://bmcbioinformatics.biomedcentral.com/track/pdf/10.1186/s12859-018-2531-5",
       "status": "GREEN",
@@ -6640,7 +6640,7 @@
     "title": "A Fast PC Algorithm for High Dimensional Causal Discovery with Multi-Core PCs",
     "venue": "IEEE/ACM Transactions on Computational Biology & Bioinformatics",
     "year": 2015,
-    "citationCount": 167,
+    "citationCount": 168,
     "openAccessPdf": {
       "url": "http://arxiv.org/pdf/1502.02454",
       "status": "GREEN",
