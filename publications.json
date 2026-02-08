@@ -350,7 +350,7 @@
     "title": "From Correlation to Causation: Max-Pooling-Based Multi-Instance Learning Leads to More Robust Whole Slide Image Classification",
     "venue": "",
     "year": 2024,
-    "citationCount": 0,
+    "citationCount": 1,
     "openAccessPdf": {
       "url": "",
       "status": null,
@@ -648,7 +648,7 @@
     },
     "url": "https://www.semanticscholar.org/paper/922896b212c972bbbd5d3d45e89dd9c459a85ac1",
     "title": "Linking Model Intervention to Causal Interpretation in Model Explanation",
-    "venue": "Pattern Recognition",
+    "venue": "arXiv.org",
     "year": 2024,
     "citationCount": 0,
     "openAccessPdf": {
@@ -1136,7 +1136,7 @@
         "name": "Sofia Triantafillou"
       },
       {
-        "authorId": "2238008909",
+        "authorId": "2264098212",
         "name": "Shohei Shimizu"
       },
       {
@@ -4308,7 +4308,7 @@
     "title": "Inferring and analyzing module-specific lncRNA-mRNA causal regulatory networks in human cancer",
     "venue": "Briefings Bioinform.",
     "year": 2019,
-    "citationCount": 42,
+    "citationCount": 43,
     "openAccessPdf": {
       "url": "",
       "status": "CLOSED",
@@ -6468,7 +6468,7 @@
     "title": "From Observational Studies to Causal Rule Mining",
     "venue": "ACM Transactions on Intelligent Systems and Technology",
     "year": 2015,
-    "citationCount": 52,
+    "citationCount": 53,
     "openAccessPdf": {
       "url": "https://dl.acm.org/doi/pdf/10.1145/2746410",
       "status": "BRONZE",
@@ -6640,7 +6640,7 @@
     "title": "A Fast PC Algorithm for High Dimensional Causal Discovery with Multi-Core PCs",
     "venue": "IEEE/ACM Transactions on Computational Biology & Bioinformatics",
     "year": 2015,
-    "citationCount": 168,
+    "citationCount": 169,
     "openAccessPdf": {
       "url": "http://arxiv.org/pdf/1502.02454",
       "status": "GREEN",
