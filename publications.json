@@ -283,14 +283,14 @@
   {
     "paperId": "d40e7849406064670e0cf92160221f8490925844",
     "externalIds": {
+      "DBLP": "conf/ecai/GaoLLLCDLZ025",
       "ArXiv": "2509.10501",
-      "DBLP": "journals/corr/abs-2509-10501",
       "DOI": "10.48550/arXiv.2509.10501",
       "CorpusId": 281316292
     },
     "url": "https://www.semanticscholar.org/paper/d40e7849406064670e0cf92160221f8490925844",
     "title": "From Noise to Precision: A Diffusion-Driven Approach to Zero-Inflated Precipitation Prediction",
-    "venue": "arXiv.org",
+    "venue": "European Conference on Artificial Intelligence",
     "year": 2025,
     "citationCount": 0,
     "openAccessPdf": {
@@ -339,6 +339,57 @@
       }
     ],
     "abstract": "Zero-inflated data pose significant challenges in precipitation forecasting due to the predominance of zeros with sparse non-zero events. To address this, we propose the Zero Inflation Diffusion Framework (ZIDF), which integrates Gaussian perturbation for smoothing zero-inflated distributions, Transformer-based prediction for capturing temporal patterns, and diffusion-based denoising to restore the original data structure. In our experiments, we use observational precipitation data collected from South Australia along with synthetically generated zero-inflated data. Results show that ZIDF demonstrates significant performance improvements over multiple state-of-the-art precipitation forecasting models, achieving up to 56.7\\% reduction in MSE and 21.1\\% reduction in MAE relative to the baseline Non-stationary Transformer. These findings highlight ZIDF's ability to robustly handle sparse time series data and suggest its potential generalizability to other domains where zero inflation is a key challenge."
+  },
+  {
+    "paperId": "e4565c878a536393ff73a8169d99971affe7fbbe",
+    "externalIds": {
+      "DBLP": "journals/pr/ChengXLLYLL26",
+      "DOI": "10.1016/j.patcog.2025.112814",
+      "CorpusId": 285287444
+    },
+    "url": "https://www.semanticscholar.org/paper/e4565c878a536393ff73a8169d99971affe7fbbe",
+    "title": "Linking model intervention to causal interpretation in model explanation",
+    "venue": "Pattern Recognition",
+    "year": 2025,
+    "citationCount": 0,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.patcog.2025.112814?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.patcog.2025.112814, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "publicationDate": "2025-12-01",
+    "authors": [
+      {
+        "authorId": "2064837870",
+        "name": "Debo Cheng"
+      },
+      {
+        "authorId": "2164717213",
+        "name": "Ziqi Xu"
+      },
+      {
+        "authorId": "2257372048",
+        "name": "Jiuyong Li"
+      },
+      {
+        "authorId": "2261397729",
+        "name": "Lin Liu"
+      },
+      {
+        "authorId": "2256160802",
+        "name": "Kui Yu"
+      },
+      {
+        "authorId": "3141770",
+        "name": "T. Le"
+      },
+      {
+        "authorId": "2301618480",
+        "name": "Jixue Liu"
+      }
+    ],
+    "abstract": null
   },
   {
     "paperId": "11d46da5d1441c66e44fe51dba9f1f5376bc8e42",
@@ -455,7 +506,7 @@
     "title": "Disentangled Representation Learning for Causal Inference With Instruments",
     "venue": "IEEE Transactions on Neural Networks and Learning Systems",
     "year": 2024,
-    "citationCount": 9,
+    "citationCount": 11,
     "openAccessPdf": {
       "url": "http://arxiv.org/pdf/2412.04641",
       "status": "GREEN",
@@ -814,7 +865,7 @@
     "title": "Learning Conditional Instrumental Variable Representation for Causal Effect Estimation",
     "venue": "ECML/PKDD",
     "year": 2023,
-    "citationCount": 10,
+    "citationCount": 11,
     "openAccessPdf": {
       "url": "http://arxiv.org/pdf/2306.12453",
       "status": "CLOSED",
@@ -862,7 +913,7 @@
     "title": "Conditional Instrumental Variable Regression with Representation Learning for Causal Inference",
     "venue": "arXiv.org",
     "year": 2023,
-    "citationCount": 11,
+    "citationCount": 12,
     "openAccessPdf": {
       "url": "https://arxiv.org/pdf/2310.01865",
       "status": "CLOSED",
@@ -1273,7 +1324,7 @@
     "title": "Instrumental Variable Estimation for Causal Inference in Longitudinal Data with Time-Dependent Latent Confounders",
     "venue": "AAAI Conference on Artificial Intelligence",
     "year": 2023,
-    "citationCount": 20,
+    "citationCount": 21,
     "openAccessPdf": {
       "url": "",
       "status": null,
@@ -1870,7 +1921,7 @@
     "title": "Data-Driven Causal Effect Estimation Based on Graphical Causal Modelling: A Survey",
     "venue": "ACM Computing Surveys",
     "year": 2022,
-    "citationCount": 45,
+    "citationCount": 46,
     "openAccessPdf": {
       "url": "https://arxiv.org/pdf/2208.09590",
       "status": "GREEN",
@@ -2143,7 +2194,7 @@
     "title": "How do the existing fairness metrics and unfairness mitigation algorithms contribute to ethical learning analytics?",
     "venue": "British Journal of Educational Technology",
     "year": 2021,
-    "citationCount": 61,
+    "citationCount": 63,
     "openAccessPdf": {
       "url": "https://edarxiv.org/86ksq/download",
       "status": "GREEN",
@@ -2854,7 +2905,7 @@
     "title": "Efficient polygenic risk scores for biobank scale data by exploiting phenotypes from inferred relatives",
     "venue": "Nature Communications",
     "year": 2020,
-    "citationCount": 28,
+    "citationCount": 29,
     "openAccessPdf": {
       "url": "https://www.nature.com/articles/s41467-020-16829-x.pdf",
       "status": "GOLD",
@@ -4781,9 +4832,9 @@
   {
     "paperId": "115ea28df14d0d7399b01afdc32554d55c609f9a",
     "externalIds": {
+      "DBLP": "journals/bmcbi/ZhangLLL18",
       "MAG": "2949610967",
       "PubMedCentral": "6311929",
-      "DBLP": "journals/bmcbi/ZhangLLL18",
       "DOI": "10.1186/s12859-018-2521-7",
       "CorpusId": 57189722,
       "PubMed": "30598067"
@@ -5417,7 +5468,7 @@
     "title": "CancerSubtypes: an R/Bioconductor package for molecular cancer subtype identification, validation and visualization",
     "venue": "Bioinform.",
     "year": 2017,
-    "citationCount": 206,
+    "citationCount": 207,
     "openAccessPdf": {
       "url": "https://academic.oup.com/bioinformatics/article-pdf/33/19/3131/25164758/btx378.pdf",
       "status": "BRONZE",
@@ -6759,7 +6810,7 @@
     "title": "Inferring condition-specific miRNA activity from matched miRNA and mRNA expression data",
     "venue": "Bioinform.",
     "year": 2014,
-    "citationCount": 26,
+    "citationCount": 27,
     "openAccessPdf": {
       "url": "https://academic.oup.com/bioinformatics/article-pdf/30/21/3070/48930779/bioinformatics_30_21_3070.pdf",
       "status": "BRONZE",
@@ -7011,7 +7062,7 @@
     "title": "Inferring microRNA-mRNA causal regulatory relationships from expression data",
     "venue": "Bioinform.",
     "year": 2013,
-    "citationCount": 86,
+    "citationCount": 87,
     "openAccessPdf": {
       "url": "https://academic.oup.com/bioinformatics/article-pdf/29/6/765/48897851/bioinformatics_29_6_765.pdf",
       "status": "BRONZE",
