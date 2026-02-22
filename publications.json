@@ -506,7 +506,7 @@
     "title": "Disentangled Representation Learning for Causal Inference With Instruments",
     "venue": "IEEE Transactions on Neural Networks and Learning Systems",
     "year": 2024,
-    "citationCount": 11,
+    "citationCount": 12,
     "openAccessPdf": {
       "url": "http://arxiv.org/pdf/2412.04641",
       "status": "GREEN",
@@ -603,7 +603,7 @@
     "title": "TSI: A Multi-View Representation Learning Approach for Time Series Forecasting",
     "venue": "Applied Informatics",
     "year": 2024,
-    "citationCount": 2,
+    "citationCount": 3,
     "openAccessPdf": {
       "url": "",
       "status": null,
@@ -1921,7 +1921,7 @@
     "title": "Data-Driven Causal Effect Estimation Based on Graphical Causal Modelling: A Survey",
     "venue": "ACM Computing Surveys",
     "year": 2022,
-    "citationCount": 46,
+    "citationCount": 47,
     "openAccessPdf": {
       "url": "https://arxiv.org/pdf/2208.09590",
       "status": "GREEN",
@@ -2417,7 +2417,7 @@
         "name": "Jiuyong Li"
       },
       {
-        "authorId": "2257246090",
+        "authorId": "2400427411",
         "name": "Gregory Cooper"
       },
       {
@@ -5271,7 +5271,7 @@
     "title": "miRsponge: an R/Bioconductor package for the identification and analysis of miRNA sponge interaction networks and modules",
     "venue": "bioRxiv",
     "year": 2018,
-    "citationCount": 23,
+    "citationCount": 22,
     "openAccessPdf": {
       "url": "https://www.biorxiv.org/content/biorxiv/early/2019/03/21/507749.full.pdf",
       "status": "GREEN",
@@ -6091,7 +6091,7 @@
     "authors": [
       {
         "authorId": "2059600576",
-        "name": "S. M. M. Karim"
+        "name": "S. Karim"
       },
       {
         "authorId": "1518051372",
@@ -6433,9 +6433,9 @@
   {
     "paperId": "74fd4aa58871b4c70b33ef0bae3f09785c005057",
     "externalIds": {
-      "MAG": "1942633596",
       "DBLP": "journals/kbs/MaL0L16",
       "ArXiv": "1508.07092",
+      "MAG": "2951147445",
       "DOI": "10.1016/J.KNOSYS.2015.10.018",
       "CorpusId": 6315799
     },
@@ -6469,7 +6469,7 @@
         "name": "T. Le"
       }
     ],
-    "abstract": null
+    "abstract": "In recent years, many methods have been developed for detecting causal relationships in observational data. Some of them have the potential to tackle large data sets. However, these methods fail to discover a combined cause, i.e. a multi-factor cause consisting of two or more component variables which individually are not causes. A straightforward approach to uncovering a combined cause is to include both individual and combined variables in the causal discovery using existing methods, but this scheme is computationally infeasible due to the huge number of combined variables. In this paper, we propose a novel approach to address this practical causal discovery problem, i.e. mining combined causes in large data sets. The experiments with both synthetic and real world data sets show that the proposed method can obtain high-quality causal discoveries with a high computational efficiency."
   },
   {
     "paperId": "98afc27cb5af9401d3ffffa136901d95ef6b1514",
