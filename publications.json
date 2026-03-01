@@ -281,6 +281,50 @@
     "abstract": "Background: Long COVID, or Post-Acute Sequelae of COVID-19 (PASC), involves persistent, multisystemic symptoms in about 10-20% of COVID-19 patients. Although age, sex, ethnicity, and comorbidities are recognized as risk factors, identifying genetic contributors is essential for developing targeted therapies. Methods: We developed a multi-omics framework using Transcriptome-Wide Mendelian Randomization (TWMR) and Control Theory (CT). This approach integrates Expression Quantitative Trait Loci (eQTL), Genome-Wide Association Studies (GWAS), RNA sequencing (RNA-seq), and Protein-Protein Interaction (PPI) networks to detect causal genes and regulatory nodes that drive critical expression changes in Long COVID. Results: We identified 32 causal genes (19 previously reported and 13 novel), which act as regulatory drivers influencing disease risk, progression, and stability. Enrichment analyses highlighted pathways linked to the SARS-CoV-2 response, viral carcinogenesis, cell cycle regulation, and immune function. Analysis of other pathophysiological conditions revealed shared genetic factors across syndromic, metabolic, autoimmune, and connective tissue disorders. Using these genes, we identified three distinct symptom-based subtypes of Long COVID, offering insights for more precise diagnosis and potential therapeutic interventions. Additionally, we provided an open-source Shiny application to enable further data exploration. Conclusion: Integrating TWMR and CT revealed genetic mechanisms and therapeutic targets for Long COVID, with novel genes informing pathogenesis and precision medicine strategies."
   },
   {
+    "paperId": "ab39c451836bb2c0b289ec6445e1dc963e593392",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2510-24046",
+      "ArXiv": "2510.24046",
+      "DOI": "10.48550/arXiv.2510.24046",
+      "CorpusId": 282401582
+    },
+    "url": "https://www.semanticscholar.org/paper/ab39c451836bb2c0b289ec6445e1dc963e593392",
+    "title": "Causal-Aware Generative Adversarial Networks with Reinforcement Learning",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 0,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2510.24046, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "publicationDate": "2025-10-28",
+    "authors": [
+      {
+        "authorId": "2380076329",
+        "name": "Tu Nguyen"
+      },
+      {
+        "authorId": "2319943726",
+        "name": "Dang Nguyen"
+      },
+      {
+        "authorId": "2319854561",
+        "name": "Tri-Nhan Vo"
+      },
+      {
+        "authorId": "3141770",
+        "name": "T. Le"
+      },
+      {
+        "authorId": "2287271089",
+        "name": "Sunil Gupta"
+      }
+    ],
+    "abstract": "The utility of tabular data for tasks ranging from model training to large-scale data analysis is often constrained by privacy concerns or regulatory hurdles. While existing data generation methods, particularly those based on Generative Adversarial Networks (GANs), have shown promise, they frequently struggle with capturing complex causal relationship, maintaining data utility, and providing provable privacy guarantees suitable for enterprise deployment. We introduce CA-GAN, a novel generative framework specifically engineered to address these challenges for real-world tabular datasets. CA-GAN utilizes a two-step approach: causal graph extraction to learn a robust, comprehensive causal relationship in the data's manifold, followed by a custom Conditional WGAN-GP (Wasserstein GAN with Gradient Penalty) that operates exclusively as per the structure of nodes in the causal graph. More importantly, the generator is trained with a new Reinforcement Learning-based objective that aligns the causal graphs constructed from real and fake data, ensuring the causal awareness in both training and sampling phases. We demonstrate CA-GAN superiority over six SOTA methods across 14 tabular datasets. Our evaluations, focused on core data engineering metrics: causal preservation, utility preservation, and privacy preservation. Our method offers a practical, high-performance solution for data engineers seeking to create high-quality, privacy-compliant synthetic datasets to benchmark database systems, accelerate software development, and facilitate secure data-driven research."
+  },
+  {
     "paperId": "d40e7849406064670e0cf92160221f8490925844",
     "externalIds": {
       "DBLP": "conf/ecai/GaoLLLCDLZ025",
@@ -506,7 +550,7 @@
     "title": "Disentangled Representation Learning for Causal Inference With Instruments",
     "venue": "IEEE Transactions on Neural Networks and Learning Systems",
     "year": 2024,
-    "citationCount": 12,
+    "citationCount": 13,
     "openAccessPdf": {
       "url": "http://arxiv.org/pdf/2412.04641",
       "status": "GREEN",
@@ -854,6 +898,62 @@
     "abstract": "Global Climate Models (GCMs) are crucial for predicting future climate changes by simulating the Earth systems. However, GCM outputs exhibit systematic biases due to model uncertainties, parameterization simplifications, and inadequate representation of complex climate phenomena. Traditional bias correction methods, which rely on historical observation data and statistical techniques, often neglect unobserved confounders, leading to biased results. This paper proposes a novel bias correction approach to utilize both GCM and observational data to learn a factor model that captures multi-cause latent confounders. Inspired by recent advances in causality based time series deconfounding, our method first constructs a factor model to learn latent confounders from historical data and then applies them to enhance the bias correction process using advanced time series forecasting models. The experimental results demonstrate significant improvements in the accuracy of precipitation outputs. By addressing unobserved confounders, our approach offers a robust and theoretically grounded solution for climate model bias correction."
   },
   {
+    "paperId": "d4b73ef4aa82fcf63eca48f34f71e119ebbaaf4c",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2403-08947",
+      "ArXiv": "2403.08947",
+      "DOI": "10.1109/MIPR62202.2024.00100",
+      "CorpusId": 268385169
+    },
+    "url": "https://www.semanticscholar.org/paper/d4b73ef4aa82fcf63eca48f34f71e119ebbaaf4c",
+    "title": "Robust COVID-19 Detection in CT Images with CLIP",
+    "venue": "Conference on Multimedia Information Processing and Retrieval",
+    "year": 2024,
+    "citationCount": 14,
+    "openAccessPdf": {
+      "url": "http://arxiv.org/pdf/2403.08947",
+      "status": "GREEN",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2403.08947, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "publicationDate": "2024-03-13",
+    "authors": [
+      {
+        "authorId": "2282198241",
+        "name": "Li Lin"
+      },
+      {
+        "authorId": "2291136598",
+        "name": "Yamini Sri Krubha"
+      },
+      {
+        "authorId": "2291936679",
+        "name": "Zhenhuan Yang"
+      },
+      {
+        "authorId": "2299077023",
+        "name": "Cheng Ren"
+      },
+      {
+        "authorId": "3141770",
+        "name": "T. Le"
+      },
+      {
+        "authorId": "2291773005",
+        "name": "Irene Amerini"
+      },
+      {
+        "authorId": "2282240967",
+        "name": "Xin Wang"
+      },
+      {
+        "authorId": "2282191978",
+        "name": "Shu Hu"
+      }
+    ],
+    "abstract": "In the realm of medical imaging, particularly for COVID-19 detection, deep learning models face substantial challenges such as the necessity for extensive computational resources, the paucity of well-annotated datasets, and a significant amount of unlabeled data. In this work, we introduce the first lightweight detector designed to overcome these obstacles, leveraging a frozen CLIP image encoder and a trainable multilayer perception (MLP). Enhanced with Conditional Value at Risk (CVaR) for robustness and a loss landscape flattening strategy for improved generalization, our model is tailored for high efficacy in COVID-19 detection. Furthermore, we integrate a teacher-student framework to capitalize on the vast amounts of unlabeled data, enabling our model to achieve superior performance despite the inherent data limitations. Experimental results on the COV19-CT-DB dataset demonstrate the effectiveness of our approach, surpassing baseline by up to 10.6% in ‘macro’ F1 score in supervised learning. The code is available at https://github.com/Purdue-M2/COVID-19_Detection_M2_PURDUE."
+  },
+  {
     "paperId": "23f68f9ddecb90ee23b391b3dce505f93785fb0e",
     "externalIds": {
       "DBLP": "conf/pkdd/ChengXLLLL23",
@@ -913,7 +1013,7 @@
     "title": "Conditional Instrumental Variable Regression with Representation Learning for Causal Inference",
     "venue": "arXiv.org",
     "year": 2023,
-    "citationCount": 12,
+    "citationCount": 13,
     "openAccessPdf": {
       "url": "https://arxiv.org/pdf/2310.01865",
       "status": "CLOSED",
@@ -1179,8 +1279,8 @@
         "name": "Jiuyong Li"
       },
       {
-        "authorId": "2238004880",
-        "name": "Robert Ness"
+        "authorId": "89635049",
+        "name": "R. Ness"
       },
       {
         "authorId": "2238004320",
@@ -1196,7 +1296,7 @@
       },
       {
         "authorId": "2238006728",
-        "name": "Kun Kuang"
+        "name": "K. Kuang"
       },
       {
         "authorId": "2238007487",
@@ -1678,7 +1778,7 @@
       },
       {
         "authorId": "118226787",
-        "name": "T. Waters"
+        "name": "Tony Waters"
       }
     ],
     "abstract": null
@@ -1734,8 +1834,8 @@
         "name": "Adelaide"
       },
       {
-        "authorId": "2149496901",
-        "name": "Sa"
+        "authorId": "2286556353",
+        "name": "Sá"
       },
       {
         "authorId": "2056742909",
@@ -2138,7 +2238,7 @@
       },
       {
         "authorId": "118226787",
-        "name": "T. Waters"
+        "name": "Tony Waters"
       }
     ],
     "abstract": "In Disability Employment Services (DES), a growing problem is recommending to disabled job seekers which skill should be upgraded and the best level for upgrading this skill to increase their employment potential most. This problem involves counterfactual reasoning to infer causal effect of factors on employment status to recommend the most effective intervention. Related methods cannot solve our problem adequately since they are developed for non-counterfactual challenges, for binary causal factors, or for randomized trials. In this paper, we present a causality-based method to tackle the problem. The method includes two stages where causal factors of employment status are first detected from data. We then combine a counterfactual reasoning framework with a machine learning approach to build an interpretable model for generating personalized recommendations. Experiments on both synthetic datasets and a real case study from a DES provider show consistent promising performance of improving employability of disabled job seekers. Results from the case study disclose effective factors and their best levels for intervention to increase employability. The most effective intervention varies among job seekers. Our model can separate job seekers by degree of employability increase. This is helpful for DES providers to allocate resources for employment assistance. Moreover, causal interpretability makes our recommendations actionable in DES business practice."
@@ -2300,7 +2400,7 @@
     "title": "Time to infer miRNA sponge modules",
     "venue": "Wiley Interdisciplinary Reviews - RNA",
     "year": 2021,
-    "citationCount": 19,
+    "citationCount": 20,
     "openAccessPdf": {
       "url": "",
       "status": "CLOSED",
@@ -2429,7 +2529,7 @@
         "name": "E. Bareinboim"
       },
       {
-        "authorId": "2258336614",
+        "authorId": "2276018013",
         "name": "Huan Liu"
       },
       {
@@ -3089,7 +3189,7 @@
       },
       {
         "authorId": "118226787",
-        "name": "T. Waters"
+        "name": "Tony Waters"
       }
     ],
     "abstract": "In the disability employment service, an emerging challenge is to recommend the skills whose improvement will increase the employment perspective most. The process of a skill being improved is called an intervention and different skills are called factors. The problem involves recommendation for outcome improvement, which requires estimating the improvement in the employment perspective, i.e., the outcome, driven by interventions on recommended factors. Currently, most recommendation systems deployed for the employment service rely on traditional recommendation models where the desired outcome instead of the degree of outcome improvement is the main goal for optimization. In this paper, we present a causality-based approach for recommending factors for intervention to achieve the largest improvement in the employment potential of disabled job seekers. It involves inferring the causal effect of interventions on the employment outcome to make recommendations for individuals. The causal interpretation of our model can justify given recommendations. We conduct a case study with our industry partner in the disability employment service. Results show that the recommended interventions could improve the employability of disabled job seekers. Experiments are also carried out with datasets in other domains to demonstrate the promise of our approach in different applications."
@@ -3454,7 +3554,7 @@
     "title": "Dependency-based anomaly detection: A general framework and comprehensive evaluation",
     "venue": "Expert systems with applications",
     "year": 2020,
-    "citationCount": 0,
+    "citationCount": 1,
     "openAccessPdf": {
       "url": "",
       "status": null,
@@ -3488,7 +3588,7 @@
         "name": "Jiuyong Li"
       }
     ],
-    "abstract": null
+    "abstract": "Anomaly detection is crucial for understanding unusual behaviors in data, as anomalies offer valuable insights. This paper introduces Dependency-based Anomaly Detection (DepAD), a general framework that utilizes variable dependencies to uncover meaningful anomalies with better interpretability. DepAD reframes unsupervised anomaly detection as supervised feature selection and prediction tasks, which allows users to tailor anomaly detection algorithms to their specific problems and data. We extensively evaluate representative off-the-shelf techniques for the DepAD framework. Two DepAD algorithms emerge as all-rounders and superior performers in handling a wide range of datasets compared to nine state-of-the-art anomaly detection methods. Additionally, we demonstrate that DepAD algorithms provide new and insightful interpretations for detected anomalies."
   },
   {
     "paperId": "aebd6c46a70dbfd777bcdcc0dc5c22ebcb0ddb98",
@@ -3839,7 +3939,7 @@
     "title": "Accurate data-driven prediction does not mean high reproducibility",
     "venue": "Nature Machine Intelligence",
     "year": 2020,
-    "citationCount": 48,
+    "citationCount": 49,
     "openAccessPdf": {
       "url": "",
       "status": null,
@@ -4455,7 +4555,7 @@
     "title": "miRspongeR: an R/Bioconductor package for the identification and analysis of miRNA sponge interaction networks and modules",
     "venue": "BMC Bioinformatics",
     "year": 2019,
-    "citationCount": 10,
+    "citationCount": 11,
     "openAccessPdf": {
       "url": "https://bmcbioinformatics.biomedcentral.com/track/pdf/10.1186/s12859-019-2861-y",
       "status": "GOLD",
@@ -4670,8 +4770,8 @@
         "name": "Yanchang Zhao"
       },
       {
-        "authorId": "2111217384",
-        "name": "Sebastien Wong"
+        "authorId": "2362475694",
+        "name": "S. Wong"
       },
       {
         "authorId": "1518051372",
@@ -4832,9 +4932,9 @@
   {
     "paperId": "115ea28df14d0d7399b01afdc32554d55c609f9a",
     "externalIds": {
-      "DBLP": "journals/bmcbi/ZhangLLL18",
       "MAG": "2949610967",
       "PubMedCentral": "6311929",
+      "DBLP": "journals/bmcbi/ZhangLLL18",
       "DOI": "10.1186/s12859-018-2521-7",
       "CorpusId": 57189722,
       "PubMed": "30598067"
@@ -5202,7 +5302,7 @@
         "name": "Weijia Zhang"
       },
       {
-        "authorId": "2200566222",
+        "authorId": "2328404883",
         "name": "Jie Gui"
       },
       {
@@ -6691,7 +6791,7 @@
     "title": "A Fast PC Algorithm for High Dimensional Causal Discovery with Multi-Core PCs",
     "venue": "IEEE/ACM Transactions on Computational Biology & Bioinformatics",
     "year": 2015,
-    "citationCount": 169,
+    "citationCount": 170,
     "openAccessPdf": {
       "url": "http://arxiv.org/pdf/1502.02454",
       "status": "GREEN",
@@ -6726,6 +6826,34 @@
       }
     ],
     "abstract": "Discovering causal relationships from observational data is a crucial problem and it has applications in many research areas. The PC algorithm is the state-of-the-art constraint based method for causal discovery. However, runtime of the PC algorithm, in the worst-case, is exponential to the number of nodes (variables), and thus it is inefficient when being applied to high dimensional data, e.g., gene expression datasets. On another note, the advancement of computer hardware in the last decade has resulted in the widespread availability of multi-core personal computers. There is a significant motivation for designing a parallelized PC algorithm that is suitable for personal computers and does not require end users’ parallel computing knowledge beyond their competency in using the PC algorithm. In this paper, we develop parallel-PC, a fast and memory efficient PC algorithm using the parallel computing technique. We apply our method to a range of synthetic and real-world high dimensional datasets. Experimental results on a dataset from the DREAM 5 challenge show that the original PC algorithm could not produce any results after running more than 24 hours; meanwhile, our parallel-PC algorithm managed to finish within around 12 hours with a 4-core CPU computer, and less than six hours with a 8-core CPU computer. Furthermore, we integrate parallel-PC into a causal inference method for inferring miRNA-mRNA regulatory relationships. The experimental results show that parallel-PC helps improve both the efficiency and accuracy of the causal inference algorithm."
+  },
+  {
+    "paperId": "cf0a97ffc68b95c61cb4e89d08e652a02c3b2dd2",
+    "externalIds": {
+      "CorpusId": 265095346
+    },
+    "url": "https://www.semanticscholar.org/paper/cf0a97ffc68b95c61cb4e89d08e652a02c3b2dd2",
+    "title": "A fast PC algorithm for high dimensional causal discovery for multi-core PCs",
+    "venue": "",
+    "year": 2015,
+    "citationCount": 0,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null
+    },
+    "publicationDate": null,
+    "authors": [
+      {
+        "authorId": "3141770",
+        "name": "T. Le"
+      },
+      {
+        "authorId": "2145489026",
+        "name": "Huawen Liu"
+      }
+    ],
+    "abstract": null
   },
   {
     "paperId": "f0529e8182df9235adcc0167d755d12e030af06b",
