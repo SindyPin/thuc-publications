@@ -1,5 +1,51 @@
 [
   {
+    "paperId": "6263a5ec6770373f24044b7345596b5442f95543",
+    "externalIds": {
+      "ArXiv": "2603.11059",
+      "CorpusId": 286489328
+    },
+    "url": "https://www.semanticscholar.org/paper/6263a5ec6770373f24044b7345596b5442f95543",
+    "title": "Identifying the Group to Intervene on to Maximise Effect Under Cross-Group Interference",
+    "venue": "",
+    "year": 2026,
+    "citationCount": 0,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2603.11059, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "publicationDate": "2026-03-04",
+    "authors": [
+      {
+        "authorId": "2316859573",
+        "name": "Xiaojing Du"
+      },
+      {
+        "authorId": "2257372048",
+        "name": "Jiuyong Li"
+      },
+      {
+        "authorId": "2261397729",
+        "name": "Lin Liu"
+      },
+      {
+        "authorId": "2064837870",
+        "name": "Debo Cheng"
+      },
+      {
+        "authorId": "2301618480",
+        "name": "Jixue Liu"
+      },
+      {
+        "authorId": "3141770",
+        "name": "T. Le"
+      }
+    ],
+    "abstract": "In many networked systems, interventions applied to one group of units can induce substantial causal effects on another group through cross-group interference pathways. Despite its practical importance in domains such as public health, digital marketing, and social policy, the problem of identifying which intervention subset in a source group maximizes the benefit on a target group remains largely unaddressed. We formalize this problem as cross-group causal influence estimation and introduce the core-to-group causal effect (Co2G), a formally defined causal estimand that quantifies the contrast in target-group outcomes under intervention versus non-intervention on a candidate source subset. We establish the nonparametric identifiability of Co2G from observational network data using do-calculus under standard causal assumptions, and develop a graph neural network-based estimator that captures cross-group interference patterns. To navigate the combinatorial search space of candidate subsets, we propose CauMax, an uncertainty-aware causal effect maximization framework with two scalable selection algorithms: (i)CauMax-G, an iterative greedy search with Monte Carlo dropout--based lower confidence bounds, and (ii)CauMax-D, a differentiable gradient-based optimization via Gumbel-Softmax relaxation. Extensive experiments on two real-world social networks demonstrate that CauMax achieves an order-of-magnitude reduction in regret compared with structural heuristics and diffusion-based baselines, and that moderate uncertainty penalization consistently improves subset selection quality."
+  },
+  {
     "paperId": "2533bd177ec92b5ee093cea735b09d1fef8775f7",
     "externalIds": {
       "DOI": "10.1109/BigData66926.2025.11401806",
@@ -14,7 +60,7 @@
       "url": "",
       "status": null,
       "license": null,
-      "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1109/BigData66926.2025.11401806?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/BigData66926.2025.11401806, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/BigData66926.2025.11401806?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/BigData66926.2025.11401806, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
     },
     "publicationDate": "2025-12-08",
     "authors": [
@@ -23,11 +69,11 @@
         "name": "Xudong Guo"
       },
       {
-        "authorId": null,
+        "authorId": "2338346365",
         "name": "Lin Liu"
       },
       {
-        "authorId": null,
+        "authorId": "2297065962",
         "name": "Sha Lu"
       },
       {
@@ -43,7 +89,7 @@
         "name": "Jixue Liu"
       }
     ],
-    "abstract": null
+    "abstract": "Epileptic seizure is a transient occurrence of signs and symptoms due to abnormal neuronal activity in the brain, and carry substantial health and safety risks to patients. Timely prediction would enable preventative actions and better clinical management. Electroencephalography (EEG) data has been widely used in various tasks, such as emotion recognition, sleep staging, anomaly detection and brain-computer interfaces. While recent EEG foundation models have demonstrated promising capabilities in many downstream tasks like the above mentioned ones, their application of EEG foundation models in epileptic seizure prediction remains unknown. We fill this gap by conducting the first systematic evaluation of EEG foundation models for seizure prediction under a unified evaluation pipeline, investigating whether frozen EEG foundation encoders provide transferable representations and gain insights of the potential as well as limitations of EEG foundation models on this task. Our study reveals that frozen EEG foundation models yield generic representations with some ability to separate preictal from inter-ictal phases, but they are insufficient for reliable seizure prediction. We provide analysis of the results and outline directions for further research."
   },
   {
     "paperId": "4c7286a6b3dc0fc7fc6e1ddf6809c5b20048651f",
@@ -269,6 +315,53 @@
     "abstract": "Long COVID, or Post-Acute Sequelae of SARS-CoV-2 infection (PASC), affects an estimated 10–20% of COVID-19 patients and presents persistent multisystemic symptoms. Although demographic and clinical factors, such as age, sex, and comorbidities, contribute to risk, the genetic mechanisms underlying this risk remain poorly defined. To address this gap, we developed a multi-omics framework that integrates Transcriptome-Wide Mendelian Randomization (TWMR), Control Theory (CT), Expression Quantitative Trait Loci (eQTL), Genome-Wide Association Studies (GWAS), RNA sequencing (RNA-seq), and Protein-Protein Interaction (PPI) network to identify putative causal genes and network drivers in Long COVID. Our approach prioritized 32 candidate genes, including 19 previously reported and 13 novel, with roles in the SARS-CoV-2 response, viral carcinogenesis, immune regulation, and cell cycle control. Enrichment analyses revealed a shared genetic architecture in syndromic, metabolic, autoimmune, and connective tissue disorders. Using causal gene expression profiles, we identified three distinct symptom-based subtypes of Long COVID, providing information on the heterogeneity of disease mechanisms and clinical presentation. Finally, we developed an open-source Shiny application for interactive exploration of these findings. Together, this integrative framework highlights novel causal mechanisms and therapeutic targets, advancing precision medicine strategies for Long COVID."
   },
   {
+    "paperId": "7df243bfd46d88057c0cc6ff877db158fd2b1d3d",
+    "externalIds": {
+      "DBLP": "conf/ausdm/VuLT0LD25",
+      "DOI": "10.1007/978-981-95-6786-7_27",
+      "CorpusId": 286430030
+    },
+    "url": "https://www.semanticscholar.org/paper/7df243bfd46d88057c0cc6ff877db158fd2b1d3d",
+    "title": "Causal Recommendation Method for Personalised Chemotherapy Optimisation in Breast Cancer",
+    "venue": "Australasian Data Mining Conference",
+    "year": 2025,
+    "citationCount": 0,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/978-981-95-6786-7_27?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/978-981-95-6786-7_27, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "publicationDate": null,
+    "authors": [
+      {
+        "authorId": "2056253056",
+        "name": "Tuyen Vu"
+      },
+      {
+        "authorId": "3141770",
+        "name": "T. Le"
+      },
+      {
+        "authorId": "2068938999",
+        "name": "Ha Xuan Tran"
+      },
+      {
+        "authorId": "2146017365",
+        "name": "Lin Liu"
+      },
+      {
+        "authorId": "2257372048",
+        "name": "Jiuyong Li"
+      },
+      {
+        "authorId": "2018742",
+        "name": "J. Du"
+      }
+    ],
+    "abstract": null
+  },
+  {
     "paperId": "a78bc08dc0a37334c00a0ffd6630190245103f23",
     "externalIds": {
       "DOI": "10.1101/2025.02.09.25321751",
@@ -338,7 +431,7 @@
     "title": "Causal-Aware Generative Adversarial Networks with Reinforcement Learning",
     "venue": "arXiv.org",
     "year": 2025,
-    "citationCount": 0,
+    "citationCount": 1,
     "openAccessPdf": {
       "url": "",
       "status": null,
@@ -491,7 +584,7 @@
     "title": "From Correlation to Causation: Max-Pooling-Based Multi-Instance Learning Leads to More Robust Whole Slide Image Classification",
     "venue": "",
     "year": 2024,
-    "citationCount": 1,
+    "citationCount": 2,
     "openAccessPdf": {
       "url": "",
       "status": null,
@@ -2067,7 +2160,7 @@
     "title": "Data-Driven Causal Effect Estimation Based on Graphical Causal Modelling: A Survey",
     "venue": "ACM Computing Surveys",
     "year": 2022,
-    "citationCount": 47,
+    "citationCount": 48,
     "openAccessPdf": {
       "url": "https://arxiv.org/pdf/2208.09590",
       "status": "GREEN",
@@ -4505,7 +4598,7 @@
     "title": "Inferring and analyzing module-specific lncRNA-mRNA causal regulatory networks in human cancer",
     "venue": "Briefings Bioinform.",
     "year": 2019,
-    "citationCount": 43,
+    "citationCount": 44,
     "openAccessPdf": {
       "url": "",
       "status": "CLOSED",
@@ -6423,7 +6516,7 @@
     "title": "miRLAB: An R Based Dry Lab for Exploring miRNA-mRNA Regulatory Relationships",
     "venue": "PLoS ONE",
     "year": 2015,
-    "citationCount": 35,
+    "citationCount": 37,
     "openAccessPdf": {
       "url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0145386&type=printable",
       "status": "GOLD",
