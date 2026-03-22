@@ -48,6 +48,7 @@
   {
     "paperId": "2533bd177ec92b5ee093cea735b09d1fef8775f7",
     "externalIds": {
+      "DBLP": "conf/bigdataconf/Guo00LLL25",
       "DOI": "10.1109/BigData66926.2025.11401806",
       "CorpusId": 286329021
     },
@@ -680,7 +681,7 @@
     "paperId": "24be3521214e4299162ec0b08ed1c016e060cd47",
     "externalIds": {
       "ArXiv": "2412.04641",
-      "DBLP": "journals/tnn/ChengLLXZLL25",
+      "DBLP": "journals/corr/abs-2412-04641",
       "DOI": "10.1109/TNNLS.2024.3512790",
       "CorpusId": 274581729,
       "PubMed": "40030572"
@@ -984,7 +985,7 @@
     "title": "Deconfounding Multi-Cause Latent Confounders: A Factor-Model Approach to Climate Model Bias Correction",
     "venue": "International Joint Conference on Artificial Intelligence",
     "year": 2024,
-    "citationCount": 5,
+    "citationCount": 3,
     "openAccessPdf": {
       "url": "",
       "status": null,
@@ -1152,7 +1153,7 @@
     "title": "Conditional Instrumental Variable Regression with Representation Learning for Causal Inference",
     "venue": "arXiv.org",
     "year": 2023,
-    "citationCount": 13,
+    "citationCount": 14,
     "openAccessPdf": {
       "url": "https://arxiv.org/pdf/2310.01865",
       "status": "CLOSED",
@@ -1351,7 +1352,7 @@
     "title": "Scanning sample-specific miRNA regulation from bulk and single-cell RNA-sequencing data",
     "venue": "bioRxiv",
     "year": 2023,
-    "citationCount": 5,
+    "citationCount": 6,
     "openAccessPdf": {
       "url": "https://doi.org/10.1186/s12915-024-02020-x",
       "status": "GOLD",
@@ -1563,7 +1564,7 @@
     "title": "Instrumental Variable Estimation for Causal Inference in Longitudinal Data with Time-Dependent Latent Confounders",
     "venue": "AAAI Conference on Artificial Intelligence",
     "year": 2023,
-    "citationCount": 21,
+    "citationCount": 22,
     "openAccessPdf": {
       "url": "",
       "status": null,
@@ -5124,7 +5125,7 @@
     "title": "miRBaseConverter: an R/Bioconductor package for converting and retrieving miRNA name, accession, sequence and family information in different versions of miRBase",
     "venue": "bioRxiv",
     "year": 2018,
-    "citationCount": 67,
+    "citationCount": 68,
     "openAccessPdf": {
       "url": "https://bmcbioinformatics.biomedcentral.com/track/pdf/10.1186/s12859-018-2531-5",
       "status": "GREEN",
@@ -5707,7 +5708,7 @@
     "title": "CancerSubtypes: an R/Bioconductor package for molecular cancer subtype identification, validation and visualization",
     "venue": "Bioinform.",
     "year": 2017,
-    "citationCount": 208,
+    "citationCount": 209,
     "openAccessPdf": {
       "url": "https://academic.oup.com/bioinformatics/article-pdf/33/19/3131/25164758/btx378.pdf",
       "status": "BRONZE",
@@ -5806,7 +5807,7 @@
     "title": "Inferring miRNA sponge co-regulation of protein-protein interactions in human breast cancer",
     "venue": "BMC Bioinformatics",
     "year": 2017,
-    "citationCount": 23,
+    "citationCount": 22,
     "openAccessPdf": {
       "url": "https://bmcbioinformatics.biomedcentral.com/track/pdf/10.1186/s12859-017-1672-2",
       "status": "GOLD",
@@ -6360,7 +6361,7 @@
     "title": "Computational methods for identifying miRNA sponge interactions",
     "venue": "Briefings Bioinform.",
     "year": 2016,
-    "citationCount": 90,
+    "citationCount": 89,
     "openAccessPdf": {
       "url": "",
       "status": "CLOSED",
@@ -6758,7 +6759,7 @@
     "title": "From Observational Studies to Causal Rule Mining",
     "venue": "ACM Transactions on Intelligent Systems and Technology",
     "year": 2015,
-    "citationCount": 53,
+    "citationCount": 54,
     "openAccessPdf": {
       "url": "https://dl.acm.org/doi/pdf/10.1145/2746410",
       "status": "BRONZE",
