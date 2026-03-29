@@ -103,7 +103,7 @@
     "title": "Omics-based computational approaches for biomarker identification, prediction, and treatment of Long COVID.",
     "venue": "Critical reviews in clinical laboratory sciences",
     "year": 2025,
-    "citationCount": 0,
+    "citationCount": 1,
     "openAccessPdf": {
       "url": "",
       "status": null,
@@ -1423,7 +1423,7 @@
         "name": "R. Ness"
       },
       {
-        "authorId": "2238004320",
+        "authorId": "2362306445",
         "name": "Sofia Triantafillou"
       },
       {
@@ -2161,7 +2161,7 @@
     "title": "Data-Driven Causal Effect Estimation Based on Graphical Causal Modelling: A Survey",
     "venue": "ACM Computing Surveys",
     "year": 2022,
-    "citationCount": 48,
+    "citationCount": 49,
     "openAccessPdf": {
       "url": "https://arxiv.org/pdf/2208.09590",
       "status": "GREEN",
@@ -4438,7 +4438,7 @@
       },
       {
         "authorId": "4807005",
-        "name": "John Toubia"
+        "name": "J. Toubia"
       },
       {
         "authorId": "1401286171",
@@ -6597,7 +6597,7 @@
     "title": "From miRNA regulation to miRNA-TF co-regulation: computational approaches and challenges",
     "venue": "Briefings Bioinform.",
     "year": 2015,
-    "citationCount": 46,
+    "citationCount": 47,
     "openAccessPdf": {
       "url": "https://academic.oup.com/bib/article-pdf/16/3/475/677796/bbu023.pdf",
       "status": "BRONZE",
