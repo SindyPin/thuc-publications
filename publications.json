@@ -885,7 +885,7 @@
     "title": "Linking Model Intervention to Causal Interpretation in Model Explanation",
     "venue": "arXiv.org",
     "year": 2024,
-    "citationCount": 0,
+    "citationCount": 1,
     "openAccessPdf": {
       "url": "",
       "status": null,
@@ -2434,7 +2434,7 @@
     "title": "How do the existing fairness metrics and unfairness mitigation algorithms contribute to ethical learning analytics?",
     "venue": "British Journal of Educational Technology",
     "year": 2021,
-    "citationCount": 64,
+    "citationCount": 65,
     "openAccessPdf": {
       "url": "https://edarxiv.org/86ksq/download",
       "status": "GREEN",
@@ -2540,7 +2540,7 @@
     "title": "Time to infer miRNA sponge modules",
     "venue": "Wiley Interdisciplinary Reviews - RNA",
     "year": 2021,
-    "citationCount": 20,
+    "citationCount": 21,
     "openAccessPdf": {
       "url": "",
       "status": "CLOSED",
@@ -4079,7 +4079,7 @@
     "title": "Accurate data-driven prediction does not mean high reproducibility",
     "venue": "Nature Machine Intelligence",
     "year": 2020,
-    "citationCount": 49,
+    "citationCount": 50,
     "openAccessPdf": {
       "url": "",
       "status": null,
@@ -4407,7 +4407,7 @@
     "title": "Extensive transcriptional responses are co-ordinated by microRNAs as revealed by Exon–Intron Split Analysis (EISA)",
     "venue": "Nucleic Acids Research",
     "year": 2019,
-    "citationCount": 16,
+    "citationCount": 17,
     "openAccessPdf": {
       "url": "https://academic.oup.com/nar/article-pdf/47/16/8606/31234506/gkz664.pdf",
       "status": "GOLD",
@@ -5708,7 +5708,7 @@
     "title": "CancerSubtypes: an R/Bioconductor package for molecular cancer subtype identification, validation and visualization",
     "venue": "Bioinform.",
     "year": 2017,
-    "citationCount": 209,
+    "citationCount": 210,
     "openAccessPdf": {
       "url": "https://academic.oup.com/bioinformatics/article-pdf/33/19/3131/25164758/btx378.pdf",
       "status": "BRONZE",
@@ -6931,7 +6931,7 @@
     "title": "A Fast PC Algorithm for High Dimensional Causal Discovery with Multi-Core PCs",
     "venue": "IEEE/ACM Transactions on Computational Biology & Bioinformatics",
     "year": 2015,
-    "citationCount": 170,
+    "citationCount": 172,
     "openAccessPdf": {
       "url": "http://arxiv.org/pdf/1502.02454",
       "status": "GREEN",
