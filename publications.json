@@ -585,7 +585,7 @@
     "title": "From Correlation to Causation: Max-Pooling-Based Multi-Instance Learning Leads to More Robust Whole Slide Image Classification",
     "venue": "",
     "year": 2024,
-    "citationCount": 2,
+    "citationCount": 3,
     "openAccessPdf": {
       "url": "",
       "status": null,
@@ -1049,7 +1049,7 @@
     "title": "Robust COVID-19 Detection in CT Images with CLIP",
     "venue": "Conference on Multimedia Information Processing and Retrieval",
     "year": 2024,
-    "citationCount": 14,
+    "citationCount": 17,
     "openAccessPdf": {
       "url": "http://arxiv.org/pdf/2403.08947",
       "status": "GREEN",
@@ -2161,7 +2161,7 @@
     "title": "Data-Driven Causal Effect Estimation Based on Graphical Causal Modelling: A Survey",
     "venue": "ACM Computing Surveys",
     "year": 2022,
-    "citationCount": 49,
+    "citationCount": 50,
     "openAccessPdf": {
       "url": "https://arxiv.org/pdf/2208.09590",
       "status": "GREEN",
@@ -5708,7 +5708,7 @@
     "title": "CancerSubtypes: an R/Bioconductor package for molecular cancer subtype identification, validation and visualization",
     "venue": "Bioinform.",
     "year": 2017,
-    "citationCount": 210,
+    "citationCount": 211,
     "openAccessPdf": {
       "url": "https://academic.oup.com/bioinformatics/article-pdf/33/19/3131/25164758/btx378.pdf",
       "status": "BRONZE",
