@@ -467,7 +467,7 @@
   {
     "paperId": "d40e7849406064670e0cf92160221f8490925844",
     "externalIds": {
-      "DBLP": "conf/ecai/GaoLLLCDLZ025",
+      "DBLP": "journals/corr/abs-2509-10501",
       "ArXiv": "2509.10501",
       "DOI": "10.48550/arXiv.2509.10501",
       "CorpusId": 281316292
@@ -476,7 +476,7 @@
     "title": "From Noise to Precision: A Diffusion-Driven Approach to Zero-Inflated Precipitation Prediction",
     "venue": "European Conference on Artificial Intelligence",
     "year": 2025,
-    "citationCount": 0,
+    "citationCount": 1,
     "openAccessPdf": {
       "url": "",
       "status": null,
@@ -856,7 +856,7 @@
     "authors": [
       {
         "authorId": "1816716716",
-        "name": "Andres M. Cifuentes-Bernal"
+        "name": "A. M. Cifuentes-Bernal"
       },
       {
         "authorId": "2146017365",
@@ -1049,7 +1049,7 @@
     "title": "Robust COVID-19 Detection in CT Images with CLIP",
     "venue": "Conference on Multimedia Information Processing and Retrieval",
     "year": 2024,
-    "citationCount": 17,
+    "citationCount": 18,
     "openAccessPdf": {
       "url": "http://arxiv.org/pdf/2403.08947",
       "status": "GREEN",
@@ -1564,7 +1564,7 @@
     "title": "Instrumental Variable Estimation for Causal Inference in Longitudinal Data with Time-Dependent Latent Confounders",
     "venue": "AAAI Conference on Artificial Intelligence",
     "year": 2023,
-    "citationCount": 22,
+    "citationCount": 23,
     "openAccessPdf": {
       "url": "",
       "status": null,
@@ -1745,7 +1745,7 @@
     "title": "Causal Inference with Conditional Instruments using Deep Generative Models",
     "venue": "AAAI Conference on Artificial Intelligence",
     "year": 2022,
-    "citationCount": 22,
+    "citationCount": 23,
     "openAccessPdf": {
       "url": "https://arxiv.org/pdf/2211.16246",
       "status": "GREEN",
@@ -2161,7 +2161,7 @@
     "title": "Data-Driven Causal Effect Estimation Based on Graphical Causal Modelling: A Survey",
     "venue": "ACM Computing Surveys",
     "year": 2022,
-    "citationCount": 50,
+    "citationCount": 51,
     "openAccessPdf": {
       "url": "https://arxiv.org/pdf/2208.09590",
       "status": "GREEN",
@@ -3888,7 +3888,7 @@
     "authors": [
       {
         "authorId": "1816716716",
-        "name": "Andres M. Cifuentes-Bernal"
+        "name": "A. M. Cifuentes-Bernal"
       },
       {
         "authorId": "145319665",
@@ -6931,7 +6931,7 @@
     "title": "A Fast PC Algorithm for High Dimensional Causal Discovery with Multi-Core PCs",
     "venue": "IEEE/ACM Transactions on Computational Biology & Bioinformatics",
     "year": 2015,
-    "citationCount": 172,
+    "citationCount": 173,
     "openAccessPdf": {
       "url": "http://arxiv.org/pdf/1502.02454",
       "status": "GREEN",
