@@ -46,6 +46,118 @@
     "abstract": "In many networked systems, interventions applied to one group of units can induce substantial causal effects on another group through cross-group interference pathways. Despite its practical importance in domains such as public health, digital marketing, and social policy, the problem of identifying which intervention subset in a source group maximizes the benefit on a target group remains largely unaddressed. We formalize this problem as cross-group causal influence estimation and introduce the core-to-group causal effect (Co2G), a formally defined causal estimand that quantifies the contrast in target-group outcomes under intervention versus non-intervention on a candidate source subset. We establish the nonparametric identifiability of Co2G from observational network data using do-calculus under standard causal assumptions, and develop a graph neural network-based estimator that captures cross-group interference patterns. To navigate the combinatorial search space of candidate subsets, we propose CauMax, an uncertainty-aware causal effect maximization framework with two scalable selection algorithms: (i)CauMax-G, an iterative greedy search with Monte Carlo dropout--based lower confidence bounds, and (ii)CauMax-D, a differentiable gradient-based optimization via Gumbel-Softmax relaxation. Extensive experiments on two real-world social networks demonstrate that CauMax achieves an order-of-magnitude reduction in regret compared with structural heuristics and diffusion-based baselines, and that moderate uncertainty penalization consistently improves subset selection quality."
   },
   {
+    "paperId": "92b98da4dfb500217a17de55942079cb40d4aad6",
+    "externalIds": {
+      "DOI": "10.1088/2632-2153/ae62ca",
+      "CorpusId": 287682798
+    },
+    "url": "https://www.semanticscholar.org/paper/92b98da4dfb500217a17de55942079cb40d4aad6",
+    "title": "TACO: TabPFN Augmented Causal Outcomes for early detection of Long COVID",
+    "venue": "Machine Learning: Science and Technology",
+    "year": 2026,
+    "citationCount": 0,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1088/2632-2153/ae62ca?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1088/2632-2153/ae62ca, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "publicationDate": "2026-04-21",
+    "authors": [
+      {
+        "authorId": "2344955746",
+        "name": "S. Pinero"
+      },
+      {
+        "authorId": "2386116464",
+        "name": "Ngoc-Bao Duong"
+      },
+      {
+        "authorId": null,
+        "name": "Xiaomei Li"
+      },
+      {
+        "authorId": "2338346365",
+        "name": "Lin Liu"
+      },
+      {
+        "authorId": "2257372048",
+        "name": "Jiuyong Li"
+      },
+      {
+        "authorId": "153508241",
+        "name": "H. Sang"
+      },
+      {
+        "authorId": "2344958333",
+        "name": "M. Winter"
+      },
+      {
+        "authorId": "2427456001",
+        "name": "T. Nguyen"
+      },
+      {
+        "authorId": "2026861052",
+        "name": "Junpeng Zhang"
+      },
+      {
+        "authorId": "3141770",
+        "name": "T. Le"
+      }
+    ],
+    "abstract": "\n Long COVID, or Post-Acute Sequelae of COVID-19 (PASC), affects 10 to 40\\% \\% of COVID-19 survivors worldwide, manifesting as persistent symptoms that last months after initial infection, including fatigue, cognitive impairment, and organ dysfunction. The heterogeneous nature of Long COVID and its delayed onset creates a critical window in which at-risk patients remain unidentified during the presymptomatic phase, when interventions could be most beneficial. Current prediction methods rely on clinical symptoms that manifest too late for early intervention or use molecular approaches based on statistical associations that cannot distinguish disease drivers from correlational noise. We present TACO (TabPFN-Augmented Causal Outcomes), a novel method for the early detection of Long COVID using gene expression data. TACO first applies Differential Causal Effect (DCE) analysis to identify genes with putative regulatory causal relationships to the pathogenesis of Long COVID, rather than simple statistical associations. It then integrates these mechanistic features with the Tabular Prior-Data Fitted Network (TabPFN), a foundation model that requires no hyperparameter tuning, alongside complementary classifiers in an ensemble approach. Experimental results show that TACO performs competitively with existing machine learning methods in predicting Long COVID from gene expression data from patients with early-stage COVID-19, while offering a causally grounded and interpretable feature selection. An ablation study confirms the positive contribution of TabPFN to the ensemble, and a strict nested cross-validation protocol, in which DCE feature selection is performed exclusively within each training fold, confirms that the results are robust to data leakage. The nested CV analysis further identifies a minimal reproducible causal gene signature with potential utility for targeted clinical sequencing during acute hospitalization for COVID-19. In addition, the causal genes identified by TACO are highly relevant to Long COVID-related functions and pathways, as confirmed by the literature and subsequent analyses, providing insights into disease mechanisms and potential treatments."
+  },
+  {
+    "paperId": "b32c3a191398c586d3bd3e6e97ba387e0d0a886d",
+    "externalIds": {
+      "ArXiv": "2604.20255",
+      "CorpusId": 287668509
+    },
+    "url": "https://www.semanticscholar.org/paper/b32c3a191398c586d3bd3e6e97ba387e0d0a886d",
+    "title": "uLEAD-TabPFN: Uncertainty-aware Dependency-based Anomaly Detection with TabPFN",
+    "venue": "",
+    "year": 2026,
+    "citationCount": 0,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2604.20255, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "publicationDate": "2026-04-22",
+    "authors": [
+      {
+        "authorId": "2297065962",
+        "name": "Sha Lu"
+      },
+      {
+        "authorId": "2301618480",
+        "name": "Jixue Liu"
+      },
+      {
+        "authorId": "2072710129",
+        "name": "Stefan Peters"
+      },
+      {
+        "authorId": "3141770",
+        "name": "T. Le"
+      },
+      {
+        "authorId": "2430984128",
+        "name": "C. Xie"
+      },
+      {
+        "authorId": "2338346365",
+        "name": "Lin Liu"
+      },
+      {
+        "authorId": "2257372048",
+        "name": "Jiuyong Li"
+      }
+    ],
+    "abstract": "Anomaly detection in tabular data is challenging due to high dimensionality, complex feature dependencies, and heterogeneous noise. Many existing methods rely on proximity-based cues and may miss anomalies caused by violations of complex feature dependencies. Dependency-based anomaly detection provides a principled alternative by identifying anomalies as violations of dependencies among features. However, existing methods often struggle to model such dependencies robustly and to scale to high-dimensional data with complex dependency structures. To address these challenges, we propose uLEAD-TabPFN, a dependency-based anomaly detection framework built on Prior-Data Fitted Networks (PFNs). uLEAD-TabPFN identifies anomalies as violations of conditional dependencies in a learned latent space, leveraging frozen PFNs for dependency estimation. Combined with uncertainty-aware scoring, the proposed framework enables robust and scalable anomaly detection. Experiments on 57 tabular datasets from ADBench show that uLEAD-TabPFN achieves particularly strong performance in medium- and high-dimensional settings, where it attains the top average rank. On high-dimensional datasets, uLEAD-TabPFN improves the average ROC-AUC by nearly 20\\% over the average baseline and by approximately 2.8\\% over the best-performing baseline, while maintaining overall superior performance compared to state-of-the-art methods. Further analysis shows that uLEAD-TabPFN provides complementary anomaly detection capability, achieving strong performance on datasets where many existing methods struggle."
+  },
+  {
     "paperId": "2533bd177ec92b5ee093cea735b09d1fef8775f7",
     "externalIds": {
       "DBLP": "conf/bigdataconf/Guo00LLL25",
@@ -163,7 +275,7 @@
     "title": "Peer Effect Estimation in the Presence of Simultaneous Feedback and Unobserved Confounders",
     "venue": "arXiv.org",
     "year": 2025,
-    "citationCount": 0,
+    "citationCount": 1,
     "openAccessPdf": {
       "url": "",
       "status": null,
@@ -985,7 +1097,7 @@
     "title": "Deconfounding Multi-Cause Latent Confounders: A Factor-Model Approach to Climate Model Bias Correction",
     "venue": "International Joint Conference on Artificial Intelligence",
     "year": 2024,
-    "citationCount": 3,
+    "citationCount": 4,
     "openAccessPdf": {
       "url": "",
       "status": null,
@@ -2161,7 +2273,7 @@
     "title": "Data-Driven Causal Effect Estimation Based on Graphical Causal Modelling: A Survey",
     "venue": "ACM Computing Surveys",
     "year": 2022,
-    "citationCount": 51,
+    "citationCount": 52,
     "openAccessPdf": {
       "url": "https://arxiv.org/pdf/2208.09590",
       "status": "GREEN",
@@ -3650,7 +3762,7 @@
     "title": "LoPAD: A Local Prediction Approach to Anomaly Detection",
     "venue": "Pacific-Asia Conference on Knowledge Discovery and Data Mining",
     "year": 2020,
-    "citationCount": 9,
+    "citationCount": 10,
     "openAccessPdf": {
       "url": "",
       "status": "CLOSED",
@@ -3694,7 +3806,7 @@
     "title": "Dependency-based anomaly detection: A general framework and comprehensive evaluation",
     "venue": "Expert systems with applications",
     "year": 2020,
-    "citationCount": 1,
+    "citationCount": 2,
     "openAccessPdf": {
       "url": "",
       "status": null,
@@ -6759,7 +6871,7 @@
     "title": "From Observational Studies to Causal Rule Mining",
     "venue": "ACM Transactions on Intelligent Systems and Technology",
     "year": 2015,
-    "citationCount": 54,
+    "citationCount": 55,
     "openAccessPdf": {
       "url": "https://dl.acm.org/doi/pdf/10.1145/2746410",
       "status": "BRONZE",
