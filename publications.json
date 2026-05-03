@@ -73,7 +73,7 @@
         "name": "Ngoc-Bao Duong"
       },
       {
-        "authorId": null,
+        "authorId": "2116432049",
         "name": "Xiaomei Li"
       },
       {
@@ -997,7 +997,7 @@
     "title": "Linking Model Intervention to Causal Interpretation in Model Explanation",
     "venue": "arXiv.org",
     "year": 2024,
-    "citationCount": 1,
+    "citationCount": 2,
     "openAccessPdf": {
       "url": "",
       "status": null,
@@ -2546,7 +2546,7 @@
     "title": "How do the existing fairness metrics and unfairness mitigation algorithms contribute to ethical learning analytics?",
     "venue": "British Journal of Educational Technology",
     "year": 2021,
-    "citationCount": 65,
+    "citationCount": 66,
     "openAccessPdf": {
       "url": "https://edarxiv.org/86ksq/download",
       "status": "GREEN",
@@ -2905,7 +2905,7 @@
     "title": "Computational methods for cancer driver discovery: A survey",
     "venue": "Theranostics",
     "year": 2020,
-    "citationCount": 23,
+    "citationCount": 24,
     "openAccessPdf": {
       "url": "https://doi.org/10.7150/thno.52670",
       "status": "GOLD",
@@ -3196,7 +3196,7 @@
     "title": "Exploring cell-specific miRNA regulation with single-cell miRNA-mRNA co-sequencing data",
     "venue": "BMC Bioinformatics",
     "year": 2020,
-    "citationCount": 13,
+    "citationCount": 14,
     "openAccessPdf": {
       "url": "https://bmcbioinformatics.biomedcentral.com/counter/pdf/10.1186/s12859-021-04498-6",
       "status": "GOLD",
@@ -3562,7 +3562,7 @@
     "title": "Local Search for Efficient Causal Effect Estimation",
     "venue": "IEEE Transactions on Knowledge and Data Engineering",
     "year": 2020,
-    "citationCount": 16,
+    "citationCount": 17,
     "openAccessPdf": {
       "url": "https://arxiv.org/pdf/2007.10014",
       "status": "GREEN",
@@ -6248,7 +6248,7 @@
     "title": "Mining heterogeneous causal effects for personalized cancer treatment",
     "venue": "Bioinform.",
     "year": 2017,
-    "citationCount": 52,
+    "citationCount": 53,
     "openAccessPdf": {
       "url": "https://academic.oup.com/bioinformatics/article-pdf/33/15/2372/25157695/btx174.pdf",
       "status": "BRONZE",
