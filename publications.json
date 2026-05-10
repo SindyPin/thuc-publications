@@ -1676,7 +1676,7 @@
     "title": "Instrumental Variable Estimation for Causal Inference in Longitudinal Data with Time-Dependent Latent Confounders",
     "venue": "AAAI Conference on Artificial Intelligence",
     "year": 2023,
-    "citationCount": 23,
+    "citationCount": 24,
     "openAccessPdf": {
       "url": "",
       "status": null,
@@ -1857,7 +1857,7 @@
     "title": "Causal Inference with Conditional Instruments using Deep Generative Models",
     "venue": "AAAI Conference on Artificial Intelligence",
     "year": 2022,
-    "citationCount": 23,
+    "citationCount": 24,
     "openAccessPdf": {
       "url": "https://arxiv.org/pdf/2211.16246",
       "status": "GREEN",
@@ -2546,7 +2546,7 @@
     "title": "How do the existing fairness metrics and unfairness mitigation algorithms contribute to ethical learning analytics?",
     "venue": "British Journal of Educational Technology",
     "year": 2021,
-    "citationCount": 66,
+    "citationCount": 69,
     "openAccessPdf": {
       "url": "https://edarxiv.org/86ksq/download",
       "status": "GREEN",
@@ -3562,7 +3562,7 @@
     "title": "Local Search for Efficient Causal Effect Estimation",
     "venue": "IEEE Transactions on Knowledge and Data Engineering",
     "year": 2020,
-    "citationCount": 17,
+    "citationCount": 18,
     "openAccessPdf": {
       "url": "https://arxiv.org/pdf/2007.10014",
       "status": "GREEN",
@@ -4191,7 +4191,7 @@
     "title": "Accurate data-driven prediction does not mean high reproducibility",
     "venue": "Nature Machine Intelligence",
     "year": 2020,
-    "citationCount": 50,
+    "citationCount": 49,
     "openAccessPdf": {
       "url": "",
       "status": null,
@@ -5237,7 +5237,7 @@
     "title": "miRBaseConverter: an R/Bioconductor package for converting and retrieving miRNA name, accession, sequence and family information in different versions of miRBase",
     "venue": "bioRxiv",
     "year": 2018,
-    "citationCount": 68,
+    "citationCount": 69,
     "openAccessPdf": {
       "url": "https://bmcbioinformatics.biomedcentral.com/track/pdf/10.1186/s12859-018-2531-5",
       "status": "GREEN",
@@ -5820,7 +5820,7 @@
     "title": "CancerSubtypes: an R/Bioconductor package for molecular cancer subtype identification, validation and visualization",
     "venue": "Bioinform.",
     "year": 2017,
-    "citationCount": 211,
+    "citationCount": 212,
     "openAccessPdf": {
       "url": "https://academic.oup.com/bioinformatics/article-pdf/33/19/3131/25164758/btx378.pdf",
       "status": "BRONZE",
@@ -6292,7 +6292,7 @@
     "title": "A novel framework for inferring condition-specific TF and miRNA co-regulation of protein-protein interactions.",
     "venue": "Gene",
     "year": 2016,
-    "citationCount": 10,
+    "citationCount": 11,
     "openAccessPdf": {
       "url": "",
       "status": "CLOSED",
@@ -7043,7 +7043,7 @@
     "title": "A Fast PC Algorithm for High Dimensional Causal Discovery with Multi-Core PCs",
     "venue": "IEEE/ACM Transactions on Computational Biology & Bioinformatics",
     "year": 2015,
-    "citationCount": 173,
+    "citationCount": 174,
     "openAccessPdf": {
       "url": "http://arxiv.org/pdf/1502.02454",
       "status": "GREEN",
