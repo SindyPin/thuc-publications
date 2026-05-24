@@ -46,68 +46,6 @@
     "abstract": "In many networked systems, interventions applied to one group of units can induce substantial causal effects on another group through cross-group interference pathways. Despite its practical importance in domains such as public health, digital marketing, and social policy, the problem of identifying which intervention subset in a source group maximizes the benefit on a target group remains largely unaddressed. We formalize this problem as cross-group causal influence estimation and introduce the core-to-group causal effect (Co2G), a formally defined causal estimand that quantifies the contrast in target-group outcomes under intervention versus non-intervention on a candidate source subset. We establish the nonparametric identifiability of Co2G from observational network data using do-calculus under standard causal assumptions, and develop a graph neural network-based estimator that captures cross-group interference patterns. To navigate the combinatorial search space of candidate subsets, we propose CauMax, an uncertainty-aware causal effect maximization framework with two scalable selection algorithms: (i)CauMax-G, an iterative greedy search with Monte Carlo dropout--based lower confidence bounds, and (ii)CauMax-D, a differentiable gradient-based optimization via Gumbel-Softmax relaxation. Extensive experiments on two real-world social networks demonstrate that CauMax achieves an order-of-magnitude reduction in regret compared with structural heuristics and diffusion-based baselines, and that moderate uncertainty penalization consistently improves subset selection quality."
   },
   {
-    "paperId": "92b98da4dfb500217a17de55942079cb40d4aad6",
-    "externalIds": {
-      "DOI": "10.1088/2632-2153/ae62ca",
-      "CorpusId": 287682798
-    },
-    "url": "https://www.semanticscholar.org/paper/92b98da4dfb500217a17de55942079cb40d4aad6",
-    "title": "TACO: TabPFN Augmented Causal Outcomes for early detection of Long COVID",
-    "venue": "Machine Learning: Science and Technology",
-    "year": 2026,
-    "citationCount": 0,
-    "openAccessPdf": {
-      "url": "",
-      "status": null,
-      "license": null,
-      "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1088/2632-2153/ae62ca?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1088/2632-2153/ae62ca, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
-    },
-    "publicationDate": "2026-04-21",
-    "authors": [
-      {
-        "authorId": "2344955746",
-        "name": "S. Pinero"
-      },
-      {
-        "authorId": "2386116464",
-        "name": "Ngoc-Bao Duong"
-      },
-      {
-        "authorId": "2116432049",
-        "name": "Xiaomei Li"
-      },
-      {
-        "authorId": "2338346365",
-        "name": "Lin Liu"
-      },
-      {
-        "authorId": "2257372048",
-        "name": "Jiuyong Li"
-      },
-      {
-        "authorId": "153508241",
-        "name": "H. Sang"
-      },
-      {
-        "authorId": "2344958333",
-        "name": "M. Winter"
-      },
-      {
-        "authorId": "2427456001",
-        "name": "T. Nguyen"
-      },
-      {
-        "authorId": "2026861052",
-        "name": "Junpeng Zhang"
-      },
-      {
-        "authorId": "3141770",
-        "name": "T. Le"
-      }
-    ],
-    "abstract": "\n Long COVID, or Post-Acute Sequelae of COVID-19 (PASC), affects 10 to 40\\% \\% of COVID-19 survivors worldwide, manifesting as persistent symptoms that last months after initial infection, including fatigue, cognitive impairment, and organ dysfunction. The heterogeneous nature of Long COVID and its delayed onset creates a critical window in which at-risk patients remain unidentified during the presymptomatic phase, when interventions could be most beneficial. Current prediction methods rely on clinical symptoms that manifest too late for early intervention or use molecular approaches based on statistical associations that cannot distinguish disease drivers from correlational noise. We present TACO (TabPFN-Augmented Causal Outcomes), a novel method for the early detection of Long COVID using gene expression data. TACO first applies Differential Causal Effect (DCE) analysis to identify genes with putative regulatory causal relationships to the pathogenesis of Long COVID, rather than simple statistical associations. It then integrates these mechanistic features with the Tabular Prior-Data Fitted Network (TabPFN), a foundation model that requires no hyperparameter tuning, alongside complementary classifiers in an ensemble approach. Experimental results show that TACO performs competitively with existing machine learning methods in predicting Long COVID from gene expression data from patients with early-stage COVID-19, while offering a causally grounded and interpretable feature selection. An ablation study confirms the positive contribution of TabPFN to the ensemble, and a strict nested cross-validation protocol, in which DCE feature selection is performed exclusively within each training fold, confirms that the results are robust to data leakage. The nested CV analysis further identifies a minimal reproducible causal gene signature with potential utility for targeted clinical sequencing during acute hospitalization for COVID-19. In addition, the causal genes identified by TACO are highly relevant to Long COVID-related functions and pathways, as confirmed by the literature and subsequent analyses, providing insights into disease mechanisms and potential treatments."
-  },
-  {
     "paperId": "b32c3a191398c586d3bd3e6e97ba387e0d0a886d",
     "externalIds": {
       "ArXiv": "2604.20255",
@@ -1072,7 +1010,7 @@
       },
       {
         "authorId": "2287751418",
-        "name": "Hoa L. Nguyen"
+        "name": "H. L. Nguyen"
       },
       {
         "authorId": "3141770",
@@ -2273,7 +2211,7 @@
     "title": "Data-Driven Causal Effect Estimation Based on Graphical Causal Modelling: A Survey",
     "venue": "ACM Computing Surveys",
     "year": 2022,
-    "citationCount": 53,
+    "citationCount": 54,
     "openAccessPdf": {
       "url": "https://arxiv.org/pdf/2208.09590",
       "status": "GREEN",
@@ -2894,9 +2832,9 @@
     "paperId": "093e26104e470b3c87aa58e9dafc33039cc01170",
     "externalIds": {
       "PubMedCentral": "8039954",
-      "DBLP": "journals/corr/abs-2007-00887",
       "ArXiv": "2007.00887",
       "MAG": "3039502227",
+      "DBLP": "journals/corr/abs-2007-00887",
       "DOI": "10.7150/thno.52670",
       "CorpusId": 220301651,
       "PubMed": "33859763"
@@ -2905,7 +2843,7 @@
     "title": "Computational methods for cancer driver discovery: A survey",
     "venue": "Theranostics",
     "year": 2020,
-    "citationCount": 24,
+    "citationCount": 25,
     "openAccessPdf": {
       "url": "https://doi.org/10.7150/thno.52670",
       "status": "GOLD",
@@ -3257,7 +3195,7 @@
     "title": "Efficient polygenic risk scores for biobank scale data by exploiting phenotypes from inferred relatives",
     "venue": "Nature Communications",
     "year": 2020,
-    "citationCount": 29,
+    "citationCount": 28,
     "openAccessPdf": {
       "url": "https://www.nature.com/articles/s41467-020-16829-x.pdf",
       "status": "GOLD",
@@ -3989,7 +3927,7 @@
     "title": "A Pseudo-Temporal Causality Approach to Identifying miRNA-mRNA Interactions During Biological Processes",
     "venue": "bioRxiv",
     "year": 2020,
-    "citationCount": 4,
+    "citationCount": 5,
     "openAccessPdf": {
       "url": "https://www.biorxiv.org/content/biorxiv/early/2020/07/08/2020.07.07.192724.full.pdf",
       "status": "GREEN",
@@ -4233,7 +4171,7 @@
     "title": "A novel single-cell based method for breast cancer prognosis",
     "venue": "bioRxiv",
     "year": 2020,
-    "citationCount": 22,
+    "citationCount": 23,
     "openAccessPdf": {
       "url": "https://digital.library.adelaide.edu.au/dspace/bitstream/2440/128437/2/hdl_128437.pdf",
       "status": "GREEN",
@@ -4519,7 +4457,7 @@
     "title": "Extensive transcriptional responses are co-ordinated by microRNAs as revealed by Exon–Intron Split Analysis (EISA)",
     "venue": "Nucleic Acids Research",
     "year": 2019,
-    "citationCount": 17,
+    "citationCount": 16,
     "openAccessPdf": {
       "url": "https://academic.oup.com/nar/article-pdf/47/16/8606/31234506/gkz664.pdf",
       "status": "GOLD",
@@ -4711,7 +4649,7 @@
     "title": "Inferring and analyzing module-specific lncRNA-mRNA causal regulatory networks in human cancer",
     "venue": "Briefings Bioinform.",
     "year": 2019,
-    "citationCount": 44,
+    "citationCount": 45,
     "openAccessPdf": {
       "url": "",
       "status": "CLOSED",
@@ -4742,9 +4680,9 @@
   {
     "paperId": "40c2a5ceba30048064b4ae52b1d76b749aeb4eed",
     "externalIds": {
-      "DBLP": "journals/ploscb/PhamLBGLLL19",
       "PubMedCentral": "6907873",
       "MAG": "2989676989",
+      "DBLP": "journals/ploscb/PhamLBGLLL19",
       "DOI": "10.1371/journal.pcbi.1007538",
       "CorpusId": 208610714,
       "PubMed": "31790386"
@@ -4753,7 +4691,7 @@
     "title": "CBNA: A control theory based method for identifying coding and non-coding cancer drivers",
     "venue": "PLoS Comput. Biol.",
     "year": 2019,
-    "citationCount": 29,
+    "citationCount": 30,
     "openAccessPdf": {
       "url": "https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1007538&type=printable",
       "status": "GOLD",
@@ -4901,7 +4839,7 @@
     "title": "Identifying miRNA synergism using multiple-intervention causal inference",
     "venue": "BMC Bioinformatics",
     "year": 2019,
-    "citationCount": 18,
+    "citationCount": 19,
     "openAccessPdf": {
       "url": "https://bmcbioinformatics.biomedcentral.com/track/pdf/10.1186/s12859-019-3215-5",
       "status": "GOLD",
@@ -5224,72 +5162,6 @@
     "abstract": "Estimating heterogeneous treatment effect is a fundamental problem in biological and medical applications. Recently, several recursive partitioning methods have been proposed to identify the subgroups that respond differently towards a treatment, and they rely on a fitness criterion to minimize the error between the estimated treatment effects and the unobservable ground truths. In this paper, we propose that a heterogeneity criterion, which maximizes the differences of treatment effects among the subgroups, also needs to be considered. Moreover, we show that better performances can be achieved when the fitness and the heterogeneous criteria are considered simultaneously. Selecting the optimal splitting points then becomes a multi-objective problem; however, a solution that achieves optimal in both aspects are often not available. To solve this problem, we propose a multi-objective splitting procedure to balance both criteria. The proposed procedure is computationally efficient and fits naturally into the existing recursive partitioning framework. Experimental results show that the proposed multi-objective approach performs consistently better than existing ones. Heterogeneity should be considered with fitness in heterogeneous treatment effect estimation, and the proposed multi-objective splitting procedure achieves the best performance by balancing both criteria."
   },
   {
-    "paperId": "19d1bbb90d3aa16427357bccabcd9ec1e8d4ac3b",
-    "externalIds": {
-      "PubMedCentral": "6311916",
-      "DBLP": "journals/bmcbi/XuSLZWZGYLL18",
-      "MAG": "2891209917",
-      "DOI": "10.1186/s12859-018-2531-5",
-      "CorpusId": 57189695,
-      "PubMed": "30598108"
-    },
-    "url": "https://www.semanticscholar.org/paper/19d1bbb90d3aa16427357bccabcd9ec1e8d4ac3b",
-    "title": "miRBaseConverter: an R/Bioconductor package for converting and retrieving miRNA name, accession, sequence and family information in different versions of miRBase",
-    "venue": "bioRxiv",
-    "year": 2018,
-    "citationCount": 69,
-    "openAccessPdf": {
-      "url": "https://bmcbioinformatics.biomedcentral.com/track/pdf/10.1186/s12859-018-2531-5",
-      "status": "GREEN",
-      "license": "CCBY",
-      "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC6311916, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
-    },
-    "publicationDate": "2018-09-06",
-    "authors": [
-      {
-        "authorId": "6884087",
-        "name": "Taosheng Xu"
-      },
-      {
-        "authorId": "2054603090",
-        "name": "Ning Su"
-      },
-      {
-        "authorId": "1518051372",
-        "name": "Lin Liu"
-      },
-      {
-        "authorId": "2026861052",
-        "name": "Junpeng Zhang"
-      },
-      {
-        "authorId": "2109602756",
-        "name": "Hongqiang Wang"
-      },
-      {
-        "authorId": "2108005467",
-        "name": "Weijia Zhang"
-      },
-      {
-        "authorId": "35909809",
-        "name": "J. Gui"
-      },
-      {
-        "authorId": "46330674",
-        "name": "Kui Yu"
-      },
-      {
-        "authorId": "1786185",
-        "name": "Jiuyong Li"
-      },
-      {
-        "authorId": "3141770",
-        "name": "T. Le"
-      }
-    ],
-    "abstract": "BackgroundmiRBase is the primary repository for published miRNA sequence and annotation data, and serves as the “go-to” place for miRNA research. However, the definition and annotation of miRNAs have been changed significantly across different versions of miRBase. The changes cause inconsistency in miRNA related data between different databases and articles published at different times. Several tools have been developed for different purposes of querying and converting the information of miRNAs between different miRBase versions, but none of them individually can provide the comprehensive information about miRNAs in miRBase and users will need to use a number of different tools in their analyses.ResultsWe introduce miRBaseConverter, an R package integrating the latest miRBase version 22 available in Bioconductor to provide a suite of functions for converting and retrieving miRNA name (ID), accession, sequence, species, version and family information in different versions of miRBase. The package is implemented in R and available under the GPL-2 license from the Bioconductor website (http://bioconductor.org/packages/miRBaseConverter/). A Shiny-based GUI suitable for non-R users is also available as a standalone application from the package and also as a web application at http://nugget.unisa.edu.au:3838/miRBaseConverter. miRBaseConverter has a built-in database for querying miRNA information in all species and for both pre-mature and mature miRNAs defined by miRBase. In addition, it is the first tool for batch querying the miRNA family information. The package aims to provide a comprehensive and easy-to-use tool for miRNA research community where researchers often utilize published miRNA data from different sources.ConclusionsThe Bioconductor package miRBaseConverter and the Shiny-based web application are presented to provide a suite of functions for converting and retrieving miRNA name, accession, sequence, species, version and family information in different versions of miRBase. The package will serve a wide range of applications in miRNA research and could provide a full view of the miRNAs of interest."
-  },
-  {
     "paperId": "1ed038863f1f149b9919e2922c2838d96daa2f8e",
     "externalIds": {
       "MAG": "2911208296",
@@ -5513,21 +5385,25 @@
   {
     "paperId": "77c01229e281151b161dc0d7ad396a286c6b6e05",
     "externalIds": {
+      "MAG": "2952528394",
+      "DBLP": "journals/bmcbi/XuSLZWZGYLL18",
+      "PubMedCentral": "6311916",
       "DOI": "10.1186/s12859-018-2531-5",
-      "CorpusId": 255779543
+      "CorpusId": 57189695,
+      "PubMed": "30598108"
     },
     "url": "https://www.semanticscholar.org/paper/77c01229e281151b161dc0d7ad396a286c6b6e05",
     "title": "miRBaseConverter: an R/Bioconductor package for converting and retrieving miRNA name, accession, sequence and family information in different versions of miRBase",
     "venue": "BMC Bioinformatics",
     "year": 2018,
-    "citationCount": 0,
+    "citationCount": 69,
     "openAccessPdf": {
       "url": "https://bmcbioinformatics.biomedcentral.com/track/pdf/10.1186/s12859-018-2531-5",
-      "status": "GOLD",
+      "status": "GREEN",
       "license": "CCBY",
-      "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1186/s12859-018-2531-5?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1186/s12859-018-2531-5, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC6311916, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
     },
-    "publicationDate": "2018-12-01",
+    "publicationDate": "2018-09-06",
     "authors": [
       {
         "authorId": "6884087",
@@ -5546,7 +5422,7 @@
         "name": "Junpeng Zhang"
       },
       {
-        "authorId": "2120307276",
+        "authorId": "2109602756",
         "name": "Hongqiang Wang"
       },
       {
@@ -5554,8 +5430,8 @@
         "name": "Weijia Zhang"
       },
       {
-        "authorId": "2328404883",
-        "name": "Jie Gui"
+        "authorId": "35909809",
+        "name": "J. Gui"
       },
       {
         "authorId": "46330674",
@@ -5820,7 +5696,7 @@
     "title": "CancerSubtypes: an R/Bioconductor package for molecular cancer subtype identification, validation and visualization",
     "venue": "Bioinform.",
     "year": 2017,
-    "citationCount": 212,
+    "citationCount": 216,
     "openAccessPdf": {
       "url": "https://academic.oup.com/bioinformatics/article-pdf/33/19/3131/25164758/btx378.pdf",
       "status": "BRONZE",
@@ -5878,7 +5754,7 @@
     "title": "Additional file 7: of Identifying miRNA sponge modules using biclustering and regulatory scores",
     "venue": "",
     "year": 2017,
-    "citationCount": 13,
+    "citationCount": 12,
     "openAccessPdf": {
       "url": "",
       "status": null,
@@ -5919,7 +5795,7 @@
     "title": "Inferring miRNA sponge co-regulation of protein-protein interactions in human breast cancer",
     "venue": "BMC Bioinformatics",
     "year": 2017,
-    "citationCount": 22,
+    "citationCount": 23,
     "openAccessPdf": {
       "url": "https://bmcbioinformatics.biomedcentral.com/track/pdf/10.1186/s12859-017-1672-2",
       "status": "GOLD",
@@ -6118,7 +5994,7 @@
     "title": "Identifying miRNA sponge modules using biclustering and regulatory scores",
     "venue": "BMC Bioinformatics",
     "year": 2017,
-    "citationCount": 10,
+    "citationCount": 11,
     "openAccessPdf": {
       "url": "https://doi.org/10.1186/s12859-017-1467-5",
       "status": "GOLD",
@@ -6248,7 +6124,7 @@
     "title": "Mining heterogeneous causal effects for personalized cancer treatment",
     "venue": "Bioinform.",
     "year": 2017,
-    "citationCount": 53,
+    "citationCount": 54,
     "openAccessPdf": {
       "url": "https://academic.oup.com/bioinformatics/article-pdf/33/15/2372/25157695/btx174.pdf",
       "status": "BRONZE",
@@ -6370,15 +6246,15 @@
     "abstract": "Motivation microRNAs (miRNAs) play crucial roles in post-transcriptional gene regulation of both plants and mammals, and dysfunctions of miRNAs are often associated with tumorigenesis and development through the effects on their target messenger RNAs (mRNAs). Identifying miRNA functions is critical for understanding cancer mechanisms and determining the efficacy of drugs. Computational methods analyzing high-throughput data offer great assistance in understanding the diverse and complex relationships between miRNAs and mRNAs. However, most of the existing methods do not fully utilise the available knowledge in biology to reduce the uncertainty in the modeling process. Therefore it is desirable to develop a method that can seamlessly integrate existing biological knowledge and high-throughput data into the process of discovering miRNA regulation mechanisms. Results In this article we present an integrative framework, CIDER (Causal miRNA target Discovery with Expression profile and Regulatory knowledge), to predict miRNA targets. CIDER is able to utilise a variety of gene regulation knowledge, including transcriptional and post-transcriptional knowledge, and to exploit gene expression data for the discovery of miRNA-mRNA regulatory relationships. The benefits of our framework is demonstrated by both simulation study and the analysis of the epithelial-to-mesenchymal transition (EMT) and the breast cancer (BRCA) datasets. Our results reveal that even a limited amount of either Transcription Factor (TF)-miRNA or miRNA-mRNA regulatory knowledge improves the performance of miRNA target prediction, and the combination of the two types of knowledge enhances the improvement further. Another useful property of the framework is that its performance increases monotonically with the increase of regulatory knowledge."
   },
   {
-    "paperId": "c2db76ee973d40adc8e4b557958d17aef7927601",
+    "paperId": "d0191825cf9be3dab299d75cfa021bda9843b83e",
     "externalIds": {
-      "PubMedCentral": "4818025",
       "MAG": "2322942874",
+      "PubMedCentral": "4818025",
       "DOI": "10.1371/journal.pone.0152792",
       "CorpusId": 16084984,
       "PubMed": "27035433"
     },
-    "url": "https://www.semanticscholar.org/paper/c2db76ee973d40adc8e4b557958d17aef7927601",
+    "url": "https://www.semanticscholar.org/paper/d0191825cf9be3dab299d75cfa021bda9843b83e",
     "title": "Identifying Cancer Subtypes from miRNA-TF-mRNA Regulatory Networks and Expression Data",
     "venue": "PLoS ONE",
     "year": 2016,
@@ -6473,7 +6349,7 @@
     "title": "Computational methods for identifying miRNA sponge interactions",
     "venue": "Briefings Bioinform.",
     "year": 2016,
-    "citationCount": 89,
+    "citationCount": 90,
     "openAccessPdf": {
       "url": "",
       "status": "CLOSED",
@@ -7043,7 +6919,7 @@
     "title": "A Fast PC Algorithm for High Dimensional Causal Discovery with Multi-Core PCs",
     "venue": "IEEE/ACM Transactions on Computational Biology & Bioinformatics",
     "year": 2015,
-    "citationCount": 174,
+    "citationCount": 176,
     "openAccessPdf": {
       "url": "http://arxiv.org/pdf/1502.02454",
       "status": "GREEN",
