@@ -1010,7 +1010,7 @@
       },
       {
         "authorId": "2287751418",
-        "name": "H. L. Nguyen"
+        "name": "Hoa L. Nguyen"
       },
       {
         "authorId": "3141770",
@@ -1035,7 +1035,7 @@
     "title": "Deconfounding Multi-Cause Latent Confounders: A Factor-Model Approach to Climate Model Bias Correction",
     "venue": "International Joint Conference on Artificial Intelligence",
     "year": 2024,
-    "citationCount": 4,
+    "citationCount": 5,
     "openAccessPdf": {
       "url": "",
       "status": null,
@@ -2484,7 +2484,7 @@
     "title": "How do the existing fairness metrics and unfairness mitigation algorithms contribute to ethical learning analytics?",
     "venue": "British Journal of Educational Technology",
     "year": 2021,
-    "citationCount": 69,
+    "citationCount": 70,
     "openAccessPdf": {
       "url": "https://edarxiv.org/86ksq/download",
       "status": "GREEN",
@@ -3455,7 +3455,7 @@
     "title": "Multi-Source Causal Feature Selection",
     "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
     "year": 2020,
-    "citationCount": 110,
+    "citationCount": 111,
     "openAccessPdf": {
       "url": "",
       "status": "CLOSED",
@@ -5122,8 +5122,8 @@
   {
     "paperId": "115ea28df14d0d7399b01afdc32554d55c609f9a",
     "externalIds": {
-      "MAG": "2949610967",
       "PubMedCentral": "6311929",
+      "MAG": "2949610967",
       "DBLP": "journals/bmcbi/ZhangLLL18",
       "DOI": "10.1186/s12859-018-2521-7",
       "CorpusId": 57189722,
@@ -5396,7 +5396,7 @@
     "title": "miRBaseConverter: an R/Bioconductor package for converting and retrieving miRNA name, accession, sequence and family information in different versions of miRBase",
     "venue": "BMC Bioinformatics",
     "year": 2018,
-    "citationCount": 69,
+    "citationCount": 70,
     "openAccessPdf": {
       "url": "https://bmcbioinformatics.biomedcentral.com/track/pdf/10.1186/s12859-018-2531-5",
       "status": "GREEN",
@@ -5696,7 +5696,7 @@
     "title": "CancerSubtypes: an R/Bioconductor package for molecular cancer subtype identification, validation and visualization",
     "venue": "Bioinform.",
     "year": 2017,
-    "citationCount": 216,
+    "citationCount": 217,
     "openAccessPdf": {
       "url": "https://academic.oup.com/bioinformatics/article-pdf/33/19/3131/25164758/btx378.pdf",
       "status": "BRONZE",
@@ -6671,7 +6671,7 @@
     "title": "Mining combined causes in large data sets",
     "venue": "Knowledge-Based Systems",
     "year": 2015,
-    "citationCount": 18,
+    "citationCount": 19,
     "openAccessPdf": {
       "url": "https://arxiv.org/pdf/1508.07092",
       "status": "GREEN",
@@ -6919,7 +6919,7 @@
     "title": "A Fast PC Algorithm for High Dimensional Causal Discovery with Multi-Core PCs",
     "venue": "IEEE/ACM Transactions on Computational Biology & Bioinformatics",
     "year": 2015,
-    "citationCount": 177,
+    "citationCount": 178,
     "openAccessPdf": {
       "url": "http://arxiv.org/pdf/1502.02454",
       "status": "GREEN",
