@@ -55,7 +55,7 @@
     "title": "uLEAD-TabPFN: Uncertainty-aware Dependency-based Anomaly Detection with TabPFN",
     "venue": "",
     "year": 2026,
-    "citationCount": 0,
+    "citationCount": 1,
     "openAccessPdf": {
       "url": "",
       "status": null,
@@ -2393,7 +2393,7 @@
     "title": "Recommending the Most Effective Intervention to Improve Employment for Job Seekers with Disability",
     "venue": "Knowledge Discovery and Data Mining",
     "year": 2021,
-    "citationCount": 15,
+    "citationCount": 16,
     "openAccessPdf": {
       "url": "https://dl.acm.org/doi/pdf/10.1145/3447548.3467095",
       "status": "BRONZE",
@@ -4745,7 +4745,7 @@
     "title": "miRspongeR: an R/Bioconductor package for the identification and analysis of miRNA sponge interaction networks and modules",
     "venue": "BMC Bioinformatics",
     "year": 2019,
-    "citationCount": 12,
+    "citationCount": 13,
     "openAccessPdf": {
       "url": "https://bmcbioinformatics.biomedcentral.com/track/pdf/10.1186/s12859-019-2861-y",
       "status": "GOLD",
@@ -5499,7 +5499,7 @@
     "title": "miRsponge: an R/Bioconductor package for the identification and analysis of miRNA sponge interaction networks and modules",
     "venue": "bioRxiv",
     "year": 2018,
-    "citationCount": 22,
+    "citationCount": 21,
     "openAccessPdf": {
       "url": "https://www.biorxiv.org/content/biorxiv/early/2019/03/21/507749.full.pdf",
       "status": "GREEN",
@@ -5696,7 +5696,7 @@
     "title": "CancerSubtypes: an R/Bioconductor package for molecular cancer subtype identification, validation and visualization",
     "venue": "Bioinform.",
     "year": 2017,
-    "citationCount": 217,
+    "citationCount": 218,
     "openAccessPdf": {
       "url": "https://academic.oup.com/bioinformatics/article-pdf/33/19/3131/25164758/btx378.pdf",
       "status": "BRONZE",
@@ -6258,7 +6258,7 @@
     "title": "Identifying Cancer Subtypes from miRNA-TF-mRNA Regulatory Networks and Expression Data",
     "venue": "PLoS ONE",
     "year": 2016,
-    "citationCount": 65,
+    "citationCount": 66,
     "openAccessPdf": {
       "url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0152792&type=printable",
       "status": "GOLD",
@@ -6919,7 +6919,7 @@
     "title": "A Fast PC Algorithm for High Dimensional Causal Discovery with Multi-Core PCs",
     "venue": "IEEE/ACM Transactions on Computational Biology & Bioinformatics",
     "year": 2015,
-    "citationCount": 178,
+    "citationCount": 180,
     "openAccessPdf": {
       "url": "http://arxiv.org/pdf/1502.02454",
       "status": "GREEN",
