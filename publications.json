@@ -2,12 +2,14 @@
   {
     "paperId": "6263a5ec6770373f24044b7345596b5442f95543",
     "externalIds": {
+      "DBLP": "journals/corr/abs-2603-11059",
       "ArXiv": "2603.11059",
+      "DOI": "10.48550/arXiv.2603.11059",
       "CorpusId": 286489328
     },
     "url": "https://www.semanticscholar.org/paper/6263a5ec6770373f24044b7345596b5442f95543",
     "title": "Identifying the Group to Intervene on to Maximise Effect Under Cross-Group Interference",
-    "venue": "",
+    "venue": "arXiv.org",
     "year": 2026,
     "citationCount": 0,
     "openAccessPdf": {
@@ -48,12 +50,14 @@
   {
     "paperId": "b32c3a191398c586d3bd3e6e97ba387e0d0a886d",
     "externalIds": {
+      "DBLP": "journals/corr/abs-2604-20255",
       "ArXiv": "2604.20255",
+      "DOI": "10.48550/arXiv.2604.20255",
       "CorpusId": 287668509
     },
     "url": "https://www.semanticscholar.org/paper/b32c3a191398c586d3bd3e6e97ba387e0d0a886d",
     "title": "uLEAD-TabPFN: Uncertainty-aware Dependency-based Anomaly Detection with TabPFN",
-    "venue": "",
+    "venue": "arXiv.org",
     "year": 2026,
     "citationCount": 1,
     "openAccessPdf": {
@@ -153,7 +157,7 @@
     "title": "Omics-based computational approaches for biomarker identification, prediction, and treatment of Long COVID.",
     "venue": "Critical reviews in clinical laboratory sciences",
     "year": 2025,
-    "citationCount": 1,
+    "citationCount": 2,
     "openAccessPdf": {
       "url": "",
       "status": null,
@@ -4396,7 +4400,7 @@
     "title": "LMSM: A modular approach for identifying lncRNA related miRNA sponge modules in breast cancer",
     "venue": "bioRxiv",
     "year": 2019,
-    "citationCount": 21,
+    "citationCount": 22,
     "openAccessPdf": {
       "url": "https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1007851&type=printable",
       "status": "GREEN",
@@ -6124,7 +6128,7 @@
     "title": "Mining heterogeneous causal effects for personalized cancer treatment",
     "venue": "Bioinform.",
     "year": 2017,
-    "citationCount": 55,
+    "citationCount": 56,
     "openAccessPdf": {
       "url": "https://academic.oup.com/bioinformatics/article-pdf/33/15/2372/25157695/btx174.pdf",
       "status": "BRONZE",
@@ -6919,7 +6923,7 @@
     "title": "A Fast PC Algorithm for High Dimensional Causal Discovery with Multi-Core PCs",
     "venue": "IEEE/ACM Transactions on Computational Biology & Bioinformatics",
     "year": 2015,
-    "citationCount": 180,
+    "citationCount": 181,
     "openAccessPdf": {
       "url": "http://arxiv.org/pdf/1502.02454",
       "status": "GREEN",
