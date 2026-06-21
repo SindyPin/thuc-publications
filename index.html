@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr Thuc Duy Le — Associate Professor, Adelaide University</title>
+<meta name="description" content="Dr Thuc Duy Le — Associate Professor at Adelaide University. Research in causal inference, machine learning, and bioinformatics: gene regulatory networks, cancer drivers, non-coding RNAs and cancer subtype discovery.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opt@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#140F50;          /* Adelaide University dark blue */
+  --ink-2:#211a78;
+  --bright:#16B6D9;       /* Adelaide bright blue accent */
+  --bright-2:#0e9bbd;
+  --cream:#F8EFE0;        /* warm parchment surface */
+  --bg:#FAFBFE;
+  --card:#FFFFFF;
+  --text:#1b1b2b;
+  --muted:#5e5e76;
+  --line:#e7e8f0;
+  --shadow:0 1px 2px rgba(20,15,80,.04),0 8px 28px rgba(20,15,80,.07);
+  --shadow-lg:0 18px 50px rgba(20,15,80,.16);
+  --radius:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  color:var(--text);background:var(--bg);line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--bright-2);text-decoration:none;transition:color .15s}
+a:hover{color:var(--ink)}
+h1,h2,h3{font-family:'Newsreader',Georgia,serif;color:var(--ink);line-height:1.15;font-weight:600}
+.serif{font-family:'Newsreader',Georgia,serif}
+section{scroll-margin-top:84px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+/* ---------- NAV ---------- */
+.nav{
+  position:sticky;top:0;z-index:50;backdrop-filter:saturate(160%) blur(10px);
+  background:rgba(255,255,255,.82);border-bottom:1px solid var(--line);
+}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:11px;font-weight:700;color:var(--ink)}
+.brand .crest{width:34px;height:34px;flex:none}
+.brand small{display:block;font-weight:500;font-size:11px;letter-spacing:.04em;color:var(--muted);text-transform:uppercase}
+.brand b{font-size:15px}
+.nav-links{display:flex;gap:6px;align-items:center}
+.nav-links a{
+  color:var(--ink);font-weight:500;font-size:14.5px;padding:8px 12px;border-radius:10px;
+}
+.nav-links a:hover{background:var(--cream);color:var(--ink)}
+.nav-toggle{display:none;background:none;border:0;cursor:pointer;padding:8px;color:var(--ink)}
+@media(max-width:820px){
+  .nav-links{position:absolute;top:64px;left:0;right:0;flex-direction:column;align-items:stretch;
+    background:#fff;border-bottom:1px solid var(--line);padding:8px 16px;gap:2px;display:none;box-shadow:var(--shadow)}
+  .nav-links.open{display:flex}
+  .nav-links a{padding:11px 12px}
+  .nav-toggle{display:block}
+}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;overflow:hidden;color:#fff;
+  background:radial-gradient(1100px 460px at 82% -8%,rgba(22,182,217,.42),transparent 60%),
+             linear-gradient(150deg,var(--ink) 0%,var(--ink-2) 62%,#2a1f8f 100%);}
+.hero::after{content:"";position:absolute;inset:0;
+  background:radial-gradient(680px 280px at 12% 118%,rgba(22,182,217,.30),transparent 60%);pointer-events:none}
+.hero-inner{display:grid;grid-template-columns:1fr 280px;gap:44px;align-items:center;
+  padding:64px 24px 70px;max-width:1080px;margin:0 auto;position:relative;z-index:1}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600;letter-spacing:.08em;
+  text-transform:uppercase;color:#bfe9f4;background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.18);padding:6px 13px;border-radius:999px;margin-bottom:18px}
+.hero h1{color:#fff;font-size:clamp(2.3rem,5vw,3.5rem);letter-spacing:-.01em}
+.hero .role{font-size:1.18rem;color:#dfe6ff;margin-top:10px;font-weight:500}
+.hero .affil{margin-top:18px;color:#cfd6f5;font-size:15px}
+.hero .affil a{color:#fff;text-decoration:underline;text-decoration-color:rgba(255,255,255,.4);text-underline-offset:3px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14.5px;
+  padding:11px 18px;border-radius:12px;border:1px solid transparent;cursor:pointer;transition:.18s}
+.btn svg{width:17px;height:17px}
+.btn-primary{background:var(--bright);color:#06303a;border-color:rgba(255,255,255,.25)}
+.btn-primary:hover{background:#fff;color:var(--ink);transform:translateY(-2px)}
+.btn-ghost{background:rgba(255,255,255,.08);color:#fff;border-color:rgba(255,255,255,.26)}
+.btn-ghost:hover{background:rgba(255,255,255,.18);color:#fff;transform:translateY(-2px)}
+.portrait{justify-self:center}
+.avatar{width:230px;height:230px;border-radius:24px;position:relative;overflow:hidden;
+  border:4px solid rgba(255,255,255,.85);box-shadow:var(--shadow-lg);
+  background:linear-gradient(150deg,#2a2196,#16B6D9)}
+.avatar img{width:100%;height:100%;object-fit:cover;display:block;position:relative;z-index:2}
+.avatar .mono{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  font-family:'Newsreader',serif;font-size:84px;color:rgba(255,255,255,.92);z-index:1}
+@media(max-width:780px){
+  .hero-inner{grid-template-columns:1fr;text-align:center;gap:30px;padding-top:48px}
+  .hero-cta{justify-content:center}
+  .portrait{order:-1}
+  .avatar{width:180px;height:180px}
+}
+
+/* ---------- QUICK LINK PILLS ---------- */
+.pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.pill{display:inline-flex;align-items:center;gap:7px;font-size:13.5px;font-weight:500;color:#eaf0ff;
+  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);padding:7px 13px;border-radius:999px}
+.pill:hover{background:rgba(255,255,255,.16);color:#fff;transform:translateY(-2px);transition:.18s}
+.pill svg{width:15px;height:15px}
+@media(max-width:780px){.pills{justify-content:center}}
+
+/* ---------- SECTION SHELL ---------- */
+.block{padding:64px 0}
+.block.alt{background:linear-gradient(180deg,#fff, #f6f4ee)}
+.sec-head{display:flex;align-items:center;gap:13px;margin-bottom:26px}
+.sec-ic{width:42px;height:42px;border-radius:12px;flex:none;display:flex;align-items:center;justify-content:center;
+  background:var(--cream);color:var(--ink);border:1px solid #efe6d6}
+.sec-ic svg{width:22px;height:22px}
+.sec-head h2{font-size:1.9rem}
+.sec-head p{color:var(--muted);font-size:14px;margin-top:2px}
+.lead{font-size:1.06rem;color:#34344a;max-width:75ch}
+.lead a{font-weight:600}
+
+/* ---------- RESEARCH CARDS ---------- */
+.grid{display:grid;gap:18px}
+.cards-3{grid-template-columns:repeat(3,1fr)}
+@media(max-width:780px){.cards-3{grid-template-columns:1fr}}
+.rcard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);transition:.2s}
+.rcard:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:#d8dbef}
+.rcard .ic{width:46px;height:46px;border-radius:13px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(150deg,var(--ink),var(--ink-2));color:#fff;margin-bottom:14px}
+.rcard .ic svg{width:23px;height:23px}
+.rcard h3{font-size:1.18rem;margin-bottom:6px}
+.rcard p{color:var(--muted);font-size:14.5px}
+
+/* ---------- STATS ---------- */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}
+@media(max-width:680px){.stats{grid-template-columns:repeat(2,1fr)}}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;text-align:center;box-shadow:var(--shadow)}
+.stat b{display:block;font-family:'Newsreader',serif;font-size:2rem;color:var(--ink);line-height:1}
+.stat span{font-size:12.5px;color:var(--muted);font-weight:500;letter-spacing:.02em}
+
+/* ---------- LISTS (services / grants) ---------- */
+.tlist{list-style:none;display:grid;gap:12px}
+.tlist li{display:flex;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:14px;
+  padding:14px 16px;box-shadow:var(--shadow);font-size:14.5px}
+.tlist li:hover{border-color:#d8dbef}
+.tlist .dot{flex:none;width:8px;height:8px;border-radius:50%;background:var(--bright);margin-top:8px}
+.grants-grid{columns:2;column-gap:18px}
+.grants-grid li{break-inside:avoid;margin-bottom:12px}
+@media(max-width:720px){.grants-grid{columns:1}}
+.tag{display:inline-block;font-size:11.5px;font-weight:600;color:var(--ink);background:var(--cream);
+  border:1px solid #efe6d6;padding:2px 9px;border-radius:999px;margin-left:6px;white-space:nowrap}
+
+/* ---------- SOFTWARE ---------- */
+.soft-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:780px){.soft-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.soft-grid{grid-template-columns:1fr}}
+.soft{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);
+  border-radius:14px;padding:14px 16px;box-shadow:var(--shadow);transition:.18s}
+.soft:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+.soft .si{width:40px;height:40px;border-radius:11px;flex:none;display:flex;align-items:center;justify-content:center;
+  background:var(--cream);color:var(--ink);font-family:'Newsreader',serif;font-weight:600;border:1px solid #efe6d6}
+.soft b{font-size:14.5px;color:var(--ink)}
+.soft small{color:var(--muted);font-size:12.5px}
+
+/* ---------- PUBLICATIONS ---------- */
+.pub-note{color:var(--muted);font-size:14px;margin-bottom:8px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.pub-note .live{display:inline-flex;align-items:center;gap:6px;font-weight:600;color:var(--bright-2)}
+.pub-note .live i{width:8px;height:8px;border-radius:50%;background:var(--bright);display:inline-block;
+  box-shadow:0 0 0 0 rgba(22,182,217,.6);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(22,182,217,.55)}70%{box-shadow:0 0 0 9px rgba(22,182,217,0)}100%{box-shadow:0 0 0 0 rgba(22,182,217,0)}}
+#auto-publications h3{font-family:'Newsreader',serif;font-size:1.35rem;color:var(--ink);
+  margin:30px 0 14px;padding-bottom:8px;border-bottom:2px solid var(--cream);position:relative}
+#auto-publications h3::before{content:"";position:absolute;bottom:-2px;left:0;width:54px;height:2px;background:var(--bright)}
+#auto-publications .pub-list{list-style:none;display:grid;gap:13px;counter-reset:p}
+#auto-publications .pub-item{position:relative;background:var(--card);border:1px solid var(--line);
+  border-left:3px solid var(--bright);border-radius:14px;padding:16px 18px 16px 20px;box-shadow:var(--shadow);transition:.18s}
+#auto-publications .pub-item:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg);border-left-color:var(--ink)}
+#auto-publications .pub-title{font-weight:600;color:var(--ink);font-size:15.5px;line-height:1.4}
+#auto-publications .pub-authors{color:var(--muted);font-size:13.5px}
+#auto-publications .pub-venue{font-style:italic;color:#43435c;font-size:13.5px}
+#auto-publications .pub-links{margin-top:9px;display:flex;flex-wrap:wrap;gap:8px}
+#auto-publications .pub-links a{font-size:12px;font-weight:600;color:var(--ink);background:var(--cream);
+  border:1px solid #efe6d6;padding:3px 10px;border-radius:999px;margin:0}
+#auto-publications .pub-links a:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.skeleton{height:74px;border-radius:14px;background:linear-gradient(90deg,#eef0f7 25%,#f7f8fc 50%,#eef0f7 75%);
+  background-size:200% 100%;animation:sk 1.3s infinite;margin-bottom:12px}
+@keyframes sk{0%{background-position:200% 0}100%{background-position:-200% 0}}
+
+/* ---------- CONTACT ---------- */
+.contact-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:22px}
+@media(max-width:780px){.contact-grid{grid-template-columns:1fr}}
+.cc{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow)}
+.cline{display:flex;align-items:flex-start;gap:13px;padding:11px 0;border-bottom:1px dashed var(--line)}
+.cline:last-child{border-bottom:0}
+.cline .ci{width:38px;height:38px;border-radius:11px;flex:none;display:flex;align-items:center;justify-content:center;
+  background:var(--cream);color:var(--ink);border:1px solid #efe6d6}
+.cline .ci svg{width:19px;height:19px}
+.cline b{font-size:13px;color:var(--ink);display:block}
+.cline span,.cline a{font-size:14px;color:var(--muted)}
+.socials{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.soc{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:13.5px;color:var(--ink);
+  background:#fff;border:1px solid var(--line);padding:9px 13px;border-radius:12px;box-shadow:var(--shadow);transition:.18s}
+.soc:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg);color:var(--ink);border-color:#d3d6ee}
+.soc svg{width:17px;height:17px}
+
+/* ---------- FOOTER ---------- */
+footer{background:var(--ink);color:#cfd6f5;padding:40px 0 30px;margin-top:10px}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+footer .brand b,footer .brand small{color:#fff}
+footer a{color:#bfe9f4}
+footer small{color:#9aa3cf;font-size:12.5px}
+.totop{display:inline-flex;align-items:center;gap:7px;color:#fff;font-size:13px;font-weight:600;
+  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);padding:8px 13px;border-radius:10px}
+.totop:hover{background:rgba(255,255,255,.2);color:#fff}
+</style>
+</head>
+<body>
+
+<!-- crest symbol reused via <use> -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="crest" viewBox="0 0 48 48">
+    <rect x="2" y="2" width="44" height="44" rx="11" fill="#140F50"/>
+    <path d="M24 9l3.6 7.6 8.4 1-6 6 1.5 8.3L24 35l-7.5 4 1.5-8.3-6-6 8.4-1z" fill="#16B6D9"/>
+    <text x="24" y="44" text-anchor="middle" font-family="Newsreader,serif" font-size="9" fill="#fff" opacity=".0">AU</text>
+  </symbol>
+</svg>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top">
+      <svg class="crest"><use href="#crest"/></svg>
+      <span><b>Thuc Duy Le</b><small>Adelaide University</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('open')">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="nav-links" id="navlinks">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#service">Service</a>
+      <a href="#grants">Grants</a>
+      <a href="#software">Software</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<a id="top"></a>
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <span class="eyebrow">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.8 5 21.4l1.4-6.8L1.3 9.9l6.9-.8z"/></svg>
+        Causal inference · Machine learning · Bioinformatics
+      </span>
+      <h1>Dr Thuc Duy Le</h1>
+      <p class="role">Associate Professor</p>
+      <p class="affil">
+        <a href="https://4llab.net" target="_blank" rel="noopener">Data Analytics Group</a> ·
+        <a href="https://www.adelaide.edu.au" target="_blank" rel="noopener">Adelaide University</a>, South Australia
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#publications">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          View Publications
+        </a>
+        <a class="btn btn-ghost" href="https://orcid.org/0000-0002-9732-4313" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zM7.4 18H5.5V8.3h1.9V18zM6.4 7.1a1.1 1.1 0 1 1 0-2.2 1.1 1.1 0 0 1 0 2.2zM18.5 18h-1.9v-4.7c0-1.1 0-2.6-1.6-2.6s-1.8 1.2-1.8 2.5V18h-1.9V8.3h1.8v1.3h.1c.3-.6 1-1.3 2.3-1.3 2.4 0 2.9 1.6 2.9 3.7V18z"/></svg>
+          ORCID iD
+        </a>
+      </div>
+      <div class="pills">
+        <a class="pill" href="https://scholar.google.com.au/citations?user=wMSCRxUAAAAJ" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3L1 9l11 6 9-4.9V17h2V9L12 3z"/><path d="M5 13.2V17c0 1.7 3.1 3 7 3s7-1.3 7-3v-3.8l-7 3.8-7-3.8z" fill="currentColor"/></svg>
+          Google Scholar
+        </a>
+        <a class="pill" href="https://www.researchgate.net/profile/Thuc-Le" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.6 0H4.4A4.4 4.4 0 0 0 0 4.4v15.2A4.4 4.4 0 0 0 4.4 24h15.2a4.4 4.4 0 0 0 4.4-4.4V4.4A4.4 4.4 0 0 0 19.6 0zM8 17.5H6V9h2v8.5zM7 7.8A1.2 1.2 0 1 1 7 5.4a1.2 1.2 0 0 1 0 2.4zm11 9.7h-2v-4.3c0-1.6-1.9-1.5-1.9 0v4.3h-2V9h2v1.1c.8-1.5 3.9-1.6 3.9 1.4v6z"/></svg>
+          ResearchGate
+        </a>
+        <a class="pill" href="https://4llab.net" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+          4LLab
+        </a>
+      </div>
+    </div>
+    <div class="portrait">
+      <div class="avatar">
+        <span class="mono">TL</span>
+        <img src="Thuc_photo.jpeg" alt="Dr Thuc Duy Le" onerror="this.style.display='none'">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="block">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></span>
+      <div><h2>About</h2><p>Researcher · educator · fellow</p></div>
+    </div>
+    <p class="lead">
+      I am an Associate Professor at Adelaide University. I was an ARC DECRA Fellow (2020&ndash;2022) and,
+      before that, an NHMRC Early Career Research Fellow in Bioinformatics / Computational Biology (2017&ndash;2019).
+      Bioinformatics is an inter-disciplinary research area that draws on Computer Science, Mathematics and Statistics
+      to solve biological problems. My research focuses on the development of <b>causal inference methods</b> and their
+      applications in bioinformatics &mdash; particularly gene regulatory networks, cancer drivers, non-coding RNAs and
+      cancer subtype discovery.
+    </p>
+    <p class="lead" style="margin-top:16px">
+      I have a diverse educational background with a BSc and MSc in Mathematics, a BSc in Computer Science, and a PhD in
+      Data Science. I was awarded the <b>Ian Davey Thesis Prize</b> for the most outstanding PhD thesis, was a visiting
+      researcher at the University of Michigan (2015), and a visiting professor at the University of Pennsylvania (2019).
+      My report <a href="./SummaryLight.pdf">Causal inference and machine learning applications in Bioinformatics</a>
+      summarises my recent research, and <a href="./THUC_LE_CV_2018.pdf">my CV</a> is available here.
+    </p>
+
+    <div class="stats">
+      <div class="stat"><b>140+</b><span>Publications</span></div>
+      <div class="stat"><b>6</b><span>Software packages</span></div>
+      <div class="stat"><b>$1.5M+</b><span>Research funding</span></div>
+      <div class="stat"><b>5</b><span>KDD workshops chaired</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESEARCH ============ -->
+<section id="research" class="block alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3v6l-5 9a2 2 0 0 0 2 3h12a2 2 0 0 0 2-3l-5-9V3"/><path d="M8 3h8M8 13h8"/></svg></span>
+      <div><h2>Research interests</h2><p>Where causality meets biology and AI</p></div>
+    </div>
+    <div class="grid cards-3">
+      <div class="rcard">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="5" cy="6" r="2.5"/><circle cx="19" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M7 7l4 9M17 7l-4 9"/></svg></div>
+        <h3>Causal inference</h3>
+        <p>New theory and methods for discovering causal relationships from observational data, including instrumental variables and intervention.</p>
+      </div>
+      <div class="rcard">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a3 3 0 0 0-3 3 3 3 0 0 0-2 5 3 3 0 0 0 0 4 3 3 0 0 0 2 5 3 3 0 0 0 6 0 3 3 0 0 0 2-5 3 3 0 0 0 0-4 3 3 0 0 0-2-5 3 3 0 0 0-3-3z"/></svg></div>
+        <h3>Gene regulatory networks</h3>
+        <p>Inferring how genes, microRNAs and non-coding RNAs regulate one another to characterise cancer subtypes.</p>
+      </div>
+      <div class="rcard">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg></div>
+        <h3>Cancer genomics</h3>
+        <p>Identifying cancer driver genes and cooperative drivers of progression with dynamic causal inference.</p>
+      </div>
+      <div class="rcard">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 3v18M3 9h6M15 7h3M15 12h3M15 17h3"/></svg></div>
+        <h3>Machine learning</h3>
+        <p>Trustworthy, explainable and competency-aware ML, including generative and representation learning.</p>
+      </div>
+      <div class="rcard">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M5 8l7-5 7 5M5 8v8l7 5 7-5V8"/></svg></div>
+        <h3>Multi-omics integration</h3>
+        <p>Integrative frameworks combining genomic, transcriptomic and clinical data &mdash; e.g. causal gene discovery in Long&nbsp;COVID.</p>
+      </div>
+      <div class="rcard">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+        <h3>Applied data science</h3>
+        <p>Personalised intervention and survival analysis for real-world impact, including disability employment services.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICE ============ -->
+<section id="service" class="block">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7L9 18l-5-5"/></svg></span>
+      <div><h2>Academic service</h2><p>Selected roles</p></div>
+    </div>
+    <ul class="tlist">
+      <li><span class="dot"></span><div>Chair, <b>KDD Causal Discovery Workshop</b> <span class="tag">2018&ndash;2023</span></div></li>
+      <li><span class="dot"></span><div>Program Committee co-chair, <b>AusDM 2019</b></div></li>
+      <li><span class="dot"></span><div>Academic Editor, <b>PLOS ONE</b></div></li>
+      <li><span class="dot"></span><div>Reviewer for <b>NAR, Bioinformatics, BMC Bioinformatics, PLOS Computational Biology, Briefings in Bioinformatics, IEEE TKDE, Nature Communications</b></div></li>
+      <li><span class="dot"></span><div>Program Committee member, <b>AAAI, PAKDD, KDD</b></div></li>
+      <li><span class="dot"></span><div>Grant reviewer, <b>NHMRC, ARC</b></div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ GRANTS ============ -->
+<section id="grants" class="block alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><circle cx="12" cy="12" r="3"/><path d="M6 9v6M18 9v6"/></svg></span>
+      <div><h2>Grants &amp; awards</h2><p>Selected funding</p></div>
+    </div>
+    <ul class="tlist grants-grid">
+      <li><span class="dot"></span><div>ARC Discovery Project &mdash; Competency-aware &amp; assuring machine learning systems (with L. Liu, J. Li, J. Liu) <span class="tag">2023&ndash;25 · $420K</span></div></li>
+      <li><span class="dot"></span><div>ARC DECRA &mdash; Next-generation causal inference methods for biological data <span class="tag">2020&ndash;22 · $418K</span></div></li>
+      <li><span class="dot"></span><div>NHMRC Fellowship &mdash; Systems biology of non-coding RNAs in cancer subtypes <span class="tag">2017&ndash;20 · $318K</span></div></li>
+      <li><span class="dot"></span><div>Industry funding (Maxima) &mdash; Skill recommendation for disability employment services <span class="tag">2020&ndash;23 · $90K</span></div></li>
+      <li><span class="dot"></span><div>Project support funding for Fellowship <span class="tag">2017&ndash;22 · $120K</span></div></li>
+      <li><span class="dot"></span><div>RTIS research funding <span class="tag">2018&ndash;20 · $80K</span></div></li>
+      <li><span class="dot"></span><div>RTIS Seed Funding <span class="tag">2019 · $40K</span></div></li>
+      <li><span class="dot"></span><div>ITEE Division investment funding <span class="tag">2017 · $25K</span></div></li>
+      <li><span class="dot"></span><div>ECR Travel Award (visit UPenn) <span class="tag">2019 · $12K</span></div></li>
+      <li><span class="dot"></span><div>Ian Davey Thesis Prize <span class="tag">2015 · $5K</span></div></li>
+      <li><span class="dot"></span><div>ECR Networking Award <span class="tag">2015 · $5K</span></div></li>
+      <li><span class="dot"></span><div>EMBL Australia &amp; Germany Travel Grant <span class="tag">2012 · $4K</span></div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ SOFTWARE ============ -->
+<section id="software" class="block">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 6l-5 6 5 6M16 6l5 6-5 6"/></svg></span>
+      <div><h2>Software</h2><p>Open-source packages &amp; tools</p></div>
+    </div>
+    <div class="soft-grid">
+      <a class="soft" href="https://bioconductor.org/packages/miRLAB/" target="_blank" rel="noopener"><span class="si">mi</span><span><b>miRLAB</b><br><small>Bioconductor</small></span></a>
+      <a class="soft" href="https://bioconductor.org/packages/CancerSubtypes/" target="_blank" rel="noopener"><span class="si">Cs</span><span><b>CancerSubtypes</b><br><small>Bioconductor</small></span></a>
+      <a class="soft" href="https://bioconductor.org/packages/miRspongeR/" target="_blank" rel="noopener"><span class="si">sp</span><span><b>miRspongeR</b><br><small>Bioconductor</small></span></a>
+      <a class="soft" href="https://bioconductor.org/packages/miRBaseConverter/" target="_blank" rel="noopener"><span class="si">Bc</span><span><b>miRBaseConverter</b><br><small>Bioconductor</small></span></a>
+      <a class="soft" href="https://cran.r-project.org/package=ParallelPC" target="_blank" rel="noopener"><span class="si">Pc</span><span><b>ParallelPC</b><br><small>CRAN</small></span></a>
+      <a class="soft" href="#publications"><span class="si">Cb</span><span><b>Causal Book</b><br><small>Practical causal exploration</small></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PUBLICATIONS ============ -->
+<section id="publications" class="block alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+      <div><h2>Publications</h2><p>Books, journals, conferences &amp; preprints</p></div>
+    </div>
+    <p class="pub-note">
+      <span class="live"><i></i>Live</span>
+      This list updates automatically from his
+      <a href="https://orcid.org/0000-0002-9732-4313" target="_blank" rel="noopener">ORCID record</a> /
+      <a href="https://www.semanticscholar.org/author/T.-Le/3141770" target="_blank" rel="noopener">Semantic Scholar</a>.
+    </p>
+
+    <div id="auto-publications">
+      <!-- Static fallback: recent work (shown if live fetch is unavailable) -->
+      <h3>2026</h3>
+      <ol class="pub-list">
+        <li class="pub-item"><span class="pub-title">Identifying the Group to Intervene on to Maximise Effect Under Cross-Group Interference</span><br><span class="pub-authors">X. Du, J. Li, L. Liu, D. Cheng, J. Liu, T. Le</span><br><span class="pub-venue">arXiv.org</span><div class="pub-links"><a href="https://arxiv.org/abs/2603.11059" target="_blank" rel="noopener">arXiv</a></div></li>
+        <li class="pub-item"><span class="pub-title">uLEAD-TabPFN: Uncertainty-aware Dependency-based Anomaly Detection with TabPFN</span><br><span class="pub-authors">S. Lu, J. Liu, S. Peters, T. Le, C. Xie, L. Liu, &hellip;</span><br><span class="pub-venue">arXiv.org</span><div class="pub-links"><a href="https://arxiv.org/abs/2604.20255" target="_blank" rel="noopener">arXiv</a></div></li>
+      </ol>
+      <h3>2025</h3>
+      <ol class="pub-list">
+        <li class="pub-item"><span class="pub-title">Omics-based computational approaches for biomarker identification, prediction, and treatment of Long COVID</span><br><span class="pub-authors">S. Pinero, X. Li, J. Zhang, M. Winter, S. H. Lee, T. Nguyen, &hellip;</span><br><span class="pub-venue">Critical Reviews in Clinical Laboratory Sciences</span><div class="pub-links"><a href="https://doi.org/10.1080/10408363.2025.2583083" target="_blank" rel="noopener">DOI</a><a href="https://pubmed.ncbi.nlm.nih.gov/41368891" target="_blank" rel="noopener">PubMed</a></div></li>
+        <li class="pub-item"><span class="pub-title">Integrative multi-omics framework for causal gene discovery in Long COVID</span><br><span class="pub-authors">S. Pinero, X. Li, L. Liu, J. Li, S. H. Lee, M. Winter, &hellip;</span><br><span class="pub-venue">PLOS Computational Biology</span><div class="pub-links"><a href="https://doi.org/10.1371/journal.pcbi.1013725" target="_blank" rel="noopener">DOI</a><a href="https://pubmed.ncbi.nlm.nih.gov/41325417" target="_blank" rel="noopener">PubMed</a></div></li>
+        <li class="pub-item"><span class="pub-title">Diffusion Models for Attribution</span><br><span class="pub-authors">X. Chen, J. Li, J. Liu, L. Liu, S. Peters, T. Le, &hellip;</span><br><span class="pub-venue">AAAI Conference on Artificial Intelligence</span><div class="pub-links"><a href="https://doi.org/10.1609/aaai.v39i2.32226" target="_blank" rel="noopener">DOI</a></div></li>
+        <li class="pub-item"><span class="pub-title">Linking model intervention to causal interpretation in model explanation</span><br><span class="pub-authors">D. Cheng, Z. Xu, J. Li, L. Liu, K. Yu, T. Le, &hellip;</span><br><span class="pub-venue">Pattern Recognition</span><div class="pub-links"><a href="https://doi.org/10.1016/j.patcog.2025.112814" target="_blank" rel="noopener">DOI</a></div></li>
+      </ol>
+      <h3>2024</h3>
+      <ol class="pub-list">
+        <li class="pub-item"><span class="pub-title">Disentangled Representation Learning for Causal Inference With Instruments</span><br><span class="pub-authors">D. Cheng, J. Li, L. Liu, Z. Xu, W. Zhang, J. Liu, &hellip;</span><br><span class="pub-venue">IEEE Transactions on Neural Networks and Learning Systems</span><div class="pub-links"><a href="https://doi.org/10.1109/TNNLS.2024.3512790" target="_blank" rel="noopener">DOI</a><a href="https://pubmed.ncbi.nlm.nih.gov/40030572" target="_blank" rel="noopener">PubMed</a></div></li>
+        <li class="pub-item"><span class="pub-title">Scanning sample-specific miRNA regulation from bulk and single-cell RNA-sequencing data</span><br><span class="pub-authors">J. Zhang, L. Liu, X. Wei, C. Zhao, Y. Luo, J. Li, &hellip;</span><br><span class="pub-venue">BMC Biology</span><div class="pub-links"><a href="https://doi.org/10.1186/s12915-024-02020-x" target="_blank" rel="noopener">DOI</a><a href="https://pubmed.ncbi.nlm.nih.gov/39334271" target="_blank" rel="noopener">PubMed</a></div></li>
+        <li class="pub-item"><span class="pub-title">Deconfounding Multi-Cause Latent Confounders: A Factor-Model Approach to Climate Model Bias Correction</span><br><span class="pub-authors">W. Gao, J. Li, D. Cheng, L. Liu, J. Liu, T. Le, &hellip;</span><br><span class="pub-venue">International Joint Conference on Artificial Intelligence (IJCAI)</span><div class="pub-links"><a href="https://doi.org/10.24963/ijcai.2024/1071" target="_blank" rel="noopener">DOI</a><a href="https://arxiv.org/abs/2408.12063" target="_blank" rel="noopener">arXiv</a></div></li>
+      </ol>
+      <p style="color:var(--muted);font-size:13.5px;margin-top:14px">Loading the full, up-to-date list&hellip;</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="block">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M4 7l8 6 8-6"/></svg></span>
+      <div><h2>Contact</h2><p>Get in touch &amp; connect</p></div>
+    </div>
+    <div class="contact-grid">
+      <div class="cc">
+        <div class="cline">
+          <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+          <div><b>Email</b><a href="mailto:thuc.le@adelaide.edu.au">thuc.le@adelaide.edu.au</a></div>
+        </div>
+        <div class="cline">
+          <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span>
+          <div><b>Phone</b><span>+61 8 8302 3996</span></div>
+        </div>
+        <div class="cline">
+          <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div><b>Office</b><span>Data Analytics Group, Adelaide University, South Australia, Australia</span></div>
+        </div>
+      </div>
+      <div class="cc">
+        <b class="serif" style="font-size:1.15rem;color:var(--ink)">Profiles</b>
+        <div class="socials" style="margin-top:14px">
+          <a class="soc" href="https://orcid.org/0000-0002-9732-4313" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="#A6CE39"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zM7.4 18H5.5V8.3h1.9V18zM6.4 7.1a1.1 1.1 0 1 1 0-2.2 1.1 1.1 0 0 1 0 2.2zM18.5 18h-1.9v-4.7c0-1.1 0-2.6-1.6-2.6s-1.8 1.2-1.8 2.5V18h-1.9V8.3h1.8v1.3h.1c.3-.6 1-1.3 2.3-1.3 2.4 0 2.9 1.6 2.9 3.7V18z"/></svg>ORCID</a>
+          <a class="soc" href="https://scholar.google.com.au/citations?user=wMSCRxUAAAAJ" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="#4285F4"><path d="M12 3L1 9l11 6 9-4.9V17h2V9z"/><path d="M5 13.2V17c0 1.7 3.1 3 7 3s7-1.3 7-3v-3.8l-7 3.8z"/></svg>Google Scholar</a>
+          <a class="soc" href="https://www.researchgate.net/profile/Thuc-Le" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="#00CCBB"><path d="M19.6 0H4.4A4.4 4.4 0 0 0 0 4.4v15.2A4.4 4.4 0 0 0 4.4 24h15.2a4.4 4.4 0 0 0 4.4-4.4V4.4A4.4 4.4 0 0 0 19.6 0zM8 17.5H6V9h2v8.5zM7 7.8a1.2 1.2 0 1 1 0-2.4 1.2 1.2 0 0 1 0 2.4zm11 9.7h-2v-4.3c0-1.6-1.9-1.5-1.9 0v4.3h-2V9h2v1.1c.8-1.5 3.9-1.6 3.9 1.4z"/></svg>ResearchGate</a>
+          <a class="soc" href="https://4llab.net" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>Data Analytics Group</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <svg class="crest" style="width:34px;height:34px"><use href="#crest"/></svg>
+      <span><b>Dr Thuc Duy Le</b><small>Adelaide University · South Australia</small></span>
+    </a>
+    <div style="text-align:right">
+      <a class="totop" href="#top">↑ Back to top</a>
+      <div style="margin-top:10px"><small>© <span id="yr"></span> Thuc Duy Le · Causal inference &amp; bioinformatics</small></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+// Auto-update the full publication list (keeps the page current)
+fetch('https://raw.githubusercontent.com/SindyPin/thuc-publications/main/publications.html')
+  .then(r => { if(!r.ok) throw new Error('offline'); return r.text(); })
+  .then(html => { document.getElementById('auto-publications').innerHTML = html; })
+  .catch(() => { /* keep the styled static recent-publications fallback already in the page */ });
+
+// Close mobile menu after clicking a link
+document.querySelectorAll('#navlinks a').forEach(a =>
+  a.addEventListener('click', () => document.getElementById('navlinks').classList.remove('open')));
+</script>
+</body>
+</html>

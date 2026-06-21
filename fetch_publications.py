@@ -1,121 +1,208 @@
 #!/usr/bin/env python3
 """
-Fetch publications from Semantic Scholar API and generate HTML.
-This script fetches all publications for Dr. Thuc Le and generates
-an HTML file that can be included in the website.
+Fetch Dr Thuc Duy Le's publications from ORCID and generate HTML.
+
+Source of truth:
+    ORCID  : https://orcid.org/0000-0002-9732-4313
+
+The ORCID public API returns the canonical list of works. Because ORCID work
+summaries don't always include full author lists or journal names, each work is
+enriched via Crossref (by DOI) when possible. Works without a DOI fall back to
+the metadata stored in ORCID itself.
 
 Usage:
     python fetch_publications.py
 
 Output:
-    - publications.html: HTML snippet with all publications
-    - publications.json: Raw data backup
+    - publications.html : HTML snippet embedded by the website (index.html)
+    - publications.json : Raw data backup
 """
 
 import requests
 import json
-from datetime import datetime
-from collections import defaultdict
 import time
 import os
+from datetime import datetime
+from collections import defaultdict
 
+# ----------------------------------------------------------------------------
 # Configuration
+# ----------------------------------------------------------------------------
 AUTHOR_NAME = "Thuc Duy Le"
-# Semantic Scholar author ID for Dr. Thuc Le (UniSA)
-# You can find this by searching: https://www.semanticscholar.org/
-AUTHOR_ID = "3141770"  # This is Thuc Duy Le's Semantic Scholar ID
+ORCID_ID = "0000-0002-9732-4313"          # Dr Thuc Duy Le
+CONTACT_EMAIL = "thuc.le@adelaide.edu.au"  # used as a polite Crossref User-Agent
 
-# Alternative: Use Google Scholar ID with scholarly library
-GOOGLE_SCHOLAR_ID = "wMSCRxUAAAAJ"
+ORCID_API = "https://pub.orcid.org/v3.0"
+CROSSREF_API = "https://api.crossref.org/works"
 
-# API endpoints
-SEMANTIC_SCHOLAR_API = "https://api.semanticscholar.org/graph/v1"
+HEADERS_ORCID = {"Accept": "application/json"}
+HEADERS_CROSSREF = {
+    "User-Agent": f"thuc-publications/2.0 (mailto:{CONTACT_EMAIL})"
+}
+
+MAX_AUTHORS = 6  # show at most this many authors, then ", ..."
 
 
-def fetch_from_semantic_scholar(author_id: str) -> list:
-    """Fetch all publications from Semantic Scholar API."""
-    publications = []
-    offset = 0
-    limit = 100
-    
-    print(f"Fetching publications for author ID: {author_id}")
-    
-    while True:
-        url = f"{SEMANTIC_SCHOLAR_API}/author/{author_id}/papers"
-        params = {
-            "fields": "title,year,authors,venue,publicationDate,externalIds,url,citationCount,abstract",
-            "limit": limit,
-            "offset": offset
-        }
-        
+# ----------------------------------------------------------------------------
+# ORCID
+# ----------------------------------------------------------------------------
+def fetch_orcid_works(orcid_id: str) -> list:
+    """Return the list of work-summary groups from ORCID."""
+    url = f"{ORCID_API}/{orcid_id}/works"
+    print(f"Fetching ORCID works for {orcid_id} ...")
+    r = requests.get(url, headers=HEADERS_ORCID, timeout=60)
+    r.raise_for_status()
+    groups = r.json().get("group", [])
+    print(f"  ORCID returned {len(groups)} work groups")
+    return groups
+
+
+def best_external_ids(summary: dict) -> dict:
+    """Extract DOI / arXiv / PubMed ids from an ORCID work summary."""
+    ids = {}
+    ext = (summary.get("external-ids") or {}).get("external-id", []) or []
+    for e in ext:
+        typ = (e.get("external-id-type") or "").lower()
+        val = e.get("external-id-value") or ""
+        if not val:
+            continue
+        if typ == "doi" and "doi" not in ids:
+            ids["doi"] = val.replace("https://doi.org/", "").strip()
+        elif typ == "arxiv" and "arxiv" not in ids:
+            ids["arxiv"] = val.replace("arXiv:", "").strip()
+        elif typ in ("pmid", "pubmed") and "pmid" not in ids:
+            ids["pmid"] = val.strip()
+    return ids
+
+
+def parse_orcid_summary(summary: dict) -> dict:
+    """Build a publication record from an ORCID work summary (no Crossref)."""
+    title = (((summary.get("title") or {}).get("title") or {}).get("value")) or "Untitled"
+    journal = (summary.get("journal-title") or {}).get("value") or ""
+    year = None
+    pub_date = summary.get("publication-date") or {}
+    if pub_date and pub_date.get("year"):
         try:
-            response = requests.get(url, params=params, timeout=30)
-            response.raise_for_status()
-            data = response.json()
-            
-            papers = data.get("data", [])
-            if not papers:
-                break
-                
-            publications.extend(papers)
-            print(f"  Fetched {len(publications)} papers so far...")
-            
-            offset += limit
-            time.sleep(1)  # Rate limiting
-            
-        except requests.exceptions.RequestException as e:
-            print(f"Error fetching from Semantic Scholar: {e}")
-            break
-    
-    return publications
+            year = int(pub_date["year"]["value"])
+        except (KeyError, TypeError, ValueError):
+            year = None
+    ids = best_external_ids(summary)
+    return {
+        "title": title.strip(),
+        "authors": [],            # ORCID summaries rarely carry co-authors
+        "venue": journal.strip(),
+        "year": year,
+        "doi": ids.get("doi", ""),
+        "arxiv": ids.get("arxiv", ""),
+        "pmid": ids.get("pmid", ""),
+        "source": "orcid",
+    }
 
 
-def search_author_by_name(name: str) -> str:
-    """Search for author ID by name if not known."""
-    url = f"{SEMANTIC_SCHOLAR_API}/author/search"
-    params = {"query": name, "limit": 5}
-    
+# ----------------------------------------------------------------------------
+# Crossref enrichment
+# ----------------------------------------------------------------------------
+def enrich_with_crossref(doi: str) -> dict:
+    """Return {title, authors[], venue, year} for a DOI, or {} on failure."""
     try:
-        response = requests.get(url, params=params, timeout=30)
-        response.raise_for_status()
-        data = response.json()
-        
-        authors = data.get("data", [])
-        for author in authors:
-            # Look for the correct author (UniSA affiliation)
-            print(f"Found: {author.get('name')} (ID: {author.get('authorId')})")
-        
-        if authors:
-            return authors[0].get("authorId")
-            
-    except requests.exceptions.RequestException as e:
-        print(f"Error searching author: {e}")
-    
-    return None
+        r = requests.get(f"{CROSSREF_API}/{doi}", headers=HEADERS_CROSSREF, timeout=30)
+        if r.status_code != 200:
+            return {}
+        m = r.json().get("message", {})
+    except requests.exceptions.RequestException:
+        return {}
+
+    # Authors
+    authors = []
+    for a in m.get("author", []) or []:
+        given = a.get("given", "")
+        family = a.get("family", "")
+        name = (f"{given} {family}").strip() or a.get("name", "")
+        if name:
+            authors.append(name)
+
+    # Venue
+    venue = ""
+    for key in ("container-title", "short-container-title"):
+        v = m.get(key)
+        if v:
+            venue = v[0]
+            break
+    if not venue and m.get("institution"):
+        inst = m["institution"]
+        venue = inst[0].get("name", "") if isinstance(inst, list) else ""
+
+    # Year
+    year = None
+    for key in ("published-print", "published-online", "published", "issued", "created"):
+        dp = (m.get(key) or {}).get("date-parts")
+        if dp and dp[0] and dp[0][0]:
+            year = dp[0][0]
+            break
+
+    title = ""
+    if m.get("title"):
+        title = m["title"][0]
+
+    return {"title": title, "authors": authors, "venue": venue, "year": year}
 
 
-def group_by_year(publications: list) -> dict:
-    """Group publications by year."""
+def build_publications(groups: list) -> list:
+    """Merge ORCID + Crossref into a clean, de-duplicated publication list."""
+    pubs = []
+    seen = set()  # de-dup by DOI or normalised title
+
+    for g in groups:
+        summaries = g.get("work-summary", []) or []
+        if not summaries:
+            continue
+        rec = parse_orcid_summary(summaries[0])
+
+        # Enrich via Crossref when a DOI is available
+        if rec["doi"]:
+            cr = enrich_with_crossref(rec["doi"])
+            if cr:
+                if cr.get("authors"):
+                    rec["authors"] = cr["authors"]
+                if cr.get("venue"):
+                    rec["venue"] = cr["venue"]
+                if cr.get("title"):
+                    rec["title"] = cr["title"]
+                if cr.get("year"):
+                    rec["year"] = cr["year"]
+            time.sleep(0.4)  # be polite to Crossref
+
+        key = rec["doi"].lower() if rec["doi"] else rec["title"].lower().strip()
+        if key in seen:
+            continue
+        seen.add(key)
+        pubs.append(rec)
+        print(f"  + {rec.get('year','????')}  {rec['title'][:70]}")
+
+    return pubs
+
+
+# ----------------------------------------------------------------------------
+# HTML generation
+# ----------------------------------------------------------------------------
+def group_by_year(pubs: list) -> dict:
     by_year = defaultdict(list)
-    
-    for pub in publications:
-        year = pub.get("year")
-        if year:
-            by_year[year].append(pub)
-        else:
-            by_year["Unknown"].append(pub)
-    
-    return dict(sorted(by_year.items(), key=lambda x: (x[0] != "Unknown", x[0]), reverse=True))
+    for p in pubs:
+        by_year[p.get("year") or "Other"].append(p)
+    return dict(sorted(by_year.items(),
+                       key=lambda x: (x[0] != "Other", x[0]), reverse=True))
 
 
-def generate_html(publications_by_year: dict) -> str:
-    """Generate HTML for publications list."""
-    html_parts = []
-    
-    html_parts.append("""
+def esc(s: str) -> str:
+    return (s or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
+def generate_html(by_year: dict) -> str:
+    out = []
+    out.append(f"""
 <!-- Auto-generated publications list -->
-<!-- Last updated: {update_time} -->
-<!-- Source: Semantic Scholar API -->
+<!-- Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} -->
+<!-- Source: ORCID ({ORCID_ID}) enriched with Crossref -->
 
 <style>
 .pub-list {{ list-style-type: decimal; }}
@@ -127,103 +214,59 @@ def generate_html(publications_by_year: dict) -> str:
 .pub-links a {{ margin-right: 1em; text-decoration: none; color: #0066cc; }}
 .pub-links a:hover {{ text-decoration: underline; }}
 </style>
-""".format(update_time=datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
-    
-    total_count = 0
-    
-    for year, pubs in publications_by_year.items():
-        html_parts.append(f"\n<h3>{year}</h3>\n")
-        html_parts.append("<ol class='pub-list'>\n")
-        
-        for i, pub in enumerate(pubs, 1):
-            total_count += 1
-            title = pub.get("title", "Untitled")
-            authors = ", ".join([a.get("name", "") for a in pub.get("authors", [])[:6]])
-            if len(pub.get("authors", [])) > 6:
-                authors += ", ..."
-            venue = pub.get("venue", "")
-            url = pub.get("url", "")
-            
-            # Get external links
-            external_ids = pub.get("externalIds", {})
-            doi = external_ids.get("DOI", "")
-            arxiv = external_ids.get("ArXiv", "")
-            pubmed = external_ids.get("PubMed", "")
-            
-            html_parts.append(f"""<li class='pub-item'>
-    <span class='pub-title'>{title}</span><br>
-    <span class='pub-authors'>{authors}</span><br>
-    <span class='pub-venue'>{venue}</span>
-    <div class='pub-links'>
 """)
-            
-            if url:
-                html_parts.append(f'        <a href="{url}" target="_blank">[Semantic Scholar]</a>\n')
-            if doi:
-                html_parts.append(f'        <a href="https://doi.org/{doi}" target="_blank">[DOI]</a>\n')
-            if arxiv:
-                html_parts.append(f'        <a href="https://arxiv.org/abs/{arxiv}" target="_blank">[arXiv]</a>\n')
-            if pubmed:
-                html_parts.append(f'        <a href="https://pubmed.ncbi.nlm.nih.gov/{pubmed}" target="_blank">[PubMed]</a>\n')
-            
-            html_parts.append("    </div>\n</li>\n")
-        
-        html_parts.append("</ol>\n")
-    
-    # Add summary at top
-    summary = f"<p><strong>Total publications: {total_count}</strong></p>\n"
-    html_parts.insert(1, summary)
-    
-    return "".join(html_parts)
+
+    total = sum(len(v) for v in by_year.values())
+    out.append(f"<p><strong>Total publications: {total}</strong></p>\n")
+
+    for year, pubs in by_year.items():
+        out.append(f"\n<h3>{year}</h3>\n<ol class='pub-list'>\n")
+        for p in pubs:
+            authors = ", ".join(p["authors"][:MAX_AUTHORS])
+            if len(p["authors"]) > MAX_AUTHORS:
+                authors += ", ..."
+            out.append("<li class='pub-item'>\n")
+            out.append(f"    <span class='pub-title'>{esc(p['title'])}</span><br>\n")
+            if authors:
+                out.append(f"    <span class='pub-authors'>{esc(authors)}</span><br>\n")
+            if p["venue"]:
+                out.append(f"    <span class='pub-venue'>{esc(p['venue'])}</span>\n")
+            out.append("    <div class='pub-links'>\n")
+            if p["doi"]:
+                out.append(f'        <a href="https://doi.org/{p["doi"]}" target="_blank">[DOI]</a>\n')
+            if p["arxiv"]:
+                out.append(f'        <a href="https://arxiv.org/abs/{p["arxiv"]}" target="_blank">[arXiv]</a>\n')
+            if p["pmid"]:
+                out.append(f'        <a href="https://pubmed.ncbi.nlm.nih.gov/{p["pmid"]}" target="_blank">[PubMed]</a>\n')
+            out.append(f'        <a href="https://orcid.org/{ORCID_ID}" target="_blank">[ORCID]</a>\n')
+            out.append("    </div>\n</li>\n")
+        out.append("</ol>\n")
+
+    return "".join(out)
 
 
-def save_results(publications: list, html_content: str, output_dir: str = "."):
-    """Save publications to JSON and HTML files."""
-    # Save raw JSON
-    json_path = os.path.join(output_dir, "publications.json")
-    with open(json_path, "w", encoding="utf-8") as f:
-        json.dump(publications, f, indent=2, ensure_ascii=False)
-    print(f"Saved {len(publications)} publications to {json_path}")
-    
-    # Save HTML
-    html_path = os.path.join(output_dir, "publications.html")
-    with open(html_path, "w", encoding="utf-8") as f:
-        f.write(html_content)
-    print(f"Saved HTML to {html_path}")
+def save(pubs: list, html: str, out_dir: str = "."):
+    with open(os.path.join(out_dir, "publications.json"), "w", encoding="utf-8") as f:
+        json.dump(pubs, f, indent=2, ensure_ascii=False)
+    with open(os.path.join(out_dir, "publications.html"), "w", encoding="utf-8") as f:
+        f.write(html)
+    print(f"Saved publications.json and publications.html ({len(pubs)} works)")
 
 
 def main():
     print("=" * 60)
-    print("Publication Fetcher for Dr. Thuc Le")
+    print(f"ORCID Publication Fetcher — {AUTHOR_NAME} ({ORCID_ID})")
     print("=" * 60)
-    
-    # Try to fetch using known author ID
-    publications = fetch_from_semantic_scholar(AUTHOR_ID)
-    
-    # If no results, try searching by name
-    if not publications:
-        print("\nNo publications found with author ID, searching by name...")
-        author_id = search_author_by_name(AUTHOR_NAME)
-        if author_id:
-            print(f"Found author ID: {author_id}")
-            publications = fetch_from_semantic_scholar(author_id)
-    
-    if not publications:
-        print("\nERROR: Could not fetch publications!")
-        print("Please verify the AUTHOR_ID in the script.")
+
+    groups = fetch_orcid_works(ORCID_ID)
+    if not groups:
+        print("ERROR: No works returned from ORCID. Aborting.")
         return
-    
-    print(f"\nTotal publications fetched: {len(publications)}")
-    
-    # Group by year
-    by_year = group_by_year(publications)
-    
-    # Generate HTML
-    html_content = generate_html(by_year)
-    
-    # Save results
-    save_results(publications, html_content)
-    
+
+    pubs = build_publications(groups)
+    by_year = group_by_year(pubs)
+    html = generate_html(by_year)
+    save(pubs, html)
     print("\nDone!")
 
 

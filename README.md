@@ -1,163 +1,80 @@
-# Auto-Update Publications from Semantic Scholar
+# Dr Thuc Duy Le — Website & Auto-Updating Publications
 
-This project automatically fetches publications from Semantic Scholar API and generates an HTML file that can be embedded in your website.
+This repository hosts **Dr Thuc Duy Le's** personal academic website and a small
+pipeline that keeps his publication list up to date automatically from **ORCID**.
 
-## 🚀 Quick Setup (Step-by-Step)
-
-### Step 1: Create a GitHub Repository
-
-1. Go to [github.com](https://github.com) and sign in
-2. Click the **+** button → **New repository**
-3. Name it: `thuc-publications` (or any name you prefer)
-4. Set to **Public** (required for free GitHub Pages)
-5. Check **"Add a README file"**
-6. Click **Create repository**
-
-### Step 2: Upload the Files
-
-1. In your new repository, click **Add file** → **Upload files**
-2. Drag and drop these files:
-   - `fetch_publications.py`
-   - `requirements.txt` (create this with content: `requests`)
-3. Click **Commit changes**
-
-### Step 3: Create the GitHub Actions Workflow
-
-1. In your repository, click **Add file** → **Create new file**
-2. Name it: `.github/workflows/update-publications.yml`
-3. Copy the content from the workflow file provided
-4. Click **Commit changes**
-
-### Step 4: Find Your Semantic Scholar Author ID
-
-1. Go to [semanticscholar.org](https://www.semanticscholar.org/)
-2. Search for "Thuc Duy Le"
-3. Click on the correct author profile
-4. The URL will be like: `https://www.semanticscholar.org/author/Thuc-Duy-Le/2482441`
-5. The number at the end (`2482441`) is the Author ID
-
-### Step 5: Update the Author ID in the Script
-
-1. Open `fetch_publications.py` in your repository
-2. Click the pencil icon to edit
-3. Find this line:
-   ```python
-   AUTHOR_ID = "2482441"
-   ```
-4. Replace with the correct ID if different
-5. Click **Commit changes**
-
-### Step 6: Run the Workflow Manually (First Time)
-
-1. Go to the **Actions** tab in your repository
-2. Click on **Update Publications** workflow
-3. Click **Run workflow** → **Run workflow**
-4. Wait for it to complete (green checkmark)
-
-### Step 7: Check the Results
-
-1. Go back to your repository's main page
-2. You should see new files:
-   - `publications.json` - Raw data
-   - `publications.html` - HTML to embed in your website
-
-### Step 8: Embed in Your Website
-
-**Option A: Direct iframe (Easiest)**
-```html
-<iframe 
-  src="https://raw.githubusercontent.com/YOUR_USERNAME/thuc-publications/main/publications.html" 
-  width="100%" 
-  height="800px" 
-  frameborder="0">
-</iframe>
-```
-
-**Option B: JavaScript fetch (Better control)**
-```html
-<div id="publications-container"></div>
-<script>
-fetch('https://raw.githubusercontent.com/YOUR_USERNAME/thuc-publications/main/publications.html')
-  .then(response => response.text())
-  .then(html => {
-    document.getElementById('publications-container').innerHTML = html;
-  });
-</script>
-```
-
-**Option C: Manual copy (Full control)**
-1. Download `publications.html` from GitHub
-2. Copy the content into your `index.html` in the Publications section
+- **ORCID iD:** [0000-0002-9732-4313](https://orcid.org/0000-0002-9732-4313)
+- **Live website:** `index.html` (can be served with GitHub Pages)
 
 ---
 
-## 📅 Automatic Updates
-
-The workflow runs automatically every Sunday at midnight UTC. You can also:
-- Trigger manually from the Actions tab
-- Change the schedule by editing the cron expression in the workflow file
-
-### Cron Examples:
-```yaml
-# Every Sunday at midnight
-- cron: '0 0 * * 0'
-
-# Every day at 6 AM UTC
-- cron: '0 6 * * *'
-
-# Every Monday and Thursday at noon
-- cron: '0 12 * * 1,4'
-```
-
----
-
-## 🔧 Troubleshooting
-
-### "Author not found" error
-- Verify the Author ID at semanticscholar.org
-- Try the author search function in the script
-
-### Workflow not running
-- Check the Actions tab for error messages
-- Ensure the repository has Actions enabled (Settings → Actions)
-
-### Publications missing
-- Semantic Scholar may not have all papers indexed
-- Consider using multiple sources (see Advanced section)
-
----
-
-## 📚 Files Overview
+## What's in here
 
 | File | Purpose |
 |------|---------|
-| `fetch_publications.py` | Main script that fetches and formats publications |
-| `.github/workflows/update-publications.yml` | GitHub Actions workflow for automation |
-| `publications.json` | Raw publication data (auto-generated) |
-| `publications.html` | HTML output for embedding (auto-generated) |
+| `index.html` | The full website (Adelaide University branding, responsive). |
+| `Thuc_photo.jpeg` | Profile photo used in the site header. |
+| `fetch_publications.py` | Fetches publications from **ORCID** (enriched with Crossref) and writes `publications.html` + `publications.json`. |
+| `requirements.txt` | Python dependency (`requests`). |
+| `.github/workflows/update-publications.yml` | GitHub Action that re-runs the fetcher on a schedule. |
+| `publications.html` | Auto-generated list embedded by the website (created by the script). |
+| `publications.json` | Raw publication data backup (created by the script). |
 
 ---
 
-## 🔄 Alternative: Using Google Scholar with `scholarly`
+## How the publication list updates (now via ORCID)
 
-If Semantic Scholar is missing papers, you can use the `scholarly` library:
+Previously this list was built from Semantic Scholar. It now uses **ORCID as the
+single source of truth**:
 
-```python
-# Install: pip install scholarly
+1. `fetch_publications.py` calls the ORCID public API for
+   [0000-0002-9732-4313](https://orcid.org/0000-0002-9732-4313) to get the
+   canonical list of works.
+2. For each work with a DOI, it pulls full author lists and journal names from
+   **Crossref** (ORCID summaries often omit co-authors).
+3. It writes `publications.html` (grouped by year) and `publications.json`.
+4. `index.html` loads `publications.html` automatically, so the website always
+   shows the latest list.
 
-from scholarly import scholarly
+### Run it manually
 
-author = scholarly.search_author_id('wMSCRxUAAAAJ')  # Dr. Thuc Le's Google Scholar ID
-scholarly.fill(author, sections=['publications'])
-
-for pub in author['publications']:
-    print(pub['bib']['title'])
+```bash
+pip install -r requirements.txt
+python fetch_publications.py
 ```
 
-**Note:** Google Scholar may rate-limit or block automated requests. Use with caution and add delays between requests.
+### Automatic updates
+
+The GitHub Action in `.github/workflows/update-publications.yml` runs every
+Sunday at midnight UTC and commits any changes. You can also trigger it any time:
+
+> **Actions** tab → **Update Publications** → **Run workflow**
+
+To change the schedule, edit the `cron` expression:
+
+```yaml
+- cron: '0 0 * * 0'   # every Sunday at midnight UTC
+- cron: '0 6 * * *'   # every day at 6am UTC
+```
 
 ---
 
-## 📝 License
+## Publishing the website with GitHub Pages
 
-MIT License - Feel free to use and modify!
+1. Go to **Settings → Pages**.
+2. Under **Build and deployment**, set **Source** = *Deploy from a branch*.
+3. Choose branch **main** and folder **/(root)**, then **Save**.
+4. The site will be available at
+   `https://sindypin.github.io/thuc-publications/`.
+
+The site is self-contained — it only needs `index.html`, `Thuc_photo.jpeg`, and
+the generated `publications.html`.
+
+---
+
+## Notes
+
+- If a work in ORCID has no DOI, the script falls back to the title/journal/year
+  stored directly in ORCID.
+- To keep the list complete and accurate, make sure works are present and public
+  on the ORCID record.
