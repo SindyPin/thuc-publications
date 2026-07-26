@@ -110,6 +110,26 @@
     "source": "orcid"
   },
   {
+    "title": "Identifying the Group to Intervene on to Maximise Effect Under Cross-Group Interference",
+    "authors": [],
+    "venue": "Arxiv",
+    "year": 2026,
+    "doi": "10.48550/arXiv.2603.11059",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "uLEAD-TabPFN: Uncertainty-aware Dependency-based Anomaly Detection with TabPFN",
+    "authors": [],
+    "venue": "Arxiv",
+    "year": 2026,
+    "doi": "10.48550/arXiv.2604.20255",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
     "title": "Identifying cooperative genes causing cancer progression with dynamic causal inference",
     "authors": [
       "Andres Mauricio Cifuentes Bernal",
@@ -254,6 +274,33 @@
     "source": "orcid"
   },
   {
+    "title": "Can EEG Foundation Models Help with Epileptic Seizure Prediction?",
+    "authors": [
+      "Xudong Guo",
+      "Lin Liu",
+      "Sha Lu",
+      "Jiuyong Li",
+      "Thuc Duy Le",
+      "Jixue Liu"
+    ],
+    "venue": "2025 IEEE International Conference on Big Data (BigData)",
+    "year": 2025,
+    "doi": "10.1109/BigData66926.2025.11401806",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Deconfounding Multi-Cause Latent Confounders: A Factor-Model Approach to Climate Model Bias Correction",
+    "authors": [],
+    "venue": "Arxiv",
+    "year": 2025,
+    "doi": "10.48550/arXiv.2408.12063",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
     "title": "Deconfounding Multi-Cause Latent Confounders: A Factor-Model Approach to Climate Model Bias Correction",
     "authors": [
       "Wentao Gao",
@@ -329,6 +376,94 @@
     "source": "orcid"
   },
   {
+    "title": "From Correlation to Causation: Max-Pooling-Based Multi-Instance Learning Leads to More Robust Whole Slide Image Classification",
+    "authors": [],
+    "venue": "Arxiv",
+    "year": 2025,
+    "doi": "10.48550/arXiv.2408.09449",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "From Noise to Precision: A Diffusion-Driven Approach to Zero-Inflated Precipitation Prediction",
+    "authors": [
+      "Wentao Gao",
+      "Jiuyong Li",
+      "Lin Liu",
+      "Thuc Duy Le",
+      "Xiongren Chen",
+      "Xiaojing Du",
+      "Jixue Liu",
+      "Yanchang Zhao",
+      "Yun Chen"
+    ],
+    "venue": "Frontiers in Artificial Intelligence and Applications",
+    "year": 2025,
+    "doi": "10.3233/FAIA250921",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "From Noise to Precision: A Diffusion-Driven Approach to Zero-Inflated Precipitation Prediction",
+    "authors": [],
+    "venue": "Arxiv",
+    "year": 2025,
+    "doi": "10.48550/arXiv.2509.10501",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Integrative multi-omics framework for causal gene discovery in Long COVID",
+    "authors": [
+      "Sindy Pinero",
+      "Xiaomei Li",
+      "Lin Liu",
+      "Jiuyong Li",
+      "Sang Hong Lee",
+      "Marnie Winter",
+      "Thin Nguyen",
+      "Junpeng Zhang",
+      "Thuc Duy Le"
+    ],
+    "venue": "PLOS Computational Biology",
+    "year": 2025,
+    "doi": "10.1371/journal.pcbi.1013725",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Linking Model Intervention to Causal Interpretation in Model Explanation",
+    "authors": [
+      "Debo Cheng",
+      "Ziqi Xu",
+      "Jiuyong Li",
+      "Lin Liu",
+      "Kui Yu",
+      "Thuc Le",
+      "Jixue Liu"
+    ],
+    "venue": "Ssrn",
+    "year": 2025,
+    "doi": "10.2139/ssrn.5390808",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Peer Effect Estimation in the Presence of Simultaneous Feedback and Unobserved Confounders",
+    "authors": [],
+    "venue": "Arxiv",
+    "year": 2025,
+    "doi": "10.48550/arXiv.2508.09154",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
     "title": "Stable Breast Cancer Prognosis",
     "authors": [
       "Xiaomei Li",
@@ -380,6 +515,22 @@
     "source": "orcid"
   },
   {
+    "title": "A latent outcome variable approach for Mendelian randomization using the expectation maximization algorithm",
+    "authors": [
+      "Lamessa Dube Amente",
+      "Natalie T Mills",
+      "Thuc Duy Le",
+      "Elina Hyppönen",
+      "S Hong Lee"
+    ],
+    "venue": "medRxiv",
+    "year": 2024,
+    "doi": "10.1101/2024.08.24.24312485",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
     "title": "Conditional instrumental variable regression with representation learning for causal inference",
     "authors": [],
     "venue": "",
@@ -402,6 +553,16 @@
     "venue": "IEEE Transactions on Neural Networks and Learning Systems",
     "year": 2024,
     "doi": "10.1109/TNNLS.2023.3262848",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Disentangled Representation Learning for Causal Inference with Instruments",
+    "authors": [],
+    "venue": "Arxiv",
+    "year": 2024,
+    "doi": "10.48550/arXiv.2412.04641",
     "arxiv": "",
     "pmid": "",
     "source": "orcid"
@@ -437,6 +598,36 @@
     "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
     "year": 2024,
     "doi": "10.1609/aaai.v38i10.29029",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Leaning Time-Varying Instruments for Identifying Causal Effects in Time-Series Data",
+    "authors": [],
+    "venue": "Arxiv",
+    "year": 2024,
+    "doi": "10.48550/arXiv.2411.17774",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Linking Model Intervention to Causal Interpretation in Model Explanation",
+    "authors": [],
+    "venue": "Arxiv",
+    "year": 2024,
+    "doi": "10.48550/arXiv.2410.15648",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Robust COVID-19 Detection in CT Images with CLIP",
+    "authors": [],
+    "venue": "Arxiv",
+    "year": 2024,
+    "doi": "10.48550/arXiv.2403.08947",
     "arxiv": "",
     "pmid": "",
     "source": "orcid"
@@ -479,6 +670,16 @@
     "source": "orcid"
   },
   {
+    "title": "TSI: A Multi-View Representation Learning Approach for Time Series Forecasting",
+    "authors": [],
+    "venue": "Arxiv",
+    "year": 2024,
+    "doi": "10.48550/arXiv.2409.19871",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
     "title": "Unraveling phenotypic variance in metabolic syndrome through multi-omics",
     "authors": [
       "Lamessa Dube Amente",
@@ -490,6 +691,173 @@
     "venue": "Human Genetics",
     "year": 2024,
     "doi": "10.1007/s00439-023-02619-0",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "CONDITIONAL INSTRUMENTAL VARIABLE REGRESSION WITH REPRESENTATION LEARNING FOR CAUSAL INFERENCE",
+    "authors": [],
+    "venue": "Arxiv",
+    "year": 2023,
+    "doi": "10.48550/arXiv.2310.01865",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Causal Inference with Conditional Instruments Using Deep Generative Models",
+    "authors": [
+      "Debo Cheng",
+      "Ziqi Xu",
+      "Jiuyong Li",
+      "Lin Liu",
+      "Jixue Liu",
+      "Thuc Duy Le"
+    ],
+    "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+    "year": 2023,
+    "doi": "10.1609/aaai.v37i6.25869",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Causal heterogeneity discovery by bottom-up pattern search for personalised decision making",
+    "authors": [
+      "Jiuyong Li",
+      "Lin Liu",
+      "Shisheng Zhang",
+      "Saisai Ma",
+      "Thuc Duy Le",
+      "Jixue Liu"
+    ],
+    "venue": "Applied Intelligence",
+    "year": 2023,
+    "doi": "10.1007/s10489-022-03860-2",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Identifying cooperative genes causing cancer progression with dynamic causal inference",
+    "authors": [
+      "Andres M. Cifuentes-Bernal",
+      "Lin Liu",
+      "Jiuyong Li",
+      "Thuc Duy Le"
+    ],
+    "venue": "bioRxiv",
+    "year": 2023,
+    "doi": "10.1101/2023.11.22.568367",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Improve interpretability of Information Bottlenecks for Attribution with Layer-wise Relevance Propagation",
+    "authors": [
+      "Xiongren Chen",
+      "Jiuyong Li",
+      "Jixue Liu",
+      "Stefan Peters",
+      "Lin Liu",
+      "Thuc Duy Le",
+      "Anthony Walsh"
+    ],
+    "venue": "2023 IEEE International Conference on Big Data (BigData)",
+    "year": 2023,
+    "doi": "10.1109/BigData59044.2023.10386271",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Instrumental Variable Estimation for Causal Inference in Longitudinal Data with Time-Dependent Latent Confounders",
+    "authors": [],
+    "venue": "Arxiv",
+    "year": 2023,
+    "doi": "10.48550/arXiv.2312.07175",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Learning Conditional Instrumental Variable Representation for Causal Effect Estimation",
+    "authors": [
+      "Debo Cheng",
+      "Ziqi Xu",
+      "Jiuyong Li",
+      "Lin Liu",
+      "Thuc Duy Le",
+      "Jixue Liu"
+    ],
+    "venue": "Lecture Notes in Computer Science",
+    "year": 2023,
+    "doi": "10.1007/978-3-031-43412-9_31",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Linking a predictive model to causal effect estimation",
+    "authors": [],
+    "venue": "Arxiv",
+    "year": 2023,
+    "doi": "10.48550/arXiv.2304.04566",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Local Search for Efficient Causal Effect Estimation",
+    "authors": [
+      "Debo Cheng",
+      "Jiuyong Li",
+      "Lin Liu",
+      "Jiji Zhang",
+      "Jixue Liu",
+      "Thuc Duy Le"
+    ],
+    "venue": "IEEE Transactions on Knowledge and Data Engineering",
+    "year": 2023,
+    "doi": "10.1109/TKDE.2022.3218131",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Pan-cancer characterization of ncRNA synergistic competition uncovers potential carcinogenic biomarkers",
+    "authors": [
+      "Junpeng Zhang",
+      "Lin Liu",
+      "Xuemei Wei",
+      "Chunwen Zhao",
+      "Sijing Li",
+      "Jiuyong Li",
+      "Thuc Duy Le"
+    ],
+    "venue": "PLOS Computational Biology",
+    "year": 2023,
+    "doi": "10.1371/journal.pcbi.1011308",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Pan-cancer characterization of ncRNA synergistic competition uncovers potential carcinogenic biomarkers",
+    "authors": [
+      "Junpeng Zhang",
+      "Lin Liu",
+      "Xuemei Wei",
+      "Chunwen Zhao",
+      "Sijing Li",
+      "Jiuyong Li",
+      "Thuc Duy Le"
+    ],
+    "venue": "bioRxiv",
+    "year": 2023,
+    "doi": "10.1101/2023.06.29.547005",
     "arxiv": "",
     "pmid": "",
     "source": "orcid"
@@ -513,35 +881,29 @@
     "source": "orcid"
   },
   {
-    "title": "Local Search for Efficient Causal Effect Estimation",
-    "authors": [
-      "Debo Cheng",
-      "Jiuyong Li",
-      "Lin Liu",
-      "Jiji Zhang",
-      "Jixue Liu",
-      "Thuc Duy Le"
-    ],
-    "venue": "IEEE Transactions on Knowledge and Data Engineering",
+    "title": "Preface: The 2023 ACM SIGKDD Workshop on Causal Discovery, Prediction and Decision",
+    "authors": [],
+    "venue": "Proceedings of Machine Learning Research",
     "year": 2023,
-    "doi": "10.1109/TKDE.2022.3218131",
+    "doi": "",
     "arxiv": "",
     "pmid": "",
     "source": "orcid"
   },
   {
-    "title": "Toward Unique and Unbiased Causal Effect Estimation From Data With Hidden Variables",
+    "title": "Scanning sample-specific miRNA regulation from bulk and single-cell RNA-sequencing data",
     "authors": [
-      "Debo Cheng",
-      "Jiuyong Li",
+      "Junpeng Zhang",
       "Lin Liu",
-      "Kui Yu",
-      "Thuc Duy Le",
-      "Jixue Liu"
+      "Xuemei Wei",
+      "Chunwen Zhao",
+      "Yanbi Luo",
+      "Jiuyong Li",
+      "Thuc Duy Le"
     ],
-    "venue": "IEEE Transactions on Neural Networks and Learning Systems",
+    "venue": "bioRxiv",
     "year": 2023,
-    "doi": "10.1109/TNNLS.2021.3133337",
+    "doi": "10.1101/2023.08.21.554111",
     "arxiv": "",
     "pmid": "",
     "source": "orcid"
@@ -577,132 +939,18 @@
     "source": "orcid"
   },
   {
-    "title": "Causal heterogeneity discovery by bottom-up pattern search for personalised decision making",
+    "title": "Toward Unique and Unbiased Causal Effect Estimation From Data With Hidden Variables",
     "authors": [
+      "Debo Cheng",
       "Jiuyong Li",
       "Lin Liu",
-      "Shisheng Zhang",
-      "Saisai Ma",
+      "Kui Yu",
       "Thuc Duy Le",
       "Jixue Liu"
     ],
-    "venue": "Applied Intelligence",
+    "venue": "IEEE Transactions on Neural Networks and Learning Systems",
     "year": 2023,
-    "doi": "10.1007/s10489-022-03860-2",
-    "arxiv": "",
-    "pmid": "",
-    "source": "orcid"
-  },
-  {
-    "title": "Causal Inference with Conditional Instruments Using Deep Generative Models",
-    "authors": [
-      "Debo Cheng",
-      "Ziqi Xu",
-      "Jiuyong Li",
-      "Lin Liu",
-      "Jixue Liu",
-      "Thuc Duy Le"
-    ],
-    "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
-    "year": 2023,
-    "doi": "10.1609/aaai.v37i6.25869",
-    "arxiv": "",
-    "pmid": "",
-    "source": "orcid"
-  },
-  {
-    "title": "Improve interpretability of Information Bottlenecks for Attribution with Layer-wise Relevance Propagation",
-    "authors": [
-      "Xiongren Chen",
-      "Jiuyong Li",
-      "Jixue Liu",
-      "Stefan Peters",
-      "Lin Liu",
-      "Thuc Duy Le",
-      "Anthony Walsh"
-    ],
-    "venue": "2023 IEEE International Conference on Big Data (BigData)",
-    "year": 2023,
-    "doi": "10.1109/BigData59044.2023.10386271",
-    "arxiv": "",
-    "pmid": "",
-    "source": "orcid"
-  },
-  {
-    "title": "Learning Conditional Instrumental Variable Representation for Causal Effect Estimation",
-    "authors": [
-      "Debo Cheng",
-      "Ziqi Xu",
-      "Jiuyong Li",
-      "Lin Liu",
-      "Thuc Duy Le",
-      "Jixue Liu"
-    ],
-    "venue": "Lecture Notes in Computer Science",
-    "year": 2023,
-    "doi": "10.1007/978-3-031-43412-9_31",
-    "arxiv": "",
-    "pmid": "",
-    "source": "orcid"
-  },
-  {
-    "title": "Pan-cancer characterization of ncRNA synergistic competition uncovers potential carcinogenic biomarkers",
-    "authors": [
-      "Junpeng Zhang",
-      "Lin Liu",
-      "Xuemei Wei",
-      "Chunwen Zhao",
-      "Sijing Li",
-      "Jiuyong Li",
-      "Thuc Duy Le"
-    ],
-    "venue": "PLOS Computational Biology",
-    "year": 2023,
-    "doi": "10.1371/journal.pcbi.1011308",
-    "arxiv": "",
-    "pmid": "",
-    "source": "orcid"
-  },
-  {
-    "title": "Preface: The 2023 ACM SIGKDD workshop on causal discovery, prediction and decision",
-    "authors": [],
-    "venue": "",
-    "year": 2023,
-    "doi": "",
-    "arxiv": "",
-    "pmid": "",
-    "source": "orcid"
-  },
-  {
-    "title": "How do the existing fairness metrics and unfairness mitigation algorithms contribute to ethical learning analytics?",
-    "authors": [
-      "Oscar Blessed Deho",
-      "Chen Zhan",
-      "Jiuyong Li",
-      "Jixue Liu",
-      "Lin Liu",
-      "Thuc Duy Le"
-    ],
-    "venue": "British Journal of Educational Technology",
-    "year": 2022,
-    "doi": "10.1111/bjet.13217",
-    "arxiv": "",
-    "pmid": "",
-    "source": "orcid"
-  },
-  {
-    "title": "Sufficient dimension reduction for average causal effect estimation",
-    "authors": [
-      "Debo Cheng",
-      "Jiuyong Li",
-      "Lin Liu",
-      "Thuc Duy Le",
-      "Jixue Liu",
-      "Kui Yu"
-    ],
-    "venue": "Data Mining and Knowledge Discovery",
-    "year": 2022,
-    "doi": "10.1007/s10618-022-00832-5",
+    "doi": "10.1109/TNNLS.2021.3133337",
     "arxiv": "",
     "pmid": "",
     "source": "orcid"
@@ -720,6 +968,36 @@
     "venue": "Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence",
     "year": 2022,
     "doi": "10.24963/ijcai.2022/671",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Ancestral Instrument Method for Causal Inference without Complete Knowledge",
+    "authors": [],
+    "venue": "Arxiv",
+    "year": 2022,
+    "doi": "10.48550/arXiv.2201.03810",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Causal Inference with Conditional Instruments using Deep Generative Models",
+    "authors": [],
+    "venue": "Arxiv",
+    "year": 2022,
+    "doi": "10.48550/arXiv.2211.16246",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Data-Driven Causal Effect Estimation Based on Graphical Causal Modelling: A Survey",
+    "authors": [],
+    "venue": "Arxiv",
+    "year": 2022,
+    "doi": "10.48550/arXiv.2208.09590",
     "arxiv": "",
     "pmid": "",
     "source": "orcid"
@@ -743,6 +1021,16 @@
     "source": "orcid"
   },
   {
+    "title": "Discovering Ancestral Instrumental Variables for Causal Inference from Observational Data",
+    "authors": [],
+    "venue": "Arxiv",
+    "year": 2022,
+    "doi": "10.48550/arXiv.2206.01931",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
     "title": "Dynamic cancer drivers: a causal approach for cancer driver discovery based on bio-pathological trajectories",
     "authors": [
       "Andres M Cifuentes-Bernal",
@@ -755,6 +1043,33 @@
     "venue": "Briefings in Functional Genomics",
     "year": 2022,
     "doi": "10.1093/bfgp/elac030",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Explanatory causal effects for model agnostic explanations",
+    "authors": [],
+    "venue": "Arxiv",
+    "year": 2022,
+    "doi": "10.48550/arXiv.2206.11529",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "How do the existing fairness metrics and unfairness mitigation algorithms contribute to ethical learning analytics?",
+    "authors": [
+      "Oscar Blessed Deho",
+      "Chen Zhan",
+      "Jiuyong Li",
+      "Jixue Liu",
+      "Lin Liu",
+      "Thuc Duy Le"
+    ],
+    "venue": "British Journal of Educational Technology",
+    "year": 2022,
+    "doi": "10.1111/bjet.13217",
     "arxiv": "",
     "pmid": "",
     "source": "orcid"
@@ -778,9 +1093,28 @@
     "source": "orcid"
   },
   {
-    "title": "Preface: the 2022 ACM SIGKDD workshop on causal discovery",
+    "title": "miRspongeR 2.0: an enhanced R package for exploring miRNA sponge regulation",
+    "authors": [
+      "Junpeng Zhang",
+      "Lin Liu",
+      "Wu Zhang",
+      "Xiaomei Li",
+      "Chunwen Zhao",
+      "Sijing Li",
+      "Jiuyong Li",
+      "Thuc Duy Le"
+    ],
+    "venue": "Bioinformatics Advances",
+    "year": 2022,
+    "doi": "10.1093/bioadv/vbac063",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Preface: The 2022 ACM SIGKDD Workshop on Causal Discovery",
     "authors": [],
-    "venue": "",
+    "venue": "Proceedings of Machine Learning Research",
     "year": 2022,
     "doi": "",
     "arxiv": "",
@@ -801,6 +1135,23 @@
     "venue": "Lecture Notes in Computer Science",
     "year": 2022,
     "doi": "10.1007/978-3-031-05981-0_8",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Sufficient dimension reduction for average causal effect estimation",
+    "authors": [
+      "Debo Cheng",
+      "Jiuyong Li",
+      "Lin Liu",
+      "Thuc Duy Le",
+      "Jixue Liu",
+      "Kui Yu"
+    ],
+    "venue": "Data Mining and Knowledge Discovery",
+    "year": 2022,
+    "doi": "10.1007/s10618-022-00832-5",
     "arxiv": "",
     "pmid": "",
     "source": "orcid"
@@ -858,103 +1209,18 @@
     "source": "orcid"
   },
   {
-    "title": "miRspongeR 2.0: an enhanced R package for exploring miRNA sponge regulation",
+    "title": "A general framework for causal classification",
     "authors": [
-      "Junpeng Zhang",
-      "Lin Liu",
-      "Wu Zhang",
-      "Xiaomei Li",
-      "Chunwen Zhao",
-      "Sijing Li",
       "Jiuyong Li",
-      "Thuc Duy Le"
-    ],
-    "venue": "Bioinformatics Advances",
-    "year": 2022,
-    "doi": "10.1093/bioadv/vbac063",
-    "arxiv": "",
-    "pmid": "",
-    "source": "orcid"
-  },
-  {
-    "title": "PAN: Personalized Annotation-Based Networks for the Prediction of Breast Cancer Relapse",
-    "authors": [
-      "Thin Nguyen",
-      "Samuel C. Lee",
-      "Thomas P. Quinn",
-      "Buu Truong",
-      "Xiaomei Li",
-      "Truyen Tran",
-      "Svetha Venkatesh",
-      "Thuc Duy Le"
-    ],
-    "venue": "IEEE/ACM Transactions on Computational Biology and Bioinformatics",
-    "year": 2021,
-    "doi": "10.1109/TCBB.2021.3076422",
-    "arxiv": "",
-    "pmid": "",
-    "source": "orcid"
-  },
-  {
-    "title": "<i>pDriver</i>\n                    : a novel method for unravelling personalized coding and miRNA cancer drivers",
-    "authors": [
-      "Vu V H Pham",
+      "Weijia Zhang",
       "Lin Liu",
-      "Cameron P Bracken",
-      "Thin Nguyen",
-      "Gregory J Goodall",
-      "Jiuyong Li",
-      "Thuc D Le"
-    ],
-    "venue": "Bioinformatics",
-    "year": 2021,
-    "doi": "10.1093/bioinformatics/btab262",
-    "arxiv": "",
-    "pmid": "",
-    "source": "orcid"
-  },
-  {
-    "title": "Stable breast cancer prognosis",
-    "authors": [
-      "Xiaomei Li",
-      "Lin Liu",
-      "Jiuyong Li",
-      "Thuc D. Le"
-    ],
-    "venue": "bioRxiv",
-    "year": 2021,
-    "doi": "10.1101/2021.09.13.460002",
-    "arxiv": "",
-    "pmid": "",
-    "source": "orcid"
-  },
-  {
-    "title": "NIBNA: a network-based node importance approach for identifying breast cancer drivers",
-    "authors": [
-      "Mandar S. Chaudhary",
-      "Vu V.H. Pham",
-      "Thuc D. Le"
-    ],
-    "venue": "Bioinformatics",
-    "year": 2021,
-    "doi": "10.1093/bioinformatics/btab145",
-    "arxiv": "",
-    "pmid": "",
-    "source": "orcid"
-  },
-  {
-    "title": "GraphDTA: predicting drug–target binding affinity with graph neural networks",
-    "authors": [
-      "Thin Nguyen",
-      "Hang Le",
-      "Thomas P Quinn",
-      "Tri Nguyen",
+      "Kui Yu",
       "Thuc Duy Le",
-      "Svetha Venkatesh"
+      "Jixue Liu"
     ],
-    "venue": "Bioinformatics",
+    "venue": "International Journal of Data Science and Analytics",
     "year": 2021,
-    "doi": "10.1093/bioinformatics/btaa921",
+    "doi": "10.1007/s41060-021-00249-1",
     "arxiv": "",
     "pmid": "",
     "source": "orcid"
@@ -977,23 +1243,6 @@
     "source": "orcid"
   },
   {
-    "title": "A general framework for causal classification",
-    "authors": [
-      "Jiuyong Li",
-      "Weijia Zhang",
-      "Lin Liu",
-      "Kui Yu",
-      "Thuc Duy Le",
-      "Jixue Liu"
-    ],
-    "venue": "International Journal of Data Science and Analytics",
-    "year": 2021,
-    "doi": "10.1007/s41060-021-00249-1",
-    "arxiv": "",
-    "pmid": "",
-    "source": "orcid"
-  },
-  {
     "title": "Computational methods for cancer driver discovery: A survey",
     "authors": [
       "Vu Viet Hoang Pham",
@@ -1006,6 +1255,35 @@
     "venue": "Theranostics",
     "year": 2021,
     "doi": "10.7150/thno.52670",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Crowdsourcing assessment of maternal blood multi-omics for predicting gestational age and preterm birth",
+    "authors": [
+      "Adi L. Tarca",
+      "Bálint Ármin Pataki",
+      "Roberto Romero",
+      "Marina Sirota",
+      "Yuanfang Guan",
+      "Rintu Kutum",
+      "Nardhy Gomez-Lopez",
+      "Bogdan Done",
+      "Gaurav Bhatti",
+      "Thomas Yu",
+      "Gaia Andreoletti",
+      "Tinnakorn Chaiworapongsa",
+      "Sonia S. Hassan",
+      "Chaur-Dong Hsu",
+      "Nima Aghaeepour",
+      "Gustavo Stolovitzky",
+      "Istvan Csabai",
+      "James C. Costello"
+    ],
+    "venue": "Cell Reports Medicine",
+    "year": 2021,
+    "doi": "10.1016/j.xcrm.2021.100323",
     "arxiv": "",
     "pmid": "",
     "source": "orcid"
@@ -1047,27 +1325,59 @@
     "source": "orcid"
   },
   {
-    "title": "Intervention Recommendation for Improving Disability Employment",
+    "title": "GraphDTA: predicting drug–target binding affinity with graph neural networks",
     "authors": [
-      "Ha Xuan Tran",
+      "Thin Nguyen",
+      "Hang Le",
+      "Thomas P Quinn",
+      "Tri Nguyen",
       "Thuc Duy Le",
-      "Jiuyong Li",
-      "Lin Liu",
-      "Jixue Liu",
-      "Yanchang Zhao",
-      "Tony Waters"
+      "Svetha Venkatesh"
     ],
-    "venue": "2020 IEEE International Conference on Big Data (Big Data)",
-    "year": 2020,
-    "doi": "10.1109/BigData50022.2020.9378350",
+    "venue": "Bioinformatics",
+    "year": 2021,
+    "doi": "10.1093/bioinformatics/btaa921",
     "arxiv": "",
     "pmid": "",
     "source": "orcid"
   },
   {
-    "title": "Preface: the 2021 ACM SIGKDD workshop on causal discovery",
+    "title": "NIBNA: a network-based node importance approach for identifying breast cancer drivers",
+    "authors": [
+      "Mandar S. Chaudhary",
+      "Vu V.H. Pham",
+      "Thuc D. Le"
+    ],
+    "venue": "Bioinformatics",
+    "year": 2021,
+    "doi": "10.1093/bioinformatics/btab145",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "PAN: Personalized Annotation-Based Networks for the Prediction of Breast Cancer Relapse",
+    "authors": [
+      "Thin Nguyen",
+      "Samuel C. Lee",
+      "Thomas P. Quinn",
+      "Buu Truong",
+      "Xiaomei Li",
+      "Truyen Tran",
+      "Svetha Venkatesh",
+      "Thuc Duy Le"
+    ],
+    "venue": "IEEE/ACM Transactions on Computational Biology and Bioinformatics",
+    "year": 2021,
+    "doi": "10.1109/TCBB.2021.3076422",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Preface: The 2021 ACM SIGKDD Workshop on Causal Discovery",
     "authors": [],
-    "venue": "",
+    "venue": "Proceedings of Machine Learning Research",
     "year": 2021,
     "doi": "",
     "arxiv": "",
@@ -1088,6 +1398,21 @@
     "venue": "Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery &amp; Data Mining",
     "year": 2021,
     "doi": "10.1145/3447548.3467095",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Stable breast cancer prognosis",
+    "authors": [
+      "Xiaomei Li",
+      "Lin Liu",
+      "Jiuyong Li",
+      "Thuc D. Le"
+    ],
+    "venue": "bioRxiv",
+    "year": 2021,
+    "doi": "10.1101/2021.09.13.460002",
     "arxiv": "",
     "pmid": "",
     "source": "orcid"
@@ -1166,34 +1491,29 @@
     "source": "orcid"
   },
   {
-    "title": "<i>DriverGroup</i>\n                    : a novel method for identifying driver gene groups",
+    "title": "<i>pDriver</i>\n                    : a novel method for unravelling personalized coding and miRNA cancer drivers",
     "authors": [
       "Vu V H Pham",
       "Lin Liu",
       "Cameron P Bracken",
+      "Thin Nguyen",
       "Gregory J Goodall",
       "Jiuyong Li",
       "Thuc D Le"
     ],
     "venue": "Bioinformatics",
-    "year": 2020,
-    "doi": "10.1093/bioinformatics/btaa797",
+    "year": 2021,
+    "doi": "10.1093/bioinformatics/btab262",
     "arxiv": "",
     "pmid": "",
     "source": "orcid"
   },
   {
-    "title": "Multi-Source Causal Feature Selection",
-    "authors": [
-      "Kui Yu",
-      "Lin Liu",
-      "Jiuyong Li",
-      "Wei Ding",
-      "Thuc Duy Le"
-    ],
-    "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    "title": "A general framework for causal classification",
+    "authors": [],
+    "venue": "Arxiv",
     "year": 2020,
-    "doi": "10.1109/TPAMI.2019.2908373",
+    "doi": "10.48550/arxiv.2003.11940",
     "arxiv": "",
     "pmid": "",
     "source": "orcid"
@@ -1217,39 +1537,36 @@
     "source": "orcid"
   },
   {
-    "title": "Efficient polygenic risk scores for biobank scale data by exploiting phenotypes from inferred relatives",
+    "title": "A novel single-cell based method for breast cancer prognosis",
     "authors": [
-      "Buu Truong",
-      "Xuan Zhou",
-      "Jisu Shin",
+      "Xiaomei Li",
+      "Lin Liu",
+      "Greg Goodall",
+      "Andreas Schreiber",
+      "Taosheng Xu",
       "Jiuyong Li",
-      "Julius H. J. van der Werf",
-      "Thuc D. Le",
-      "S. Hong Lee"
+      "Thuc Duy Le"
     ],
-    "venue": "Nature Communications",
+    "venue": "bioRxiv",
     "year": 2020,
-    "doi": "10.1038/s41467-020-16829-x",
+    "doi": "10.1101/2020.04.26.062794",
     "arxiv": "",
     "pmid": "",
     "source": "orcid"
   },
   {
-    "title": "LMSM: A modular approach for identifying lncRNA related miRNA sponge modules in breast cancer",
+    "title": "A Pseudo-Temporal Causality Approach to Identifying miRNA-mRNA Interactions During Biological Processes",
     "authors": [
-      "Junpeng Zhang",
-      "Taosheng Xu",
+      "Andres M. Cifuentes-Bernal",
+      "Vu VH Pham",
+      "Xiaomei Li",
       "Lin Liu",
-      "Wu Zhang",
-      "Chunwen Zhao",
-      "Sijing Li",
       "Jiuyong Li",
-      "Nini Rao",
       "Thuc Duy Le"
     ],
-    "venue": "PLOS Computational Biology",
+    "venue": "bioRxiv",
     "year": 2020,
-    "doi": "10.1371/journal.pcbi.1007851",
+    "doi": "10.1101/2020.07.07.192724",
     "arxiv": "",
     "pmid": "",
     "source": "orcid"
@@ -1305,6 +1622,16 @@
     "source": "orcid"
   },
   {
+    "title": "Causal query in observational data with hidden variables",
+    "authors": [],
+    "venue": "Arxiv",
+    "year": 2020,
+    "doi": "10.48550/arxiv.2001.10269",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
     "title": "Computational Methods for Predicting Autism Spectrum Disorder from Gene Expression Data",
     "authors": [
       "Junpeng Zhang",
@@ -1317,6 +1644,117 @@
     "venue": "Lecture Notes in Computer Science",
     "year": 2020,
     "doi": "10.1007/978-3-030-65390-3_31",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Computational methods for cancer driver discovery: A survey",
+    "authors": [],
+    "venue": "Arxiv",
+    "year": 2020,
+    "doi": "10.48550/arxiv.2007.00887",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Correction to: Identifying miRNA synergism using multiple-intervention causal inference",
+    "authors": [
+      "Junpeng Zhang",
+      "Vu Viet Hoang Pham",
+      "Lin Liu",
+      "Taosheng Xu",
+      "Buu Truong",
+      "Jiuyong Li",
+      "Nini Rao",
+      "Thuc Duy Le"
+    ],
+    "venue": "BMC Bioinformatics",
+    "year": 2020,
+    "doi": "10.1186/s12859-020-3369-1",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Dependency-based Anomaly Detection: a General Framework and Comprehensive Evaluation",
+    "authors": [],
+    "venue": "Arxiv",
+    "year": 2020,
+    "doi": "10.48550/arXiv.2011.06716",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "<i>DriverGroup</i>\n                    : a novel method for identifying driver gene groups",
+    "authors": [
+      "Vu V H Pham",
+      "Lin Liu",
+      "Cameron P Bracken",
+      "Gregory J Goodall",
+      "Jiuyong Li",
+      "Thuc D Le"
+    ],
+    "venue": "Bioinformatics",
+    "year": 2020,
+    "doi": "10.1093/bioinformatics/btaa797",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "<i>DriverGroup</i>\n                  : A novel method for identifying driver gene groups",
+    "authors": [
+      "Vu VH Pham",
+      "Lin Liu",
+      "Cameron P Bracken",
+      "Gregory J Goodall",
+      "Jiuyong Li",
+      "Thuc D Le"
+    ],
+    "venue": "bioRxiv",
+    "year": 2020,
+    "doi": "10.1101/2020.04.23.058719",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Efficient polygenic risk scores for biobank scale data by exploiting phenotypes from inferred relatives",
+    "authors": [
+      "Buu Truong",
+      "Xuan Zhou",
+      "Jisu Shin",
+      "Jiuyong Li",
+      "Julius H. J. van der Werf",
+      "Thuc D. Le",
+      "S. Hong Lee"
+    ],
+    "venue": "Nature Communications",
+    "year": 2020,
+    "doi": "10.1038/s41467-020-16829-x",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Exploring cell-specific miRNA regulation with single-cell miRNA-mRNA co-sequencing data",
+    "authors": [
+      "Junpeng Zhang",
+      "Lin Liu",
+      "Taosheng Xu",
+      "Wu Zhang",
+      "Chunwen Zhao",
+      "Sijing Li",
+      "Jiuyong Li",
+      "Nini Rao",
+      "Thuc Duy Le"
+    ],
+    "venue": "bioRxiv",
+    "year": 2020,
+    "doi": "10.1101/2020.10.14.340299",
     "arxiv": "",
     "pmid": "",
     "source": "orcid"
@@ -1366,7 +1804,45 @@
     ],
     "venue": "Life Science Alliance",
     "year": 2020,
-    "doi": "10.26508/lsa.202000867",
+    "doi": "10.26508/LSA.202000867",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Intervention Recommendation for Improving Disability Employment",
+    "authors": [
+      "Ha Xuan Tran",
+      "Thuc Duy Le",
+      "Jiuyong Li",
+      "Lin Liu",
+      "Jixue Liu",
+      "Yanchang Zhao",
+      "Tony Waters"
+    ],
+    "venue": "2020 IEEE International Conference on Big Data (Big Data)",
+    "year": 2020,
+    "doi": "10.1109/BigData50022.2020.9378350",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "LMSM: A modular approach for identifying lncRNA related miRNA sponge modules in breast cancer",
+    "authors": [
+      "Junpeng Zhang",
+      "Taosheng Xu",
+      "Lin Liu",
+      "Wu Zhang",
+      "Chunwen Zhao",
+      "Sijing Li",
+      "Jiuyong Li",
+      "Nini Rao",
+      "Thuc Duy Le"
+    ],
+    "venue": "PLOS Computational Biology",
+    "year": 2020,
+    "doi": "10.1371/journal.pcbi.1007851",
     "arxiv": "",
     "pmid": "",
     "source": "orcid"
@@ -1383,6 +1859,16 @@
     "venue": "Lecture Notes in Computer Science",
     "year": 2020,
     "doi": "10.1007/978-3-030-47436-2_50",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Local search for efficient causal effect estimation",
+    "authors": [],
+    "venue": "Arxiv",
+    "year": 2020,
+    "doi": "10.48550/arXiv.2007.10014",
     "arxiv": "",
     "pmid": "",
     "source": "orcid"
@@ -1419,9 +1905,25 @@
     "source": "orcid"
   },
   {
+    "title": "Multi-Source Causal Feature Selection",
+    "authors": [
+      "Kui Yu",
+      "Lin Liu",
+      "Jiuyong Li",
+      "Wei Ding",
+      "Thuc Duy Le"
+    ],
+    "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    "year": 2020,
+    "doi": "10.1109/TPAMI.2019.2908373",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
     "title": "Preface: The 2020 ACM SIGKDD Workshop on Causal Discovery",
     "authors": [],
-    "venue": "",
+    "venue": "Proceedings of Machine Learning Research",
     "year": 2020,
     "doi": "",
     "arxiv": "",
@@ -1429,19 +1931,47 @@
     "source": "orcid"
   },
   {
-    "title": "CBNA: A control theory based method for identifying coding and non-coding cancer drivers",
+    "title": "The winning methods for predicting cellular position in the DREAM single cell transcriptomics challenge",
     "authors": [
-      "Vu V. H. Pham",
+      "Vu VH Pham",
+      "Xiaomei Li",
+      "Buu Truong",
+      "Thin Nguyen",
       "Lin Liu",
-      "Cameron P. Bracken",
-      "Gregory J. Goodall",
-      "Qi Long",
       "Jiuyong Li",
-      "Thuc D. Le"
+      "Thuc D Le"
     ],
-    "venue": "PLOS Computational Biology",
-    "year": 2019,
-    "doi": "10.1371/journal.pcbi.1007538",
+    "venue": "bioRxiv",
+    "year": 2020,
+    "doi": "10.1101/2020.05.09.086397",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Towards precise causal effect estimation from data with hidden variables",
+    "authors": [],
+    "venue": "Arxiv",
+    "year": 2020,
+    "doi": "10.48550/arxiv.2002.10091",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "<i>pDriver</i>\n                  : A novel method for unravelling personalised coding and miRNA cancer drivers",
+    "authors": [
+      "Vu VH Pham",
+      "Lin Liu",
+      "Cameron P Bracken",
+      "Thin Nguyen",
+      "Gregory J Goodall",
+      "Jiuyong Li",
+      "Thuc D Le"
+    ],
+    "venue": "bioRxiv",
+    "year": 2020,
+    "doi": "10.1101/2020.04.23.058727",
     "arxiv": "",
     "pmid": "",
     "source": "orcid"
@@ -1459,25 +1989,6 @@
     "venue": "IEEE/ACM Transactions on Computational Biology and Bioinformatics",
     "year": 2019,
     "doi": "10.1109/TCBB.2016.2591526",
-    "arxiv": "",
-    "pmid": "",
-    "source": "orcid"
-  },
-  {
-    "title": "Identifying miRNA synergism using multiple-intervention causal inference",
-    "authors": [
-      "Junpeng Zhang",
-      "Vu Viet Hoang Pham",
-      "Lin Liu",
-      "Taosheng Xu",
-      "Buu Truong",
-      "Jiuyong Li",
-      "Nini Rao",
-      "Thuc Duy Le"
-    ],
-    "venue": "bioRxiv",
-    "year": 2019,
-    "doi": "10.1101/652180",
     "arxiv": "",
     "pmid": "",
     "source": "orcid"
@@ -1517,6 +2028,24 @@
     "source": "orcid"
   },
   {
+    "title": "CBNA: A control theory based method for identifying coding and non-coding cancer drivers",
+    "authors": [
+      "Vu V. H. Pham",
+      "Lin Liu",
+      "Cameron P. Bracken",
+      "Gregory J. Goodall",
+      "Qi Long",
+      "Jiuyong Li",
+      "Thuc D. Le"
+    ],
+    "venue": "PLOS Computational Biology",
+    "year": 2019,
+    "doi": "10.1371/journal.pcbi.1007538",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
     "title": "Data-driven discovery of causal interactions",
     "authors": [
       "Saisai Ma",
@@ -1542,21 +2071,6 @@
     "venue": "Intelligent Data Analysis",
     "year": 2019,
     "doi": "10.3233/IDA-184010",
-    "arxiv": "",
-    "pmid": "",
-    "source": "orcid"
-  },
-  {
-    "title": "Effective Outlier Detection based on Bayesian Network and Proximity",
-    "authors": [
-      "Sha Lu",
-      "Lin Liu",
-      "Jiuyong Li",
-      "Thuc Duy Le"
-    ],
-    "venue": "2018 IEEE International Conference on Big Data (Big Data)",
-    "year": 2018,
-    "doi": "10.1109/BigData.2018.8622230",
     "arxiv": "",
     "pmid": "",
     "source": "orcid"
@@ -1589,6 +2103,16 @@
     "source": "orcid"
   },
   {
+    "title": "Identify treatment effect patterns for personalised decisions",
+    "authors": [],
+    "venue": "Arxiv",
+    "year": 2019,
+    "doi": "10.48550/arXiv.1906.06080",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
     "title": "Identifying miRNA synergism using multiple-intervention causal inference",
     "authors": [
       "Junpeng Zhang",
@@ -1603,6 +2127,25 @@
     "venue": "BMC Bioinformatics",
     "year": 2019,
     "doi": "10.1186/s12859-019-3215-5",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Identifying miRNA synergism using multiple-intervention causal inference",
+    "authors": [
+      "Junpeng Zhang",
+      "Vu Viet Hoang Pham",
+      "Lin Liu",
+      "Taosheng Xu",
+      "Buu Truong",
+      "Jiuyong Li",
+      "Nini Rao",
+      "Thuc Duy Le"
+    ],
+    "venue": "bioRxiv",
+    "year": 2019,
+    "doi": "10.1101/652180",
     "arxiv": "",
     "pmid": "",
     "source": "orcid"
@@ -1627,16 +2170,21 @@
     "source": "orcid"
   },
   {
-    "title": "Inferring and analyzing module-specific lncRNA–mRNA causal regulatory networks in human cancer",
+    "title": "LMSM: a modular approach for identifying lncRNA related miRNA sponge modules in breast cancer",
     "authors": [
       "Junpeng Zhang",
-      "Thuc Duy Le",
+      "Taosheng Xu",
       "Lin Liu",
-      "Jiuyong Li"
+      "Wu Zhang",
+      "Chunwen Zhao",
+      "Sijing Li",
+      "Jiuyong Li",
+      "Nini Rao",
+      "Thuc Duy Le"
     ],
-    "venue": "Briefings in Bioinformatics",
+    "venue": "bioRxiv",
     "year": 2019,
-    "doi": "10.1093/bib/bby008",
+    "doi": "10.1101/841502",
     "arxiv": "",
     "pmid": "",
     "source": "orcid"
@@ -3252,11 +3800,96 @@
     "source": "orcid"
   },
   {
-    "title": "Data Mining",
+    "title": "PAN: Personalized Annotation-based Networks for the Prediction of Breast Cancer Relapse",
+    "authors": [
+      "Thin Nguyen",
+      "Samuel C. Lee",
+      "Thomas P. Quinn",
+      "Buu Truong",
+      "Xiaomei Li",
+      "Truyen Tran",
+      "Svetha Venkatesh",
+      "Thuc Duy Le"
+    ],
+    "venue": "bioRxiv",
+    "year": 2019,
+    "doi": "10.1101/534628",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Predicting cellular position in the\n                  <i>Drosophila</i>\n                  embryo from Single-Cell Transcriptomics data",
+    "authors": [
+      "Jovan Tanevski",
+      "Thin Nguyen",
+      "Buu Truong",
+      "Nikos Karaiskos",
+      "Mehmet Eren Ahsen",
+      "Xinyu Zhang",
+      "Chang Shu",
+      "Ke Xu",
+      "Xiaoyu Liang",
+      "Ying Hu",
+      "Hoang V.V. Pham",
+      "Li Xiaomei",
+      "Thuc D. Le",
+      "Adi L. Tarca",
+      "Gaurav Bhatti",
+      "Roberto Romero",
+      "Nestoras Karathanasis",
+      "Phillipe Loher",
+      "Yang Chen",
+      "Zhengqing Ouyang",
+      "Disheng Mao",
+      "Yuping Zhang",
+      "Maryam Zand",
+      "Jianhua Ruan",
+      "Christoph Hafemeister",
+      "Peng Qiu",
+      "Duc Tran",
+      "Tin Nguyen",
+      "Attila Gabor",
+      "Thomas Yu",
+      "Enrico Glaab",
+      "Roland Krause",
+      "Peter Banda",
+      "DREAM SCTC Consortium",
+      "Gustavo Stolovitzky",
+      "Nikolaus Rajewsky",
+      "Julio Saez-Rodriguez",
+      "Pablo Meyer"
+    ],
+    "venue": "bioRxiv",
+    "year": 2019,
+    "doi": "10.1101/796029",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "GraphDTA: Predicting drug–target binding affinity with graph neural networks",
+    "authors": [
+      "Thin Nguyen",
+      "Hang Le",
+      "Thomas P. Quinn",
+      "Tri Nguyen",
+      "Thuc Duy Le",
+      "Svetha Venkatesh"
+    ],
+    "venue": "bioRxiv",
+    "year": 2019,
+    "doi": "10.1101/684662",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Preface",
     "authors": [],
     "venue": "Communications in Computer and Information Science",
     "year": 2019,
-    "doi": "10.1007/978-981-15-1699-3",
+    "doi": "",
     "arxiv": "",
     "pmid": "",
     "source": "orcid"
@@ -3264,9 +3897,174 @@
   {
     "title": "Preface: The 2019 ACM SIGKDD Workshop on Causal Discovery",
     "authors": [],
-    "venue": "",
+    "venue": "Proceedings of Machine Learning Research",
     "year": 2019,
     "doi": "",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "An exploration of algorithmic discrimination in data and classification",
+    "authors": [],
+    "venue": "Arxiv",
+    "year": 2018,
+    "doi": "10.48550/arxiv.1811.02994",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Discovering context specific causal relationships",
+    "authors": [],
+    "venue": "Arxiv",
+    "year": 2018,
+    "doi": "10.48550/arxiv.1808.06316",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Effective Outlier Detection based on Bayesian Network and Proximity",
+    "authors": [
+      "Sha Lu",
+      "Lin Liu",
+      "Jiuyong Li",
+      "Thuc Duy Le"
+    ],
+    "venue": "2018 IEEE International Conference on Big Data (Big Data)",
+    "year": 2018,
+    "doi": "10.1109/BigData.2018.8622230",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Estimating heterogeneous treatment effect by balancing heterogeneity and fitness",
+    "authors": [
+      "Weijia Zhang",
+      "Thuc Duy Le",
+      "Lin Liu",
+      "Jiuyong Li"
+    ],
+    "venue": "BMC Bioinformatics",
+    "year": 2018,
+    "doi": "10.1186/s12859-018-2521-7",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Estimating heterogeneous treatment effects by balancing heterogeneity and fitness",
+    "authors": [
+      "Weijia Zhang",
+      "Thuc Le",
+      "Lin Liu",
+      "Jiuyong Li"
+    ],
+    "venue": "bioRxiv",
+    "year": 2018,
+    "doi": "10.1101/333278",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "FairMod - Making predictive models discrimination aware",
+    "authors": [],
+    "venue": "Arxiv",
+    "year": 2018,
+    "doi": "10.48550/arxiv.1811.01480",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Identifying miRNA-mRNA regulatory relationships in breast cancer with invariant causal prediction",
+    "authors": [],
+    "venue": "bioRxiv",
+    "year": 2018,
+    "doi": "",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Identifying miRNA-mRNA regulatory relationships in breast cancer with invariant causal prediction",
+    "authors": [
+      "Vu Viet Hoang Pham",
+      "Junpeng Zhang",
+      "Lin Liu",
+      "Buu Minh Thanh Truong",
+      "Taosheng Xu",
+      "Trung Tin Nguyen",
+      "Jiuyong Li",
+      "Thuc Duy Le"
+    ],
+    "venue": "bioRxiv",
+    "year": 2018,
+    "doi": "10.1101/340638",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Inferring and analyzing module-specific lncRNA--mRNA causal regulatory networks in human cancer",
+    "authors": [],
+    "venue": "Briefings in bioinformatics",
+    "year": 2018,
+    "doi": "",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Inferring and analyzing module-specific lncRNA–mRNA causal regulatory networks in human cancer",
+    "authors": [
+      "Junpeng Zhang",
+      "Thuc Duy Le",
+      "Lin Liu",
+      "Jiuyong Li"
+    ],
+    "venue": "Briefings in Bioinformatics",
+    "year": 2019,
+    "doi": "10.1093/bib/bby008",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "LncmiRSRN: identification and analysis of long non-coding RNA related miRNA sponge regulatory network in human cancer",
+    "authors": [
+      "Junpeng Zhang",
+      "Lin Liu",
+      "Jiuyong Li",
+      "Thuc Duy Le"
+    ],
+    "venue": "Bioinformatics",
+    "year": 2018,
+    "doi": "10.1093/bioinformatics/bty525",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "miRBaseConverter: An R/Bioconductor Package for Converting and Retrieving miRNA Name, Accession, Sequence and Family Information in Different Versions of miRBase",
+    "authors": [
+      "Taosheng Xu",
+      "Ning Su",
+      "Lin Liu",
+      "Junpeng Zhang",
+      "Hongqiang Wang",
+      "Weijia Zhang",
+      "Jie Gui",
+      "Kui Yu",
+      "Jiuyong Li",
+      "Thuc Duy Le"
+    ],
+    "venue": "bioRxiv",
+    "year": 2018,
+    "doi": "10.1101/407148",
     "arxiv": "",
     "pmid": "",
     "source": "orcid"
@@ -3290,66 +4088,33 @@
     "source": "orcid"
   },
   {
-    "title": "LncmiRSRN: identification and analysis of long non-coding RNA related miRNA sponge regulatory network in human cancer",
+    "title": "Open Community Challenge Reveals Molecular Network Modules with Key Roles in Diseases",
     "authors": [
-      "Junpeng Zhang",
-      "Lin Liu",
-      "Jiuyong Li",
-      "Thuc Duy Le"
+      "Sarvenaz Choobdar",
+      "Mehmet Ahsen",
+      "Jake Crawford",
+      "Mattia Tomasoni",
+      "David Lamparter",
+      "Junyuan Lin",
+      "Benjamin Hescott",
+      "Xiaozhe Hu",
+      "Jonathan Mercer",
+      "Ted Natoli",
+      "Rajiv Narayan",
+      "DREAM Module Identification Challen Consortium",
+      "Aravind Subramanian",
+      "Gustavo Stolovitzky",
+      "Zolttn Kutalik",
+      "Kasper Lage",
+      "Donna Slonim",
+      "Julio Saez-Rodriguez",
+      "Lenore J. Cowen",
+      "Sven Bergmann",
+      "Daniel Marbach"
     ],
-    "venue": "Bioinformatics",
+    "venue": "SSRN Electronic Journal",
     "year": 2018,
-    "doi": "10.1093/bioinformatics/bty525",
-    "arxiv": "",
-    "pmid": "",
-    "source": "orcid"
-  },
-  {
-    "title": "Estimating heterogeneous treatment effects by balancing heterogeneity and fitness",
-    "authors": [
-      "Weijia Zhang",
-      "Thuc Le",
-      "Lin Liu",
-      "Jiuyong Li"
-    ],
-    "venue": "bioRxiv",
-    "year": 2018,
-    "doi": "10.1101/333278",
-    "arxiv": "",
-    "pmid": "",
-    "source": "orcid"
-  },
-  {
-    "title": "Estimating heterogeneous treatment effect by balancing heterogeneity and fitness",
-    "authors": [
-      "Weijia Zhang",
-      "Thuc Duy Le",
-      "Lin Liu",
-      "Jiuyong Li"
-    ],
-    "venue": "BMC Bioinformatics",
-    "year": 2018,
-    "doi": "10.1186/s12859-018-2521-7",
-    "arxiv": "",
-    "pmid": "",
-    "source": "orcid"
-  },
-  {
-    "title": "Identifying miRNA-mRNA regulatory relationships in breast cancer with invariant causal prediction",
-    "authors": [],
-    "venue": "bioRxiv",
-    "year": 2018,
-    "doi": "",
-    "arxiv": "",
-    "pmid": "",
-    "source": "orcid"
-  },
-  {
-    "title": "Inferring and analyzing module-specific lncRNA--mRNA causal regulatory networks in human cancer",
-    "authors": [],
-    "venue": "Briefings in bioinformatics",
-    "year": 2018,
-    "doi": "",
+    "doi": "10.2139/ssrn.3188379",
     "arxiv": "",
     "pmid": "",
     "source": "orcid"
@@ -3384,7 +4149,7 @@
   {
     "title": "Preface: The 2018 ACM SIGKDD Workshop on Causal Discovery",
     "authors": [],
-    "venue": "",
+    "venue": "Proceedings of Machine Learning Research",
     "year": 2018,
     "doi": "",
     "arxiv": "",
@@ -3397,6 +4162,26 @@
     "venue": "Frontiers in Cellular and Infection Microbiology",
     "year": 2018,
     "doi": "",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Use of Haploid Model of Candida albicans to Uncover Mechanism of Action of a Novel Antifungal Agent",
+    "authors": [
+      "Thuyen Truong",
+      "Tanujaa Suriyanarayanan",
+      "Guisheng Zeng",
+      "Thuc D. Le",
+      "Lin Liu",
+      "Jiuyong Li",
+      "Cao Tong",
+      "Yue Wang",
+      "Chaminda J. Seneviratne"
+    ],
+    "venue": "Frontiers in Cellular and Infection Microbiology",
+    "year": 2018,
+    "doi": "10.3389/fcimb.2018.00164",
     "arxiv": "",
     "pmid": "",
     "source": "orcid"
@@ -3434,10 +4219,46 @@
   },
   {
     "title": "CancerSubtypes: an R/Bioconductor package for molecular cancer subtype identification, validation and visualization",
+    "authors": [
+      "Taosheng Xu",
+      "Thuc Duy Le",
+      "Lin Liu",
+      "Ning Su",
+      "Rujing Wang",
+      "Bingyu Sun",
+      "Antonio Colaprico",
+      "Gianluca Bontempi",
+      "Jiuyong Li"
+    ],
+    "venue": "Bioinformatics",
+    "year": 2017,
+    "doi": "10.1093/bioinformatics/btx378",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "CancerSubtypes: an R/Bioconductor package for molecular cancer subtype identification, validation and visualization",
     "authors": [],
     "venue": "Bioinformatics",
     "year": 2017,
     "doi": "",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Causal Decision Trees",
+    "authors": [
+      "Jiuyong Li",
+      "Saisai Ma",
+      "Thuc Le",
+      "Lin Liu",
+      "Jixue Liu"
+    ],
+    "venue": "IEEE Transactions on Knowledge and Data Engineering",
+    "year": 2017,
+    "doi": "10.1109/TKDE.2016.2619350",
     "arxiv": "",
     "pmid": "",
     "source": "orcid"
@@ -3473,11 +4294,43 @@
     "source": "orcid"
   },
   {
+    "title": "Discrimination detection by causal effect estimation",
+    "authors": [
+      "Jiuyong Li",
+      "Jixue Liu",
+      "Lin Liu",
+      "Thuc Duy Le",
+      "Saisai Ma",
+      "Yizhao Han"
+    ],
+    "venue": "2017 IEEE International Conference on Big Data (Big Data)",
+    "year": 2017,
+    "doi": "10.1109/BigData.2017.8258033",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
     "title": "Identifying miRNA sponge modules using biclustering and regulatory scores",
     "authors": [],
     "venue": "BMC bioinformatics",
     "year": 2017,
     "doi": "",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Identifying miRNA sponge modules using biclustering and regulatory scores",
+    "authors": [
+      "Junpeng Zhang",
+      "Thuc D Le",
+      "Lin Liu",
+      "Jiuyong Li"
+    ],
+    "venue": "BMC Bioinformatics",
+    "year": 2017,
+    "doi": "10.1186/s12859-017-1467-5",
     "arxiv": "",
     "pmid": "",
     "source": "orcid"
@@ -3493,6 +4346,24 @@
     "source": "orcid"
   },
   {
+    "title": "Identifying microRNA targets in epithelial-mesenchymal transition using joint-intervention causal inference",
+    "authors": [
+      "Thuc Duy Le",
+      "Junpeng Zhang",
+      "Lin Liu",
+      "Buu Minh Thanh Truong",
+      "Shu Hu",
+      "Taosheng Xu",
+      "Jiuyong Li"
+    ],
+    "venue": "Proceedings of the 8th International Conference on Computational Systems-Biology and Bioinformatics",
+    "year": 2017,
+    "doi": "10.1145/3156346.3156353",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
     "title": "Inferring miRNA sponge co-regulation of protein-protein interactions in human breast cancer",
     "authors": [],
     "venue": "BMC bioinformatics",
@@ -3503,11 +4374,42 @@
     "source": "orcid"
   },
   {
+    "title": "Inferring miRNA sponge co-regulation of protein-protein interactions in human breast cancer",
+    "authors": [
+      "Junpeng Zhang",
+      "Thuc Duy Le",
+      "Lin Liu",
+      "Jiuyong Li"
+    ],
+    "venue": "BMC Bioinformatics",
+    "year": 2017,
+    "doi": "10.1186/s12859-017-1672-2",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
     "title": "Mining heterogeneous causal effects for personalized cancer treatment",
     "authors": [],
     "venue": "Bioinformatics",
     "year": 2017,
     "doi": "",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
+    "title": "Mining heterogeneous causal effects for personalized cancer treatment",
+    "authors": [
+      "Weijia Zhang",
+      "Thuc Duy Le",
+      "Lin Liu",
+      "Zhi-Hua Zhou",
+      "Jiuyong Li"
+    ],
+    "venue": "Bioinformatics",
+    "year": 2017,
+    "doi": "10.1093/bioinformatics/btx174",
     "arxiv": "",
     "pmid": "",
     "source": "orcid"
