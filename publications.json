@@ -1,5 +1,23 @@
 [
   {
+    "title": "Lightweight Wrappers for Adapting Time Series Foundation Models to Regional Drought Forecasting",
+    "authors": [
+      "Wentao Gao",
+      "Jiuyong Li",
+      "Lin Liu",
+      "Thuc Duy Le",
+      "Jixue Liu",
+      "Yanchang Zhao",
+      "Yun Chen"
+    ],
+    "venue": "Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2",
+    "year": 2026,
+    "doi": "10.1145/3770855.3818835",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
     "title": "TACO: TabPFN augmented causal outcomes for early detection of long COVID",
     "authors": [
       "Sindy Pinero",
