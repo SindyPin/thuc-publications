@@ -1,5 +1,24 @@
 [
   {
+    "title": "TabSurv: Tabular foundation model for breast cancer prognosis using gene expression data",
+    "authors": [
+      "Tuyen Vu",
+      "Ha Xuan Tran",
+      "Xiaomei Li",
+      "Sindy Pinero",
+      "Lin Liu",
+      "Jiuyong Li",
+      "Jia Tina Du",
+      "Thuc Duy Le"
+    ],
+    "venue": "Computer Methods and Programs in Biomedicine",
+    "year": 2027,
+    "doi": "10.1016/j.cmpb.2026.109693",
+    "arxiv": "",
+    "pmid": "",
+    "source": "orcid"
+  },
+  {
     "title": "Lightweight Wrappers for Adapting Time Series Foundation Models to Regional Drought Forecasting",
     "authors": [
       "Wentao Gao",
